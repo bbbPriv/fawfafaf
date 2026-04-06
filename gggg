@@ -9670,7 +9670,8 @@ L},wrench={ImageRectSize=M['64_64'],ImageRectOffset=M['64_448'],Image=L},x={Imag
 'zoom-in']={ImageRectSize=M['64_64'],ImageRectOffset=M['384_448'],Image=L},['zoom-out']={ImageRectSize=M['64_64'],
 ImageRectOffset=M['448_448'],Image=L}}end)()end,[30]=function()local aa,ab,ac=a(30)local ad return(function(...)local ae
 ,af,ag=request or http_request or(syn and syn.request)or(http and http.request),getcustomasset or getsynasset or(syn and
-syn.asset),{Enabled=false,Folder='FluentRenewed',ResolvedAssets={},Urls={['rbxassetid://9886659671']=
+syn.asset),{Enabled=false,Folder='FluentRenewed',CacheChecked=false,CacheVersion='2',RefreshCache=false,RefreshedAssets=
+{},ResolvedAssets={},Urls={['rbxassetid://9886659671']=
 [[https://raw.githubusercontent.com/bbbPriv/BoogaFluentAssets/refs/heads/main/9886659671.png]],[
 'rbxassetid://9886659276']=[[https://raw.githubusercontent.com/bbbPriv/BoogaFluentAssets/refs/heads/main/Min.png]],[
 'rbxassetid://9886659406']=[[https://raw.githubusercontent.com/bbbPriv/BoogaFluentAssets/refs/heads/main/Max.png]],[
@@ -9691,33 +9692,39 @@ syn.asset),{Enabled=false,Folder='FluentRenewed',ResolvedAssets={},Urls={['rbxas
 [[https://raw.githubusercontent.com/bbbPriv/BoogaFluentAssets/refs/heads/main/3ee01e99fc4fa65ab09168c6fddc1733%20(4).png]]
 ,['rbxassetid://9968344227']=
 [[https://raw.githubusercontent.com/bbbPriv/BoogaFluentAssets/refs/heads/main/983e68118724da2954693420d55e6be0%20(4).png]]
-}}local function ah(ai)if ae then local aj,ak=pcall(ae,{Url=ai,Method='GET'})if aj and ak then local b=ak.StatusCode or
-ak.Status or 0 if(ak.Success~=false and b==0)or(b>=200 and b<300)then return ak.Body end end end local aj,ak=pcall(game.
-HttpGet,game,ai)if aj then return ak end end local function ai(aj)if not isfolder or not makefolder then return false
-end local ak,b=aj:gsub('\\','/'):split'/',''for c=1,#ak do local d=ak[c]if d~=''then b=b==''and d or`{b}/{d}`if not
-isfolder(b)then makefolder(b)end end end return true end function ag.SetEnabled(aj,ak)aj.Enabled=ak==true table.clear(aj
-.ResolvedAssets)end function ag.SetFolder(aj,ak)if typeof(ak)=='string'and ak~=''then aj.Folder=ak table.clear(aj.
-ResolvedAssets)end end function ag.Get(aj,ak)if not aj.Enabled or typeof(ak)~='string'then return ak end local b=aj.Urls
-[ak]if not b or not isfile or not writefile or not af then return ak end local c=aj.ResolvedAssets[ak]if c then return c
-end local d=ak:gsub('^rbxassetid://','')if d==ak then return ak end local e=`{aj.Folder}/Icons`if not ai(e)then return
-ak end local f=`{e}/{d}.png`if not isfile(f)then local g=ah(b)if not g then return ak end local h=pcall(writefile,f,g)if
-not h then return ak end end local g,h=pcall(af,f)if g and h then aj.ResolvedAssets[ak]=h return h end return ak end
-return ag end)()end,[31]=function()local aa,ab,ac=a(31)local ad return(function(...)local ae={Names={'Vynixu','Dark',
-'Darker','Light','Quiet Light','Aqua','Tomorrow Night Blue','Abyss','Amethyst','Amethyst Dark','Rose','Amberfall',
-'NeonTide','VerdantGlass','MidnightPrism','FrozenAurora','OpalineHalo','Yaru','United Ubuntu','Elementary','Yaru Dark',
-'United GNOME','Arc Dark','Ambiance','Adapta Nokto','Monokai','Monokai Classic','Monokai Vibrant','Monokai Dimmed',
-'Typewriter','Dark Typewriter','Kimbie Dark','Solarized Dark','Solarized Light','DuoTone Dark Sea','DuoTone Dark Sky',
-'DuoTone Dark Space','DuoTone Dark Forest','DuoTone Dark Earth','VSC Dark+','VSC Dark Modern','VSC Dark High Contrast',
-'VSC Light+','VSC Light Modern','VSC Light High Contrast','VSC Red','VS Dark','VS Light','GitHub Dark',
-'GitHub Dark Dimmed','GitHub Dark Default','GitHub Dark High Contrast','GitHub Dark Colorblind','GitHub Light',
-'GitHub Light Default','GitHub Light High Contrast','GitHub Light Colorblind','Viow Arabian','Viow Arabian Mix',
-'Viow Darker','Viow Flat','Viow Light','Viow Mars','Viow Neon'}}for af,ag in next,ae.Names do local ah=ac(ab[ag])ah.Name
-=ag ae[ah.Name]=ah end return ae end)()end,[32]=function()local aa,ab,ac=a(32)local ad return(function(...)return{Accent
-=Color3.fromRGB(102,136,204),AcrylicMain=Color3.fromRGB(0,12,24),AcrylicBorder=Color3.fromRGB(43,43,74),AcrylicGradient=
-ColorSequence.new(Color3.fromRGB(0,12,24),Color3.fromRGB(0,12,24)),AcrylicNoise=1,TitleBarLine=Color3.fromRGB(43,43,74),
-Tab=Color3.fromRGB(128,162,194),Element=Color3.fromRGB(24,31,47),ElementBorder=Color3.fromRGB(43,43,74),InElementBorder=
-Color3.fromRGB(0,99,165),ElementTransparency=0,ToggleSlider=Color3.fromRGB(0,99,165),ToggleToggled=Color3.fromRGB(24,31,
-47),SliderRail=Color3.fromRGB(0,99,165),DropdownFrame=Color3.fromRGB(24,31,47),DropdownHolder=Color3.fromRGB(24,31,47),
+}}local function ah(ai)local aj,ak=pcall(game.HttpGet,game,ai)if aj then return ak end if ae then aj,ak=pcall(ae,{Url=ai
+,Method='GET'})if aj and ak then local b=ak.StatusCode or ak.Status or 0 if(ak.Success~=false and b==0)or(b>=200 and b<
+300)then return ak.Body end end end end local function ai(aj)if not isfolder or not makefolder then return false end
+local ak,b=aj:gsub('\\','/'):split'/',''for c=1,#ak do local d=ak[c]if d~=''then b=b==''and d or`{b}/{d}`if not
+isfolder(b)then makefolder(b)end end end return true end function ag.EnsureCache(aj)if aj.CacheChecked then return true
+end aj.CacheChecked=true local ak=`{aj.Folder}/Icons`if not ai(ak)then return false end if not isfile or not readfile or
+not writefile then return true end local b,c=`{ak}/.version`if isfile(b)then local d,e=pcall(readfile,b)if d then c=e
+end end aj.RefreshCache=c~=aj.CacheVersion if aj.RefreshCache then pcall(writefile,b,aj.CacheVersion)end return true end
+function ag.SetEnabled(aj,ak)aj.Enabled=ak==true aj.CacheChecked=false aj.RefreshCache=false table.clear(aj.
+RefreshedAssets)table.clear(aj.ResolvedAssets)end function ag.SetFolder(aj,ak)if typeof(ak)=='string'and ak~=''then aj.
+Folder=ak aj.CacheChecked=false aj.RefreshCache=false table.clear(aj.RefreshedAssets)table.clear(aj.ResolvedAssets)end
+end function ag.Get(aj,ak)if not aj.Enabled or typeof(ak)~='string'then return ak end local b=aj.Urls[ak]if not b or not
+isfile or not writefile or not af then return ak end local c=aj.ResolvedAssets[ak]if c then return c end local d=ak:
+gsub('^rbxassetid://','')if d==ak then return ak end local e=`{aj.Folder}/Icons`if not aj:EnsureCache()then return ak
+end local f,g=`{e}/{d}.png`,aj.RefreshCache and not aj.RefreshedAssets[ak]if g or not isfile(f)then local h=ah(b)if not
+h then return ak end local i=pcall(writefile,f,h)if not i then return ak end aj.RefreshedAssets[ak]=true end local h,i=
+pcall(af,f)if h and i then aj.ResolvedAssets[ak]=i return i end return ak end return ag end)()end,[31]=function()local
+aa,ab,ac=a(31)local ad return(function(...)local ae={Names={'Vynixu','Dark','Darker','Light','Quiet Light','Aqua',
+'Tomorrow Night Blue','Abyss','Amethyst','Amethyst Dark','Rose','Amberfall','NeonTide','VerdantGlass','MidnightPrism',
+'FrozenAurora','OpalineHalo','Yaru','United Ubuntu','Elementary','Yaru Dark','United GNOME','Arc Dark','Ambiance',
+'Adapta Nokto','Monokai','Monokai Classic','Monokai Vibrant','Monokai Dimmed','Typewriter','Dark Typewriter',
+'Kimbie Dark','Solarized Dark','Solarized Light','DuoTone Dark Sea','DuoTone Dark Sky','DuoTone Dark Space',
+'DuoTone Dark Forest','DuoTone Dark Earth','VSC Dark+','VSC Dark Modern','VSC Dark High Contrast','VSC Light+',
+'VSC Light Modern','VSC Light High Contrast','VSC Red','VS Dark','VS Light','GitHub Dark','GitHub Dark Dimmed',
+'GitHub Dark Default','GitHub Dark High Contrast','GitHub Dark Colorblind','GitHub Light','GitHub Light Default',
+'GitHub Light High Contrast','GitHub Light Colorblind','Viow Arabian','Viow Arabian Mix','Viow Darker','Viow Flat',
+'Viow Light','Viow Mars','Viow Neon'}}for af,ag in next,ae.Names do local ah=ac(ab[ag])ah.Name=ag ae[ah.Name]=ah end
+return ae end)()end,[32]=function()local aa,ab,ac=a(32)local ad return(function(...)return{Accent=Color3.fromRGB(102,136
+,204),AcrylicMain=Color3.fromRGB(0,12,24),AcrylicBorder=Color3.fromRGB(43,43,74),AcrylicGradient=ColorSequence.new(
+Color3.fromRGB(0,12,24),Color3.fromRGB(0,12,24)),AcrylicNoise=1,TitleBarLine=Color3.fromRGB(43,43,74),Tab=Color3.
+fromRGB(128,162,194),Element=Color3.fromRGB(24,31,47),ElementBorder=Color3.fromRGB(43,43,74),InElementBorder=Color3.
+fromRGB(0,99,165),ElementTransparency=0,ToggleSlider=Color3.fromRGB(0,99,165),ToggleToggled=Color3.fromRGB(24,31,47),
+SliderRail=Color3.fromRGB(0,99,165),DropdownFrame=Color3.fromRGB(24,31,47),DropdownHolder=Color3.fromRGB(24,31,47),
 DropdownBorder=Color3.fromRGB(43,43,74),DropdownOption=Color3.fromRGB(102,136,204),Keybind=Color3.fromRGB(24,31,47),
 Input=Color3.fromRGB(24,31,47),InputFocused=Color3.fromRGB(24,31,47),InputIndicator=Color3.fromRGB(64,99,133),Dialog=
 Color3.fromRGB(38,38,65),DialogHolder=Color3.fromRGB(6,6,33),DialogHolderLine=Color3.fromRGB(43,43,74),DialogButton=
@@ -11243,48 +11250,48 @@ function()local aa,ab,ac=a(150)local ad return(function(...)return function()loc
 Parent.SingleMotor),ac(ab.Parent.GroupMotor)local ah,aj=af.new(0),ag.new{}it('should properly detect motors',function()
 expect(ae(ah)).to.equal(true)expect(ae(aj)).to.equal(true)end)it("shouldn't detect things that aren't motors",function()
 expect(ae{}).to.equal(false)end)it('should return the proper motor type',function()local ak,b=ae(ah)local c,d=ae(aj)
-expect(b).to.equal'Single'expect(d).to.equal'Group'end)end end)()end},{{1,2,{'Fluent Renewed'},{{2,1,{'Components'},{{9,
-2,{'Tab'}},{11,2,{'TitleBar'}},{8,2,{'Section'}},{3,2,{'Assets'}},{6,2,{'Element'}},{7,2,{'Notification'}},{12,2,{
-'Window'}},{4,2,{'Button'}},{5,2,{'Dialog'}},{10,2,{'Textbox'}}}},{96,1,{'Packages'},{{97,2,{'Flipper'}},{100,1,{
-'_Index'},{{104,1,{'littensy_ripple@0.9.3'},{{105,2,{'Promise'}},{106,2,{'ripple'},{{108,2,{'createMotion'}},{110,1,{
-'solvers'},{{116,2,{'spring.spec'}},{113,2,{'linear'}},{112,2,{'immediate.spec'}},{114,2,{'linear.spec'}},{118,2,{
-'tween.spec'}},{117,2,{'tween'}},{111,2,{'immediate'}},{115,2,{'spring'}}}},{107,2,{'config'}},{119,2,{'types'}},{109,2,
-{'createMotion.spec'}},{120,1,{'utils'},{{123,2,{'merge'}},{122,2,{'intermediate'}},{124,2,{'snapshot'}},{121,2,{
-'assign'}},{125,2,{'spy'}}}}}}}},{133,1,{'reselim_flipper@2.0.0'},{{134,2,{'flipper'},{{141,2,{'Linear'}},{142,2,{
-'Linear.spec'}},{146,2,{'SingleMotor.spec'}},{139,2,{'Instant'}},{149,2,{'isMotor'}},{144,2,{'Signal.spec'}},{143,2,{
-'Signal'}},{150,2,{'isMotor.spec'}},{140,2,{'Instant.spec'}},{145,2,{'SingleMotor'}},{137,2,{'GroupMotor'}},{138,2,{
-'GroupMotor.spec'}},{136,2,{'BaseMotor.spec'}},{148,2,{'Spring.spec'}},{135,2,{'BaseMotor'}},{147,2,{'Spring'}}}}}},{101
-,1,{'evaera_promise@4.0.0'},{{102,2,{'promise'},{{103,2,{'init.spec'}}}}}},{126,1,{'lucasmzreal_fastsignal@10.4.0'},{{
-127,2,{'fastsignal'},{{128,2,{'Deferred'}},{129,2,{'Docs'}},{132,2,{'wally'}},{131,2,{'Readme'}},{130,2,{'Immediate'}}}}
-}}}},{98,2,{'Ripple'}},{99,2,{'Signal'}}}},{22,1,{'Modules'},{{23,2,{'Acrylic'},{{26,2,{'CreateAcrylic'}},{27,2,{'Utils'
-}},{25,2,{'AcrylicPaint'}},{24,2,{'AcrylicBlur'}}}},{29,2,{'Icons'}},{30,2,{'SecureAssets'}},{28,2,{'Creator'}}}},{13,2,
-{'Elements'},{{14,2,{'Button'}},{16,2,{'Dropdown'}},{21,2,{'Toggle'}},{20,2,{'Slider'}},{17,2,{'Input'}},{19,2,{
-'Paragraph'}},{18,2,{'Keybind'}},{15,2,{'Colorpicker'}}}},{31,2,{'Themes'},{{59,2,{'Kimbie Dark'}},{68,2,{'Quiet Light'}
-},{50,2,{'GitHub Dark Colorblind'}},{93,2,{'Vynixu'}},{72,2,{'Tomorrow Night Blue'}},{61,2,{'MidnightPrism'}},{46,2,{
-'DuoTone Dark Sky'}},{60,2,{'Light'}},{44,2,{'DuoTone Dark Forest'}},{34,2,{'Amberfall'}},{38,2,{'Aqua'}},{92,2,{
-'Viow Neon'}},{70,2,{'Solarized Dark'}},{82,2,{'VSC Light Modern'}},{76,2,{'VS Dark'}},{74,2,{'United GNOME'}},{85,2,{
-'VerdantGlass'}},{48,2,{'Elementary'}},{80,2,{'VSC Dark+'}},{64,2,{'Monokai Vibrant'}},{88,2,{'Viow Darker'}},{53,2,{
-'GitHub Dark High Contrast'}},{87,2,{'Viow Arabian'}},{86,2,{'Viow Arabian Mix'}},{89,2,{'Viow Flat'}},{75,2,{
-'United Ubuntu'}},{32,2,{'Abyss'}},{56,2,{'GitHub Light Default'}},{84,2,{'VSC Red'}},{83,2,{'VSC Light+'}},{90,2,{
-'Viow Light'}},{81,2,{'VSC Light High Contrast'}},{79,2,{'VSC Dark Modern'}},{78,2,{'VSC Dark High Contrast'}},{95,2,{
-'Yaru'}},{51,2,{'GitHub Dark Default'}},{55,2,{'GitHub Light Colorblind'}},{63,2,{'Monokai Dimmed'}},{71,2,{
-'Solarized Light'}},{36,2,{'Amethyst Dark'}},{91,2,{'Viow Mars'}},{57,2,{'GitHub Light High Contrast'}},{69,2,{'Rose'}},
-{77,2,{'VS Light'}},{67,2,{'OpalineHalo'}},{58,2,{'GitHub Light'}},{66,2,{'NeonTide'}},{37,2,{'Amethyst'}},{54,2,{
-'GitHub Dark'}},{33,2,{'Adapta Nokto'}},{73,2,{'Typewriter'}},{62,2,{'Monokai Classic'}},{41,2,{'Dark'}},{45,2,{
-'DuoTone Dark Sea'}},{35,2,{'Ambiance'}},{43,2,{'DuoTone Dark Earth'}},{47,2,{'DuoTone Dark Space'}},{49,2,{
-'FrozenAurora'}},{40,2,{'Dark Typewriter'}},{65,2,{'Monokai'}},{39,2,{'Arc Dark'}},{52,2,{'GitHub Dark Dimmed'}},{42,2,{
-'Darker'}},{94,2,{'Yaru Dark'}}}}}}},'0.4.2','WaxRuntime',string,task,setmetatable,error,next,table,unpack,coroutine,
-script,type,require,pcall,tostring,tonumber,_VERSION local m,n,o,p,q,r,s=b.insert,b.remove,b.freeze or function(m)return
-m end,d.wrap,ae.sub,ae.match,ae.gmatch if k and q(k,1,4)=='Lune'then local t,u=h(g,'@lune/task')if t and u then af=u end
-end local t=af and af.defer local u,v,w,x,y,z,A,B,C=t or function(u,...)p(u)(...)end,{[1]='Folder',[2]='ModuleScript',[3
-]='Script',[4]='LocalScript',[5]='StringValue'},{},{},{},{},{},{},{}local D,E={GetFullName={{},function(D)local E,F=D.
-Name,D.Parent while F do E=F.Name..'.'..E F=F.Parent end return E end},GetChildren={{},function(D)local E={}for F in aj,
-C[D]do m(E,F)end return E end},GetDescendants={{},function(D)local E={}for F in aj,C[D]do m(E,F)for G,H in aj,F:
-GetDescendants()do m(E,H)end end return E end},FindFirstChild={{'string','boolean?'},function(D,E,F)local G=C[D]for H in
-aj,G do if H.Name==E then return H end end if F then for H in aj,G do return H:FindFirstChild(E,true)end end end},
-FindFirstAncestor={{'string'},function(D,E)local F=D.Parent while F do if F.Name==E then return F end F=F.Parent end end
-},WaitForChild={{'string','number?'},function(D,E)return D:FindFirstChild(E)end}},{}for F,G in aj,D do local H,I,J=G[1],
-G[2],{}for K,L in aj,H do local M,N=r(L,'^([^%?]+)(%??)')J[K]={M,N}end E[F]=function(K,...)if not C[K]then ah(
+expect(b).to.equal'Single'expect(d).to.equal'Group'end)end end)()end},{{1,2,{'Fluent Renewed'},{{22,1,{'Modules'},{{28,2
+,{'Creator'}},{30,2,{'SecureAssets'}},{29,2,{'Icons'}},{23,2,{'Acrylic'},{{25,2,{'AcrylicPaint'}},{24,2,{'AcrylicBlur'}}
+,{27,2,{'Utils'}},{26,2,{'CreateAcrylic'}}}}}},{13,2,{'Elements'},{{14,2,{'Button'}},{18,2,{'Keybind'}},{21,2,{'Toggle'}
+},{17,2,{'Input'}},{20,2,{'Slider'}},{16,2,{'Dropdown'}},{15,2,{'Colorpicker'}},{19,2,{'Paragraph'}}}},{96,1,{'Packages'
+},{{97,2,{'Flipper'}},{99,2,{'Signal'}},{98,2,{'Ripple'}},{100,1,{'_Index'},{{133,1,{'reselim_flipper@2.0.0'},{{134,2,{
+'flipper'},{{146,2,{'SingleMotor.spec'}},{139,2,{'Instant'}},{141,2,{'Linear'}},{142,2,{'Linear.spec'}},{143,2,{'Signal'
+}},{148,2,{'Spring.spec'}},{144,2,{'Signal.spec'}},{137,2,{'GroupMotor'}},{138,2,{'GroupMotor.spec'}},{145,2,{
+'SingleMotor'}},{150,2,{'isMotor.spec'}},{140,2,{'Instant.spec'}},{147,2,{'Spring'}},{136,2,{'BaseMotor.spec'}},{149,2,{
+'isMotor'}},{135,2,{'BaseMotor'}}}}}},{101,1,{'evaera_promise@4.0.0'},{{102,2,{'promise'},{{103,2,{'init.spec'}}}}}},{
+104,1,{'littensy_ripple@0.9.3'},{{106,2,{'ripple'},{{107,2,{'config'}},{120,1,{'utils'},{{123,2,{'merge'}},{124,2,{
+'snapshot'}},{125,2,{'spy'}},{121,2,{'assign'}},{122,2,{'intermediate'}}}},{110,1,{'solvers'},{{112,2,{'immediate.spec'}
+},{117,2,{'tween'}},{115,2,{'spring'}},{116,2,{'spring.spec'}},{114,2,{'linear.spec'}},{113,2,{'linear'}},{118,2,{
+'tween.spec'}},{111,2,{'immediate'}}}},{109,2,{'createMotion.spec'}},{119,2,{'types'}},{108,2,{'createMotion'}}}},{105,2
+,{'Promise'}}}},{126,1,{'lucasmzreal_fastsignal@10.4.0'},{{127,2,{'fastsignal'},{{131,2,{'Readme'}},{132,2,{'wally'}},{
+129,2,{'Docs'}},{130,2,{'Immediate'}},{128,2,{'Deferred'}}}}}}}}}},{31,2,{'Themes'},{{95,2,{'Yaru'}},{76,2,{'VS Dark'}},
+{91,2,{'Viow Mars'}},{54,2,{'GitHub Dark'}},{78,2,{'VSC Dark High Contrast'}},{85,2,{'VerdantGlass'}},{63,2,{
+'Monokai Dimmed'}},{92,2,{'Viow Neon'}},{94,2,{'Yaru Dark'}},{41,2,{'Dark'}},{90,2,{'Viow Light'}},{72,2,{
+'Tomorrow Night Blue'}},{47,2,{'DuoTone Dark Space'}},{80,2,{'VSC Dark+'}},{55,2,{'GitHub Light Colorblind'}},{89,2,{
+'Viow Flat'}},{74,2,{'United GNOME'}},{52,2,{'GitHub Dark Dimmed'}},{88,2,{'Viow Darker'}},{44,2,{'DuoTone Dark Forest'}
+},{49,2,{'FrozenAurora'}},{87,2,{'Viow Arabian'}},{86,2,{'Viow Arabian Mix'}},{84,2,{'VSC Red'}},{61,2,{'MidnightPrism'}
+},{45,2,{'DuoTone Dark Sea'}},{33,2,{'Adapta Nokto'}},{51,2,{'GitHub Dark Default'}},{83,2,{'VSC Light+'}},{57,2,{
+'GitHub Light High Contrast'}},{53,2,{'GitHub Dark High Contrast'}},{42,2,{'Darker'}},{32,2,{'Abyss'}},{82,2,{
+'VSC Light Modern'}},{62,2,{'Monokai Classic'}},{48,2,{'Elementary'}},{68,2,{'Quiet Light'}},{81,2,{
+'VSC Light High Contrast'}},{79,2,{'VSC Dark Modern'}},{75,2,{'United Ubuntu'}},{93,2,{'Vynixu'}},{77,2,{'VS Light'}},{
+50,2,{'GitHub Dark Colorblind'}},{73,2,{'Typewriter'}},{71,2,{'Solarized Light'}},{70,2,{'Solarized Dark'}},{69,2,{
+'Rose'}},{38,2,{'Aqua'}},{40,2,{'Dark Typewriter'}},{35,2,{'Ambiance'}},{59,2,{'Kimbie Dark'}},{67,2,{'OpalineHalo'}},{
+66,2,{'NeonTide'}},{39,2,{'Arc Dark'}},{65,2,{'Monokai'}},{64,2,{'Monokai Vibrant'}},{46,2,{'DuoTone Dark Sky'}},{43,2,{
+'DuoTone Dark Earth'}},{60,2,{'Light'}},{36,2,{'Amethyst Dark'}},{34,2,{'Amberfall'}},{58,2,{'GitHub Light'}},{37,2,{
+'Amethyst'}},{56,2,{'GitHub Light Default'}}}},{2,1,{'Components'},{{7,2,{'Notification'}},{3,2,{'Assets'}},{10,2,{
+'Textbox'}},{12,2,{'Window'}},{6,2,{'Element'}},{11,2,{'TitleBar'}},{9,2,{'Tab'}},{5,2,{'Dialog'}},{8,2,{'Section'}},{4,
+2,{'Button'}}}}}}},'0.4.2','WaxRuntime',string,task,setmetatable,error,next,table,unpack,coroutine,script,type,require,
+pcall,tostring,tonumber,_VERSION local m,n,o,p,q,r,s=b.insert,b.remove,b.freeze or function(m)return m end,d.wrap,ae.sub
+,ae.match,ae.gmatch if k and q(k,1,4)=='Lune'then local t,u=h(g,'@lune/task')if t and u then af=u end end local t=af and
+af.defer local u,v,w,x,y,z,A,B,C=t or function(u,...)p(u)(...)end,{[1]='Folder',[2]='ModuleScript',[3]='Script',[4]=
+'LocalScript',[5]='StringValue'},{},{},{},{},{},{},{}local D,E={GetFullName={{},function(D)local E,F=D.Name,D.Parent
+while F do E=F.Name..'.'..E F=F.Parent end return E end},GetChildren={{},function(D)local E={}for F in aj,C[D]do m(E,F)
+end return E end},GetDescendants={{},function(D)local E={}for F in aj,C[D]do m(E,F)for G,H in aj,F:GetDescendants()do m(
+E,H)end end return E end},FindFirstChild={{'string','boolean?'},function(D,E,F)local G=C[D]for H in aj,G do if H.Name==E
+then return H end end if F then for H in aj,G do return H:FindFirstChild(E,true)end end end},FindFirstAncestor={{
+'string'},function(D,E)local F=D.Parent while F do if F.Name==E then return F end F=F.Parent end end},WaitForChild={{
+'string','number?'},function(D,E)return D:FindFirstChild(E)end}},{}for F,G in aj,D do local H,I,J=G[1],G[2],{}for K,L in
+aj,H do local M,N=r(L,'^([^%?]+)(%??)')J[K]={M,N}end E[F]=function(K,...)if not C[K]then ah(
 "Expected ':' not '.' calling member function "..F,2)end local L={...}for M,N in aj,J do local O=L[M]local P,Q,R=f(O),N[
 1],N[2]if O==nil and not R then ah('Argument '..O..' missing or nil',3)end if Q~='any'and P~=Q and not(P=='nil'and R)
 then ah('Argument '..M..' expects type "'..Q..'", got "'..P..'"',2)end end return I(K,...)end end local function F(G,H,I
