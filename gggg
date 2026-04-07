@@ -9677,7 +9677,7 @@ L},wrench={ImageRectSize=M['64_64'],ImageRectOffset=M['64_448'],Image=L},x={Imag
 'zoom-in']={ImageRectSize=M['64_64'],ImageRectOffset=M['384_448'],Image=L},['zoom-out']={ImageRectSize=M['64_64'],
 ImageRectOffset=M['448_448'],Image=L}}end)()end,[30]=function()local aa,ab,ac=a(30)local ad return(function(...)local ae
 ,af,ag=request or http_request or(syn and syn.request)or(http and http.request),getcustomasset or getsynasset or(syn and
-syn.asset),{Enabled=false,Folder='FluentRenewed',CacheVersion='4',Prepared=false,Empty='',ResolvedAssets={},Urls={[
+syn.asset),{Enabled=false,Folder='FluentRenewed',CacheVersion='5',Prepared=false,Empty='',ResolvedAssets={},Urls={[
 'rbxassetid://9886659671']=
 [[https://raw.githubusercontent.com/bbbPriv/BoogaFluentAssets/refs/heads/main/9886659671.png]],[
 'rbxassetid://9886659276']=[[https://raw.githubusercontent.com/bbbPriv/BoogaFluentAssets/refs/heads/main/Min.png]],[
@@ -9709,6 +9709,8 @@ syn.asset),{Enabled=false,Folder='FluentRenewed',CacheVersion='4',Prepared=false
 [[https://raw.githubusercontent.com/bbbPriv/BoogaFluentAssets/refs/heads/main/31b23d2687ca8073f58073ad0d8e765e.png]],[
 'rbxassetid://129900432084566']=
 [[https://raw.githubusercontent.com/bbbPriv/BoogaFluentAssets/refs/heads/main/ad14e907f6671eb9fdcbf0559461dc8a.png]],[
+'rbxassetid://115396960406352']=
+[[https://raw.githubusercontent.com/bbbPriv/BoogaFluentAssets/refs/heads/main/f802794f1df3f64d2bdb5e8ba00b5267.png]],[
 'http://www.roblox.com/asset/?id=14204231522']=
 [[https://raw.githubusercontent.com/bbbPriv/BoogaFluentAssets/refs/heads/main/4ef50c22a59572b4560a217e5df57c68%20(2).png]]
 ,['http://www.roblox.com/asset/?id=4805639000']=
@@ -9731,435 +9733,435 @@ end local c=`{b}/.version`if not readfile or not isfile(c)then return true end l
 return true end end return false end function ag.Prepare(ak)if not ak.Enabled or ak.Prepared then return end ak.Prepared
 =true table.clear(ak.ResolvedAssets)if not isfile or not writefile or not af then return end local b=`{ak.Folder}/Icons`
 if not ai(b)then return end local c,d=`{b}/.version`,true if readfile and isfile(c)then local e,f=pcall(readfile,c)if e
-and f==ak.CacheVersion then d=false end end for e,f in next,ak.Urls do local g=aj(e)if not g then continue end local h=`{
-b}/{g}.png`if d or not isfile(h)then local i=ah(f)if i then pcall(writefile,h,i)end end if isfile(h)then local i,j=
-pcall(af,h)if i and j then ak.ResolvedAssets[e]=j end end end if d then pcall(writefile,c,ak.CacheVersion)end end
-function ag.Get(ak,b)if not ak.Enabled or typeof(b)~='string'then return b end if not ak.Urls[b]then return b end return
-ak.ResolvedAssets[b]or ak.Empty end return ag end)()end,[31]=function()local aa,ab,ac=a(31)local ad return(function(...)
-local ae={Names={'Vynixu','Dark','Darker','Light','Quiet Light','Aqua','Tomorrow Night Blue','Abyss','Amethyst',
-'Amethyst Dark','Rose','Amberfall','NeonTide','VerdantGlass','MidnightPrism','FrozenAurora','OpalineHalo','Yaru',
-'United Ubuntu','Elementary','Yaru Dark','United GNOME','Arc Dark','Ambiance','Adapta Nokto','Monokai','Monokai Classic'
-,'Monokai Vibrant','Monokai Dimmed','Typewriter','Dark Typewriter','Kimbie Dark','Solarized Dark','Solarized Light',
-'DuoTone Dark Sea','DuoTone Dark Sky','DuoTone Dark Space','DuoTone Dark Forest','DuoTone Dark Earth','VSC Dark+',
-'VSC Dark Modern','VSC Dark High Contrast','VSC Light+','VSC Light Modern','VSC Light High Contrast','VSC Red','VS Dark'
-,'VS Light','GitHub Dark','GitHub Dark Dimmed','GitHub Dark Default','GitHub Dark High Contrast',
-'GitHub Dark Colorblind','GitHub Light','GitHub Light Default','GitHub Light High Contrast','GitHub Light Colorblind',
-'Viow Arabian','Viow Arabian Mix','Viow Darker','Viow Flat','Viow Light','Viow Mars','Viow Neon'}}for af,ag in next,ae.
-Names do local ah=ac(ab[ag])ah.Name=ag ae[ah.Name]=ah end return ae end)()end,[32]=function()local aa,ab,ac=a(32)local
-ad return(function(...)return{Accent=Color3.fromRGB(102,136,204),AcrylicMain=Color3.fromRGB(0,12,24),AcrylicBorder=
-Color3.fromRGB(43,43,74),AcrylicGradient=ColorSequence.new(Color3.fromRGB(0,12,24),Color3.fromRGB(0,12,24)),AcrylicNoise
-=1,TitleBarLine=Color3.fromRGB(43,43,74),Tab=Color3.fromRGB(128,162,194),Element=Color3.fromRGB(24,31,47),ElementBorder=
-Color3.fromRGB(43,43,74),InElementBorder=Color3.fromRGB(0,99,165),ElementTransparency=0,ToggleSlider=Color3.fromRGB(0,99
-,165),ToggleToggled=Color3.fromRGB(24,31,47),SliderRail=Color3.fromRGB(0,99,165),DropdownFrame=Color3.fromRGB(24,31,47),
-DropdownHolder=Color3.fromRGB(24,31,47),DropdownBorder=Color3.fromRGB(43,43,74),DropdownOption=Color3.fromRGB(102,136,
-204),Keybind=Color3.fromRGB(24,31,47),Input=Color3.fromRGB(24,31,47),InputFocused=Color3.fromRGB(24,31,47),
-InputIndicator=Color3.fromRGB(64,99,133),Dialog=Color3.fromRGB(38,38,65),DialogHolder=Color3.fromRGB(6,6,33),
-DialogHolderLine=Color3.fromRGB(43,43,74),DialogButton=Color3.fromRGB(24,31,47),DialogButtonBorder=Color3.fromRGB(43,43,
-74),DialogBorder=Color3.fromRGB(43,43,74),DialogInput=Color3.fromRGB(24,31,47),DialogInputLine=Color3.fromRGB(0,99,165),
-Text=Color3.fromRGB(102,136,204),SubText=Color3.fromRGB(64,99,133),Hover=Color3.fromRGB(8,40,107),HoverChange=0.1}end)()
-end,[33]=function()local aa,ab,ac=a(33)local ad return(function(...)return{Accent=Color3.fromHex'#ec6a3f',AcrylicMain=
-Color3.fromHex'#31312e',AcrylicBorder=Color3.fromHex'#403f3a',AcrylicGradient=ColorSequence.new(Color3.fromHex'#31312e',
-Color3.fromHex'#31312e'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#403f3a',Tab=Color3.fromHex'#dddddd',Element=Color3.
-fromHex'#373633',ElementBorder=Color3.fromHex'#403f3a',InElementBorder=Color3.fromHex'#ec6a3f',ElementTransparency=0,
-ToggleSlider=Color3.fromHex'#ec6a3f',ToggleToggled=Color3.fromHex'#31312e',SliderRail=Color3.fromHex'#ec6a3f',
-DropdownFrame=Color3.fromHex'#373633',DropdownHolder=Color3.fromHex'#373633',DropdownBorder=Color3.fromHex'#403f3a',
-DropdownOption=Color3.fromHex'#dddddd',Keybind=Color3.fromHex'#373633',Input=Color3.fromHex'#373633',InputFocused=Color3
-.fromHex'#373633',InputIndicator=Color3.fromHex'#747c84',Dialog=Color3.fromHex'#3c3b37',DialogHolder=Color3.fromHex
-'#31312e',DialogHolderLine=Color3.fromHex'#403f3a',DialogButton=Color3.fromHex'#373633',DialogButtonBorder=Color3.
-fromHex'#403f3a',DialogBorder=Color3.fromHex'#403f3a',DialogInput=Color3.fromHex'#373633',DialogInputLine=Color3.fromHex
-'#ec6a3f',Text=Color3.fromHex'#dddddd',SubText=Color3.fromHex'#747c84',Hover=Color3.fromHex'#403f3a',HoverChange=0.1}end
-)()end,[34]=function()local aa,ab,ac=a(34)local ad return(function(...)return{Accent=Color3.fromRGB(200,100,40),
-AcrylicMain=Color3.fromRGB(35,30,25),AcrylicBorder=Color3.fromRGB(90,60,45),AcrylicGradient=ColorSequence.new(Color3.
-fromRGB(120,70,40),Color3.fromRGB(30,20,15)),AcrylicNoise=0.92,TitleBarLine=Color3.fromRGB(110,70,45),Tab=Color3.
-fromRGB(155,110,85),Element=Color3.fromRGB(120,85,65),ElementBorder=Color3.fromRGB(40,30,25),InElementBorder=Color3.
-fromRGB(85,55,40),ElementTransparency=0.88,ToggleSlider=Color3.fromRGB(155,110,85),ToggleToggled=Color3.fromRGB(0,0,0),
-SliderRail=Color3.fromRGB(155,110,85),DropdownFrame=Color3.fromRGB(170,125,95),DropdownHolder=Color3.fromRGB(100,70,55),
-DropdownBorder=Color3.fromRGB(60,40,30),DropdownOption=Color3.fromRGB(155,110,85),Keybind=Color3.fromRGB(140,95,70),
-Input=Color3.fromRGB(120,85,65),InputFocused=Color3.fromRGB(18,12,10),InputIndicator=Color3.fromRGB(185,135,95),Dialog=
-Color3.fromRGB(100,70,55),DialogHolder=Color3.fromRGB(85,60,45),DialogHolderLine=Color3.fromRGB(60,40,30),DialogButton=
-Color3.fromRGB(100,70,55),DialogButtonBorder=Color3.fromRGB(140,95,70),DialogBorder=Color3.fromRGB(110,80,65),
-DialogInput=Color3.fromRGB(120,85,65),DialogInputLine=Color3.fromRGB(185,135,95),Text=Color3.fromRGB(245,240,235),
-SubText=Color3.fromRGB(180,160,140),Hover=Color3.fromRGB(200,100,40),HoverChange=0.04}end)()end,[35]=function()local aa,
-ab,ac=a(35)local ad return(function(...)return{Accent=Color3.fromHex'#00BCD4',AcrylicMain=Color3.fromHex'#29353b',
-AcrylicBorder=Color3.fromHex'#222D32',AcrylicGradient=ColorSequence.new(Color3.fromHex'#29353b',Color3.fromHex'#29353b')
-,AcrylicNoise=1,TitleBarLine=Color3.fromHex'#222D32',Tab=Color3.fromHex'#EEFFFF',Element=Color3.fromHex'#243035',
-ElementBorder=Color3.fromHex'#222D32',InElementBorder=Color3.fromHex'#00BCD4',ElementTransparency=0,ToggleSlider=Color3.
-fromHex'#00BCD4',ToggleToggled=Color3.fromHex'#29353b',SliderRail=Color3.fromHex'#00BCD4',DropdownFrame=Color3.fromHex
-'#243035',DropdownHolder=Color3.fromHex'#243035',DropdownBorder=Color3.fromHex'#222D32',DropdownOption=Color3.fromHex
-'#EEFFFF',Keybind=Color3.fromHex'#243035',Input=Color3.fromHex'#243035',InputFocused=Color3.fromHex'#243035',
-InputIndicator=Color3.fromHex'#546E7A',Dialog=Color3.fromHex'#222D32',DialogHolder=Color3.fromHex'#29353b',
-DialogHolderLine=Color3.fromHex'#222D32',DialogButton=Color3.fromHex'#243035',DialogButtonBorder=Color3.fromHex'#222D32'
-,DialogBorder=Color3.fromHex'#222D32',DialogInput=Color3.fromHex'#243035',DialogInputLine=Color3.fromHex'#00BCD4',Text=
-Color3.fromHex'#EEFFFF',SubText=Color3.fromHex'#546E7A',Hover=Color3.fromHex'#2D3B42',HoverChange=0.1}end)()end,[36]=
-function()local aa,ab,ac=a(36)local ad return(function(...)return{Accent=Color3.fromHex'#b133ff',AcrylicMain=Color3.
-fromHex'#120024',AcrylicBorder=Color3.fromHex'#4d057b',AcrylicGradient=ColorSequence.new(Color3.fromHex'#120024',Color3.
-fromHex'#120024'),AcrylicNoise=0.92,TitleBarLine=Color3.fromHex'#4d057b',Tab=Color3.fromHex'#e9d9f2',Element=Color3.
-fromHex'#25013c',ElementBorder=Color3.fromHex'#4d057b',InElementBorder=Color3.fromHex'#b133ff',ElementTransparency=0.85,
-ToggleSlider=Color3.fromHex'#7d16bf',ToggleToggled=Color3.fromHex'#120024',SliderRail=Color3.fromHex'#7d16bf',
-DropdownFrame=Color3.fromHex'#25013c',DropdownHolder=Color3.fromHex'#25013c',DropdownBorder=Color3.fromHex'#4d057b',
-DropdownOption=Color3.fromHex'#e9d9f2',Keybind=Color3.fromHex'#25013c',Input=Color3.fromHex'#180030',InputFocused=Color3
-.fromHex'#180030',InputIndicator=Color3.fromHex'#9e85ad',Dialog=Color3.fromHex'#25013c',DialogHolder=Color3.fromHex
-'#120024',DialogHolderLine=Color3.fromHex'#4d057b',DialogButton=Color3.fromHex'#25013c',DialogButtonBorder=Color3.
-fromHex'#4d057b',DialogBorder=Color3.fromHex'#4d057b',DialogInput=Color3.fromHex'#180030',DialogInputLine=Color3.fromHex
-'#b133ff',Text=Color3.fromHex'#e9d9f2',SubText=Color3.fromHex'#9e85ad',Hover=Color3.fromHex'#4d057b',HoverChange=0.1}end
-)()end,[37]=function()local aa,ab,ac=a(37)local ad return(function(...)return{Accent=Color3.fromRGB(97,62,167),
-AcrylicMain=Color3.fromRGB(20,20,20),AcrylicBorder=Color3.fromRGB(110,90,130),AcrylicGradient=ColorSequence.new(Color3.
-fromRGB(85,57,139),Color3.fromRGB(40,25,65)),AcrylicNoise=0.92,TitleBarLine=Color3.fromRGB(95,75,110),Tab=Color3.
-fromRGB(160,140,180),Element=Color3.fromRGB(140,120,160),ElementBorder=Color3.fromRGB(60,50,70),InElementBorder=Color3.
-fromRGB(100,90,110),ElementTransparency=0.87,ToggleSlider=Color3.fromRGB(140,120,160),ToggleToggled=Color3.fromRGB(0,0,0
-),SliderRail=Color3.fromRGB(140,120,160),DropdownFrame=Color3.fromRGB(170,160,200),DropdownHolder=Color3.fromRGB(60,45,
-80),DropdownBorder=Color3.fromRGB(50,40,65),DropdownOption=Color3.fromRGB(140,120,160),Keybind=Color3.fromRGB(140,120,
-160),Input=Color3.fromRGB(140,120,160),InputFocused=Color3.fromRGB(20,10,30),InputIndicator=Color3.fromRGB(170,150,190),
-Dialog=Color3.fromRGB(60,45,80),DialogHolder=Color3.fromRGB(45,30,65),DialogHolderLine=Color3.fromRGB(40,25,60),
-DialogButton=Color3.fromRGB(60,45,80),DialogButtonBorder=Color3.fromRGB(95,80,110),DialogBorder=Color3.fromRGB(85,70,100
-),DialogInput=Color3.fromRGB(70,55,85),DialogInputLine=Color3.fromRGB(175,160,190),Text=Color3.fromRGB(240,240,240),
-SubText=Color3.fromRGB(170,170,170),Hover=Color3.fromRGB(140,120,160),HoverChange=0.04}end)()end,[38]=function()local aa
-,ab,ac=a(38)local ad return(function(...)return{Accent=Color3.fromRGB(60,165,165),AcrylicMain=Color3.fromRGB(20,20,20),
-AcrylicBorder=Color3.fromRGB(50,100,100),AcrylicGradient=ColorSequence.new(Color3.fromRGB(60,140,140),Color3.fromRGB(40,
-80,80)),AcrylicNoise=0.92,TitleBarLine=Color3.fromRGB(60,120,120),Tab=Color3.fromRGB(140,180,180),Element=Color3.
-fromRGB(110,160,160),ElementBorder=Color3.fromRGB(40,70,70),InElementBorder=Color3.fromRGB(80,110,110),
-ElementTransparency=0.84,ToggleSlider=Color3.fromRGB(110,160,160),ToggleToggled=Color3.fromRGB(0,0,0),SliderRail=Color3.
-fromRGB(110,160,160),DropdownFrame=Color3.fromRGB(160,200,200),DropdownHolder=Color3.fromRGB(40,80,80),DropdownBorder=
-Color3.fromRGB(40,65,65),DropdownOption=Color3.fromRGB(110,160,160),Keybind=Color3.fromRGB(110,160,160),Input=Color3.
-fromRGB(110,160,160),InputFocused=Color3.fromRGB(20,10,30),InputIndicator=Color3.fromRGB(130,170,170),Dialog=Color3.
-fromRGB(40,80,80),DialogHolder=Color3.fromRGB(30,60,60),DialogHolderLine=Color3.fromRGB(25,50,50),DialogButton=Color3.
-fromRGB(40,80,80),DialogButtonBorder=Color3.fromRGB(80,110,110),DialogBorder=Color3.fromRGB(50,100,100),DialogInput=
-Color3.fromRGB(45,90,90),DialogInputLine=Color3.fromRGB(130,170,170),Text=Color3.fromRGB(240,240,240),SubText=Color3.
-fromRGB(170,170,170),Hover=Color3.fromRGB(110,160,160),HoverChange=0.04}end)()end,[39]=function()local aa,ab,ac=a(39)
-local ad return(function(...)return{Accent=Color3.fromHex'#5294e2',AcrylicMain=Color3.fromHex'#383c4a',AcrylicBorder=
-Color3.fromHex'#404f7d',AcrylicGradient=ColorSequence.new(Color3.fromHex'#383c4a',Color3.fromHex'#383c4a'),AcrylicNoise=
-1,TitleBarLine=Color3.fromHex'#404f7d',Tab=Color3.fromHex'#a2a2a2',Element=Color3.fromHex'#4b5162',ElementBorder=Color3.
-fromHex'#404f7d',InElementBorder=Color3.fromHex'#5294e2',ElementTransparency=0,ToggleSlider=Color3.fromHex'#5294e2',
-ToggleToggled=Color3.fromHex'#383c4a',SliderRail=Color3.fromHex'#5294e2',DropdownFrame=Color3.fromHex'#4b5162',
-DropdownHolder=Color3.fromHex'#4b5162',DropdownBorder=Color3.fromHex'#404f7d',DropdownOption=Color3.fromHex'#a2a2a2',
-Keybind=Color3.fromHex'#4b5162',Input=Color3.fromHex'#4b5162',InputFocused=Color3.fromHex'#4b5162',InputIndicator=Color3
-.fromHex'#7285b7',Dialog=Color3.fromHex'#434858',DialogHolder=Color3.fromHex'#383c4a',DialogHolderLine=Color3.fromHex
-'#404f7d',DialogButton=Color3.fromHex'#4b5162',DialogButtonBorder=Color3.fromHex'#404f7d',DialogBorder=Color3.fromHex
-'#404f7d',DialogInput=Color3.fromHex'#4b5162',DialogInputLine=Color3.fromHex'#5294e2',Text=Color3.fromHex'#a2a2a2',
-SubText=Color3.fromHex'#7285b7',Hover=Color3.fromHex'#4b5162',HoverChange=0.1}end)()end,[40]=function()local aa,ab,ac=a(
-40)local ad return(function(...)return{Accent=Color3.fromRGB(109,180,120),AcrylicMain=Color3.fromRGB(38,38,38),
-AcrylicBorder=Color3.fromRGB(85,85,85),AcrylicGradient=ColorSequence.new(Color3.fromRGB(38,38,38),Color3.fromRGB(38,38,
-38)),AcrylicNoise=1,TitleBarLine=Color3.fromRGB(189,189,189),Tab=Color3.fromRGB(109,180,120),Element=Color3.fromRGB(42,
-42,42),ElementBorder=Color3.fromRGB(51,51,51),InElementBorder=Color3.fromRGB(51,51,51),ElementTransparency=0,
-ToggleSlider=Color3.fromRGB(103,169,113),ToggleToggled=Color3.fromRGB(255,255,255),SliderRail=Color3.fromRGB(51,51,51),
-DropdownFrame=Color3.fromRGB(68,68,68),DropdownHolder=Color3.fromRGB(68,68,68),DropdownBorder=Color3.fromRGB(38,38,38),
-DropdownOption=Color3.fromRGB(153,200,255),Keybind=Color3.fromRGB(54,54,54),Input=Color3.fromRGB(27,27,27),InputFocused=
-Color3.fromRGB(51,51,51),InputIndicator=Color3.fromRGB(197,184,161),Dialog=Color3.fromRGB(38,38,38),DialogHolder=Color3.
-fromRGB(58,52,46),DialogHolderLine=Color3.fromRGB(40,40,40),DialogButton=Color3.fromRGB(42,42,42),DialogButtonBorder=
-Color3.fromRGB(51,51,51),DialogBorder=Color3.fromRGB(189,189,189),DialogInput=Color3.fromRGB(27,27,27),DialogInputLine=
-Color3.fromRGB(197,184,161),Text=Color3.fromRGB(197,184,161),SubText=Color3.fromRGB(158,158,158),Hover=Color3.fromRGB(
-149,149,149),HoverChange=0.04}end)()end,[41]=function()local aa,ab,ac=a(41)local ad return(function(...)return{Accent=
-Color3.fromRGB(96,205,255),AcrylicMain=Color3.fromRGB(60,60,60),AcrylicBorder=Color3.fromRGB(90,90,90),AcrylicGradient=
-ColorSequence.new(Color3.fromRGB(40,40,40),Color3.fromRGB(40,40,40)),AcrylicNoise=0.9,TitleBarLine=Color3.fromRGB(75,75,
-75),Tab=Color3.fromRGB(120,120,120),Element=Color3.fromRGB(120,120,120),ElementBorder=Color3.fromRGB(35,35,35),
-InElementBorder=Color3.fromRGB(90,90,90),ElementTransparency=0.87,ToggleSlider=Color3.fromRGB(120,120,120),ToggleToggled
-=Color3.fromRGB(0,0,0),SliderRail=Color3.fromRGB(120,120,120),DropdownFrame=Color3.fromRGB(160,160,160),DropdownHolder=
-Color3.fromRGB(45,45,45),DropdownBorder=Color3.fromRGB(35,35,35),DropdownOption=Color3.fromRGB(120,120,120),Keybind=
-Color3.fromRGB(120,120,120),Input=Color3.fromRGB(160,160,160),InputFocused=Color3.fromRGB(10,10,10),InputIndicator=
-Color3.fromRGB(150,150,150),Dialog=Color3.fromRGB(45,45,45),DialogHolder=Color3.fromRGB(35,35,35),DialogHolderLine=
-Color3.fromRGB(30,30,30),DialogButton=Color3.fromRGB(45,45,45),DialogButtonBorder=Color3.fromRGB(80,80,80),DialogBorder=
-Color3.fromRGB(70,70,70),DialogInput=Color3.fromRGB(55,55,55),DialogInputLine=Color3.fromRGB(160,160,160),Text=Color3.
-fromRGB(240,240,240),SubText=Color3.fromRGB(170,170,170),Hover=Color3.fromRGB(120,120,120),HoverChange=0.07}end)()end,[
-42]=function()local aa,ab,ac=a(42)local ad return(function(...)return{Accent=Color3.fromRGB(72,138,182),AcrylicMain=
-Color3.fromRGB(30,30,30),AcrylicBorder=Color3.fromRGB(60,60,60),AcrylicGradient=ColorSequence.new(Color3.fromRGB(25,25,
-25),Color3.fromRGB(15,15,15)),AcrylicNoise=0.94,TitleBarLine=Color3.fromRGB(65,65,65),Tab=Color3.fromRGB(100,100,100),
-Element=Color3.fromRGB(70,70,70),ElementBorder=Color3.fromRGB(25,25,25),InElementBorder=Color3.fromRGB(55,55,55),
-ElementTransparency=0.82,DropdownFrame=Color3.fromRGB(120,120,120),DropdownHolder=Color3.fromRGB(35,35,35),
-DropdownBorder=Color3.fromRGB(25,25,25),Dialog=Color3.fromRGB(35,35,35),DialogHolder=Color3.fromRGB(25,25,25),
-DialogHolderLine=Color3.fromRGB(20,20,20),DialogButton=Color3.fromRGB(35,35,35),DialogButtonBorder=Color3.fromRGB(55,55,
-55),DialogBorder=Color3.fromRGB(50,50,50),DialogInput=Color3.fromRGB(45,45,45),DialogInputLine=Color3.fromRGB(120,120,
-120)}end)()end,[43]=function()local aa,ab,ac=a(43)local ad return(function(...)return{Accent=Color3.fromHex'#fecb52',
-AcrylicMain=Color3.fromHex'#2c2826',AcrylicBorder=Color3.fromHex'#48413d',AcrylicGradient=ColorSequence.new(Color3.
-fromHex'#2c2826',Color3.fromHex'#2c2826'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#48413d',Tab=Color3.fromHex
-'#bd987f',Element=Color3.fromHex'#35302D',ElementBorder=Color3.fromHex'#48413d',InElementBorder=Color3.fromHex'#fecb52',
-ElementTransparency=0,ToggleSlider=Color3.fromHex'#fecb52',ToggleToggled=Color3.fromHex'#2c2826',SliderRail=Color3.
-fromHex'#fecb52',DropdownFrame=Color3.fromHex'#35302D',DropdownHolder=Color3.fromHex'#35302D',DropdownBorder=Color3.
-fromHex'#48413d',DropdownOption=Color3.fromHex'#bd987f',Keybind=Color3.fromHex'#35302D',Input=Color3.fromHex'#35302D',
-InputFocused=Color3.fromHex'#35302D',InputIndicator=Color3.fromHex'#564b43',Dialog=Color3.fromHex'#35302D',DialogHolder=
-Color3.fromHex'#2c2826',DialogHolderLine=Color3.fromHex'#48413d',DialogButton=Color3.fromHex'#35302D',DialogButtonBorder
-=Color3.fromHex'#48413d',DialogBorder=Color3.fromHex'#48413d',DialogInput=Color3.fromHex'#35302D',DialogInputLine=Color3
-.fromHex'#fecb52',Text=Color3.fromHex'#bd987f',SubText=Color3.fromHex'#564b43',Hover=Color3.fromHex'#4D4642',HoverChange
-=0.1}end)()end,[44]=function()local aa,ab,ac=a(44)local ad return(function(...)return{Accent=Color3.fromHex'#e7f98b',
-AcrylicMain=Color3.fromHex'#2a2d2a',AcrylicBorder=Color3.fromHex'#424842',AcrylicGradient=ColorSequence.new(Color3.
-fromHex'#2a2d2a',Color3.fromHex'#2a2d2a'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#424842',Tab=Color3.fromHex
-'#a9bca9',Element=Color3.fromHex'#313531',ElementBorder=Color3.fromHex'#424842',InElementBorder=Color3.fromHex'#e7f98b',
-ElementTransparency=0,ToggleSlider=Color3.fromHex'#e7f98b',ToggleToggled=Color3.fromHex'#2a2d2a',SliderRail=Color3.
-fromHex'#e7f98b',DropdownFrame=Color3.fromHex'#313531',DropdownHolder=Color3.fromHex'#313531',DropdownBorder=Color3.
-fromHex'#424842',DropdownOption=Color3.fromHex'#a9bca9',Keybind=Color3.fromHex'#313531',Input=Color3.fromHex'#313531',
-InputFocused=Color3.fromHex'#313531',InputIndicator=Color3.fromHex'#585f58',Dialog=Color3.fromHex'#313531',DialogHolder=
-Color3.fromHex'#2a2d2a',DialogHolderLine=Color3.fromHex'#424842',DialogButton=Color3.fromHex'#313531',DialogButtonBorder
-=Color3.fromHex'#424842',DialogBorder=Color3.fromHex'#424842',DialogInput=Color3.fromHex'#313531',DialogInputLine=Color3
-.fromHex'#e7f98b',Text=Color3.fromHex'#a9bca9',SubText=Color3.fromHex'#585f58',Hover=Color3.fromHex'#474D47',HoverChange
-=0.1}end)()end,[45]=function()local aa,ab,ac=a(45)local ad return(function(...)return{Accent=Color3.fromHex'#34FEBB',
-AcrylicMain=Color3.fromHex'#1D262F',AcrylicBorder=Color3.fromHex'#303F4F',AcrylicGradient=ColorSequence.new(Color3.
-fromHex'#1D262F',Color3.fromHex'#1D262F'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#303F4F',Tab=Color3.fromHex
-'#88b4e7',Element=Color3.fromHex'#232D38',ElementBorder=Color3.fromHex'#303F4F',InElementBorder=Color3.fromHex'#34FEBB',
-ElementTransparency=0,ToggleSlider=Color3.fromHex'#34FEBB',ToggleToggled=Color3.fromHex'#1D262F',SliderRail=Color3.
-fromHex'#34FEBB',DropdownFrame=Color3.fromHex'#232D38',DropdownHolder=Color3.fromHex'#232D38',DropdownBorder=Color3.
-fromHex'#303F4F',DropdownOption=Color3.fromHex'#88b4e7',Keybind=Color3.fromHex'#232D38',Input=Color3.fromHex'#232D38',
-InputFocused=Color3.fromHex'#232D38',InputIndicator=Color3.fromHex'#444c55',Dialog=Color3.fromHex'#232D38',DialogHolder=
-Color3.fromHex'#1D262F',DialogHolderLine=Color3.fromHex'#303F4F',DialogButton=Color3.fromHex'#232D38',DialogButtonBorder
-=Color3.fromHex'#303F4F',DialogBorder=Color3.fromHex'#303F4F',DialogInput=Color3.fromHex'#232D38',DialogInputLine=Color3
-.fromHex'#34FEBB',Text=Color3.fromHex'#88b4e7',SubText=Color3.fromHex'#444c55',Hover=Color3.fromHex'#354454',HoverChange
-=0.1}end)()end,[46]=function()local aa,ab,ac=a(46)local ad return(function(...)return{Accent=Color3.fromHex'#fec38f',
-AcrylicMain=Color3.fromHex'#2c2734',AcrylicBorder=Color3.fromHex'#443d51',AcrylicGradient=ColorSequence.new(Color3.
-fromHex'#2c2734',Color3.fromHex'#2c2734'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#443d51',Tab=Color3.fromHex
-'#cab2fa',Element=Color3.fromHex'#342E3D',ElementBorder=Color3.fromHex'#443d51',InElementBorder=Color3.fromHex'#fec38f',
-ElementTransparency=0,ToggleSlider=Color3.fromHex'#fec38f',ToggleToggled=Color3.fromHex'#2c2734',SliderRail=Color3.
-fromHex'#fec38f',DropdownFrame=Color3.fromHex'#342E3D',DropdownHolder=Color3.fromHex'#342E3D',DropdownBorder=Color3.
-fromHex'#443d51',DropdownOption=Color3.fromHex'#cab2fa',Keybind=Color3.fromHex'#342E3D',Input=Color3.fromHex'#342E3D',
-InputFocused=Color3.fromHex'#342E3D',InputIndicator=Color3.fromHex'#544d60',Dialog=Color3.fromHex'#342E3D',DialogHolder=
-Color3.fromHex'#2c2734',DialogHolderLine=Color3.fromHex'#443d51',DialogButton=Color3.fromHex'#342E3D',DialogButtonBorder
-=Color3.fromHex'#443d51',DialogBorder=Color3.fromHex'#443d51',DialogInput=Color3.fromHex'#342E3D',DialogInputLine=Color3
-.fromHex'#fec38f',Text=Color3.fromHex'#cab2fa',SubText=Color3.fromHex'#544d60',Hover=Color3.fromHex'#494256',HoverChange
-=0.1}end)()end,[47]=function()local aa,ab,ac=a(47)local ad return(function(...)return{Accent=Color3.fromHex'#fe7734',
-AcrylicMain=Color3.fromHex'#24242e',AcrylicBorder=Color3.fromHex'#3a3a4a',AcrylicGradient=ColorSequence.new(Color3.
-fromHex'#24242e',Color3.fromHex'#24242e'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#3a3a4a',Tab=Color3.fromHex
-'#8686cb',Element=Color3.fromHex'#2B2B36',ElementBorder=Color3.fromHex'#3a3a4a',InElementBorder=Color3.fromHex'#fe7734',
-ElementTransparency=0,ToggleSlider=Color3.fromHex'#fe7734',ToggleToggled=Color3.fromHex'#24242e',SliderRail=Color3.
-fromHex'#fe7734',DropdownFrame=Color3.fromHex'#2B2B36',DropdownHolder=Color3.fromHex'#2B2B36',DropdownBorder=Color3.
-fromHex'#3a3a4a',DropdownOption=Color3.fromHex'#8686cb',Keybind=Color3.fromHex'#2B2B36',Input=Color3.fromHex'#2B2B36',
-InputFocused=Color3.fromHex'#2B2B36',InputIndicator=Color3.fromHex'#49495a',Dialog=Color3.fromHex'#2B2B36',DialogHolder=
-Color3.fromHex'#24242e',DialogHolderLine=Color3.fromHex'#3a3a4a',DialogButton=Color3.fromHex'#2B2B36',DialogButtonBorder
-=Color3.fromHex'#3a3a4a',DialogBorder=Color3.fromHex'#3a3a4a',DialogInput=Color3.fromHex'#2B2B36',DialogInputLine=Color3
-.fromHex'#fe7734',Text=Color3.fromHex'#8686cb',SubText=Color3.fromHex'#49495a',Hover=Color3.fromHex'#3F3F4F',HoverChange
-=0.1}end)()end,[48]=function()local aa,ab,ac=a(48)local ad return(function(...)return{Accent=Color3.fromHex'#cb5226',
-AcrylicMain=Color3.fromHex'#eff0f1',AcrylicBorder=Color3.fromHex'#e9d18d',AcrylicGradient=ColorSequence.new(Color3.
-fromHex'#eff0f1',Color3.fromHex'#eff0f1'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#e9d18d',Tab=Color3.fromHex
-'#5e5e5e',Element=Color3.fromHex'#fdf6e3',ElementBorder=Color3.fromHex'#e9d18d',InElementBorder=Color3.fromHex'#cb5226',
-ElementTransparency=0,ToggleSlider=Color3.fromHex'#cb5226',ToggleToggled=Color3.fromHex'#fdf6e3',SliderRail=Color3.
-fromHex'#cb5226',DropdownFrame=Color3.fromHex'#fbefce',DropdownHolder=Color3.fromHex'#fbefce',DropdownBorder=Color3.
-fromHex'#e9d18d',DropdownOption=Color3.fromHex'#5e5e5e',Keybind=Color3.fromHex'#fdf6e3',Input=Color3.fromHex'#fdf6e3',
-InputFocused=Color3.fromHex'#fdf6e3',InputIndicator=Color3.fromHex'#93a1a1',Dialog=Color3.fromHex'#fbefce',DialogHolder=
-Color3.fromHex'#fbefce',DialogHolderLine=Color3.fromHex'#e9d18d',DialogButton=Color3.fromHex'#fbefce',DialogButtonBorder
-=Color3.fromHex'#e9d18d',DialogBorder=Color3.fromHex'#e9d18d',DialogInput=Color3.fromHex'#fdf6e3',DialogInputLine=Color3
-.fromHex'#cb5226',Text=Color3.fromHex'#5e5e5e',SubText=Color3.fromHex'#93a1a1',Hover=Color3.fromHex'#d6d6d6',HoverChange
-=0.1}end)()end,[49]=function()local aa,ab,ac=a(49)local ad return(function(...)return{Accent=Color3.fromRGB(105,180,215)
-,AcrylicMain=Color3.fromRGB(16,22,34),AcrylicBorder=Color3.fromRGB(36,72,96),AcrylicGradient=ColorSequence.new(Color3.
-fromRGB(28,62,106),Color3.fromRGB(100,180,215)),AcrylicNoise=0.92,TitleBarLine=Color3.fromRGB(42,84,116),Tab=Color3.
-fromRGB(150,200,225),Element=Color3.fromRGB(86,122,148),ElementBorder=Color3.fromRGB(16,30,44),InElementBorder=Color3.
-fromRGB(105,180,215),ElementTransparency=0.82,ToggleSlider=Color3.fromRGB(112,170,200),ToggleToggled=Color3.fromRGB(8,10
-,16),SliderRail=Color3.fromRGB(112,170,200),DropdownFrame=Color3.fromRGB(160,200,220),DropdownHolder=Color3.fromRGB(20,
-40,60),DropdownBorder=Color3.fromRGB(16,32,48),DropdownOption=Color3.fromRGB(132,180,205),Keybind=Color3.fromRGB(112,170
-,200),Input=Color3.fromRGB(122,185,210),InputFocused=Color3.fromRGB(10,12,18),InputIndicator=Color3.fromRGB(186,220,235)
-,Dialog=Color3.fromRGB(20,36,54),DialogHolder=Color3.fromRGB(16,32,50),DialogHolderLine=Color3.fromRGB(12,24,38),
-DialogButton=Color3.fromRGB(20,36,54),DialogButtonBorder=Color3.fromRGB(72,124,150),DialogBorder=Color3.fromRGB(34,64,92
-),DialogInput=Color3.fromRGB(46,92,118),DialogInputLine=Color3.fromRGB(186,220,235),Text=Color3.fromRGB(242,246,250),
-SubText=Color3.fromRGB(170,190,200),Hover=Color3.fromRGB(112,170,200),HoverChange=0.04}end)()end,[50]=function()local aa
-,ab,ac=a(50)local ad return(function(...)return{Accent=Color3.fromHex'#1f6feb',AcrylicMain=Color3.fromHex'#010409',
-AcrylicBorder=Color3.fromHex'#30363d',AcrylicGradient=ColorSequence.new(Color3.fromHex'#010409',Color3.fromHex'#010409')
-,AcrylicNoise=1,TitleBarLine=Color3.fromHex'#30363d',Tab=Color3.fromHex'#c9d1d9',Element=Color3.fromHex'#161b22',
-ElementBorder=Color3.fromHex'#30363d',InElementBorder=Color3.fromHex'#1f6feb',ElementTransparency=0,ToggleSlider=Color3.
-fromHex'#1f6feb',ToggleToggled=Color3.fromHex'#0d1117',SliderRail=Color3.fromHex'#1f6feb',DropdownFrame=Color3.fromHex
-'#161b22',DropdownHolder=Color3.fromHex'#161b22',DropdownBorder=Color3.fromHex'#30363d',DropdownOption=Color3.fromHex
-'#c9d1d9',Keybind=Color3.fromHex'#0d1117',Input=Color3.fromHex'#0d1117',InputFocused=Color3.fromHex'#0d1117',
-InputIndicator=Color3.fromHex'#6e7681',Dialog=Color3.fromHex'#161b22',DialogHolder=Color3.fromHex'#161b22',
-DialogHolderLine=Color3.fromHex'#30363d',DialogButton=Color3.fromHex'#0d1117',DialogButtonBorder=Color3.fromHex'#30363d'
-,DialogBorder=Color3.fromHex'#30363d',DialogInput=Color3.fromHex'#0d1117',DialogInputLine=Color3.fromHex'#1f6feb',Text=
-Color3.fromHex'#c9d1d9',SubText=Color3.fromHex'#8b949e',Hover=Color3.fromHex'#6e7681',HoverChange=0.1}end)()end,[51]=
-function()local aa,ab,ac=a(51)local ad return(function(...)return{Accent=Color3.fromHex'#1f6feb',AcrylicMain=Color3.
-fromHex'#010409',AcrylicBorder=Color3.fromHex'#30363d',AcrylicGradient=ColorSequence.new(Color3.fromHex'#010409',Color3.
-fromHex'#010409'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#30363d',Tab=Color3.fromHex'#e6edf3',Element=Color3.fromHex
-'#161b22',ElementBorder=Color3.fromHex'#30363d',InElementBorder=Color3.fromHex'#1f6feb',ElementTransparency=0,
-ToggleSlider=Color3.fromHex'#1f6feb',ToggleToggled=Color3.fromHex'#0d1117',SliderRail=Color3.fromHex'#1f6feb',
-DropdownFrame=Color3.fromHex'#161b22',DropdownHolder=Color3.fromHex'#161b22',DropdownBorder=Color3.fromHex'#30363d',
-DropdownOption=Color3.fromHex'#e6edf3',Keybind=Color3.fromHex'#0d1117',Input=Color3.fromHex'#0d1117',InputFocused=Color3
-.fromHex'#0d1117',InputIndicator=Color3.fromHex'#6e7681',Dialog=Color3.fromHex'#161b22',DialogHolder=Color3.fromHex
-'#161b22',DialogHolderLine=Color3.fromHex'#30363d',DialogButton=Color3.fromHex'#0d1117',DialogButtonBorder=Color3.
-fromHex'#30363d',DialogBorder=Color3.fromHex'#30363d',DialogInput=Color3.fromHex'#0d1117',DialogInputLine=Color3.fromHex
-'#1f6feb',Text=Color3.fromHex'#e6edf3',SubText=Color3.fromHex'#7d8590',Hover=Color3.fromHex'#6e7681',HoverChange=0.1}end
-)()end,[52]=function()local aa,ab,ac=a(52)local ad return(function(...)return{Accent=Color3.fromHex'#316dca',AcrylicMain
-=Color3.fromHex'#1c2128',AcrylicBorder=Color3.fromHex'#444c56',AcrylicGradient=ColorSequence.new(Color3.fromHex'#1c2128'
-,Color3.fromHex'#1c2128'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#444c56',Tab=Color3.fromHex'#adbac7',Element=Color3
-.fromHex'#2d333b',ElementBorder=Color3.fromHex'#444c56',InElementBorder=Color3.fromHex'#316dca',ElementTransparency=0,
-ToggleSlider=Color3.fromHex'#316dca',ToggleToggled=Color3.fromHex'#22272e',SliderRail=Color3.fromHex'#316dca',
-DropdownFrame=Color3.fromHex'#2d333b',DropdownHolder=Color3.fromHex'#2d333b',DropdownBorder=Color3.fromHex'#444c56',
-DropdownOption=Color3.fromHex'#adbac7',Keybind=Color3.fromHex'#22272e',Input=Color3.fromHex'#22272e',InputFocused=Color3
-.fromHex'#22272e',InputIndicator=Color3.fromHex'#636e7b',Dialog=Color3.fromHex'#2d333b',DialogHolder=Color3.fromHex
-'#2d333b',DialogHolderLine=Color3.fromHex'#444c56',DialogButton=Color3.fromHex'#22272e',DialogButtonBorder=Color3.
-fromHex'#444c56',DialogBorder=Color3.fromHex'#444c56',DialogInput=Color3.fromHex'#22272e',DialogInputLine=Color3.fromHex
-'#316dca',Text=Color3.fromHex'#adbac7',SubText=Color3.fromHex'#768390',Hover=Color3.fromHex'#636e7b',HoverChange=0.1}end
-)()end,[53]=function()local aa,ab,ac=a(53)local ad return(function(...)return{Accent=Color3.fromHex'#409eff',AcrylicMain
-=Color3.fromHex'#010409',AcrylicBorder=Color3.fromHex'#7a828e',AcrylicGradient=ColorSequence.new(Color3.fromHex'#010409'
-,Color3.fromHex'#010409'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#7a828e',Tab=Color3.fromHex'#f0f3f6',Element=Color3
-.fromHex'#272b33',ElementBorder=Color3.fromHex'#7a828e',InElementBorder=Color3.fromHex'#409eff',ElementTransparency=0,
-ToggleSlider=Color3.fromHex'#409eff',ToggleToggled=Color3.fromHex'#0a0c10',SliderRail=Color3.fromHex'#409eff',
-DropdownFrame=Color3.fromHex'#272b33',DropdownHolder=Color3.fromHex'#272b33',DropdownBorder=Color3.fromHex'#7a828e',
-DropdownOption=Color3.fromHex'#f0f3f6',Keybind=Color3.fromHex'#0a0c10',Input=Color3.fromHex'#0a0c10',InputFocused=Color3
-.fromHex'#0a0c10',InputIndicator=Color3.fromHex'#9ea7b3',Dialog=Color3.fromHex'#272b33',DialogHolder=Color3.fromHex
-'#272b33',DialogHolderLine=Color3.fromHex'#7a828e',DialogButton=Color3.fromHex'#0a0c10',DialogButtonBorder=Color3.
-fromHex'#7a828e',DialogBorder=Color3.fromHex'#7a828e',DialogInput=Color3.fromHex'#0a0c10',DialogInputLine=Color3.fromHex
-'#409eff',Text=Color3.fromHex'#f0f3f6',SubText=Color3.fromHex'#f0f3f6',Hover=Color3.fromHex'#9ea7b3',HoverChange=0.1}end
-)()end,[54]=function()local aa,ab,ac=a(54)local ad return(function(...)return{Accent=Color3.fromHex'#005cc5',AcrylicMain
-=Color3.fromHex'#1f2428',AcrylicBorder=Color3.fromHex'#1b1f23',AcrylicGradient=ColorSequence.new(Color3.fromHex'#1f2428'
-,Color3.fromHex'#1f2428'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#1b1f23',Tab=Color3.fromHex'#e1e4e8',Element=Color3
-.fromHex'#2f363d',ElementBorder=Color3.fromHex'#1b1f23',InElementBorder=Color3.fromHex'#005cc5',ElementTransparency=0,
-ToggleSlider=Color3.fromHex'#005cc5',ToggleToggled=Color3.fromHex'#2f363d',SliderRail=Color3.fromHex'#005cc5',
-DropdownFrame=Color3.fromHex'#2f363d',DropdownHolder=Color3.fromHex'#2f363d',DropdownBorder=Color3.fromHex'#1b1f23',
-DropdownOption=Color3.fromHex'#e1e4e8',Keybind=Color3.fromHex'#2f363d',Input=Color3.fromHex'#2f363d',InputFocused=Color3
-.fromHex'#2f363d',InputIndicator=Color3.fromHex'#959da5',Dialog=Color3.fromHex'#2f363d',DialogHolder=Color3.fromHex
-'#2f363d',DialogHolderLine=Color3.fromHex'#444d56',DialogButton=Color3.fromHex'#2f363d',DialogButtonBorder=Color3.
-fromHex'#1b1f23',DialogBorder=Color3.fromHex'#1b1f23',DialogInput=Color3.fromHex'#2f363d',DialogInputLine=Color3.fromHex
-'#005cc5',Text=Color3.fromHex'#d1d5da',SubText=Color3.fromHex'#959da5',Hover=Color3.fromHex'#282e34',HoverChange=0.1}end
-)()end,[55]=function()local aa,ab,ac=a(55)local ad return(function(...)return{Accent=Color3.fromHex'#0969da',AcrylicMain
-=Color3.fromHex'#f6f8fa',AcrylicBorder=Color3.fromHex'#d0d7de',AcrylicGradient=ColorSequence.new(Color3.fromHex'#f6f8fa'
-,Color3.fromHex'#f6f8fa'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#d0d7de',Tab=Color3.fromHex'#24292f',Element=Color3
-.fromHex'#ffffff',ElementBorder=Color3.fromHex'#d0d7de',InElementBorder=Color3.fromHex'#0969da',ElementTransparency=0,
-ToggleSlider=Color3.fromHex'#0969da',ToggleToggled=Color3.fromHex'#ffffff',SliderRail=Color3.fromHex'#0969da',
-DropdownFrame=Color3.fromHex'#ffffff',DropdownHolder=Color3.fromHex'#ffffff',DropdownBorder=Color3.fromHex'#d0d7de',
-DropdownOption=Color3.fromHex'#24292f',Keybind=Color3.fromHex'#ffffff',Input=Color3.fromHex'#ffffff',InputFocused=Color3
-.fromHex'#ffffff',InputIndicator=Color3.fromHex'#6e7781',Dialog=Color3.fromHex'#ffffff',DialogHolder=Color3.fromHex
-'#ffffff',DialogHolderLine=Color3.fromHex'#d0d7de',DialogButton=Color3.fromHex'#ffffff',DialogButtonBorder=Color3.
-fromHex'#20252c',DialogBorder=Color3.fromHex'#d0d7de',DialogInput=Color3.fromHex'#ffffff',DialogInputLine=Color3.fromHex
-'#0969da',Text=Color3.fromHex'#24292f',SubText=Color3.fromHex'#57606a',Hover=Color3.fromHex'#eaeef2',HoverChange=0.1}end
-)()end,[56]=function()local aa,ab,ac=a(56)local ad return(function(...)return{Accent=Color3.fromHex'#0969da',AcrylicMain
-=Color3.fromHex'#f6f8fa',AcrylicBorder=Color3.fromHex'#d0d7de',AcrylicGradient=ColorSequence.new(Color3.fromHex'#f6f8fa'
-,Color3.fromHex'#f6f8fa'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#d0d7de',Tab=Color3.fromHex'#1f2328',Element=Color3
-.fromHex'#ffffff',ElementBorder=Color3.fromHex'#d0d7de',InElementBorder=Color3.fromHex'#0969da',ElementTransparency=0,
-ToggleSlider=Color3.fromHex'#0969da',ToggleToggled=Color3.fromHex'#ffffff',SliderRail=Color3.fromHex'#0969da',
-DropdownFrame=Color3.fromHex'#ffffff',DropdownHolder=Color3.fromHex'#ffffff',DropdownBorder=Color3.fromHex'#d0d7de',
-DropdownOption=Color3.fromHex'#1f2328',Keybind=Color3.fromHex'#ffffff',Input=Color3.fromHex'#ffffff',InputFocused=Color3
-.fromHex'#ffffff',InputIndicator=Color3.fromHex'#6e7781',Dialog=Color3.fromHex'#ffffff',DialogHolder=Color3.fromHex
-'#ffffff',DialogHolderLine=Color3.fromHex'#d0d7de',DialogButton=Color3.fromHex'#ffffff',DialogButtonBorder=Color3.
-fromHex'#20252c',DialogBorder=Color3.fromHex'#d0d7de',DialogInput=Color3.fromHex'#ffffff',DialogInputLine=Color3.fromHex
-'#0969da',Text=Color3.fromHex'#1f2328',SubText=Color3.fromHex'#656d76',Hover=Color3.fromHex'#eaeef2',HoverChange=0.1}end
-)()end,[57]=function()local aa,ab,ac=a(57)local ad return(function(...)return{Accent=Color3.fromHex'#0349b4',AcrylicMain
-=Color3.fromHex'#ffffff',AcrylicBorder=Color3.fromHex'#20252c',AcrylicGradient=ColorSequence.new(Color3.fromHex'#ffffff'
-,Color3.fromHex'#ffffff'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#20252c',Tab=Color3.fromHex'#0e1116',Element=Color3
-.fromHex'#ffffff',ElementBorder=Color3.fromHex'#20252c',InElementBorder=Color3.fromHex'#0349b4',ElementTransparency=0,
-ToggleSlider=Color3.fromHex'#0349b4',ToggleToggled=Color3.fromHex'#ffffff',SliderRail=Color3.fromHex'#0349b4',
-DropdownFrame=Color3.fromHex'#ffffff',DropdownHolder=Color3.fromHex'#ffffff',DropdownBorder=Color3.fromHex'#20252c',
-DropdownOption=Color3.fromHex'#0e1116',Keybind=Color3.fromHex'#ffffff',Input=Color3.fromHex'#ffffff',InputFocused=Color3
-.fromHex'#ffffff',InputIndicator=Color3.fromHex'#66707b',Dialog=Color3.fromHex'#ffffff',DialogHolder=Color3.fromHex
-'#ffffff',DialogHolderLine=Color3.fromHex'#20252c',DialogButton=Color3.fromHex'#ffffff',DialogButtonBorder=Color3.
-fromHex'#20252c',DialogBorder=Color3.fromHex'#20252c',DialogInput=Color3.fromHex'#ffffff',DialogInputLine=Color3.fromHex
-'#0349b4',Text=Color3.fromHex'#0e1116',SubText=Color3.fromHex'#66707b',Hover=Color3.fromHex'#e7ecf0',HoverChange=0.1}end
-)()end,[58]=function()local aa,ab,ac=a(58)local ad return(function(...)return{Accent=Color3.fromHex'2188ff',AcrylicMain=
-Color3.fromHex'f6f8fa',AcrylicBorder=Color3.fromHex'e1e4e8',AcrylicGradient=ColorSequence.new(Color3.fromHex'f6f8fa',
-Color3.fromHex'f6f8fa'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'e1e4e8',Tab=Color3.fromHex'2f363d',Element=Color3.
-fromHex'fafbfc',ElementBorder=Color3.fromHex'e1e4e8',InElementBorder=Color3.fromHex'2188ff',ElementTransparency=0,
-ToggleSlider=Color3.fromHex'2188ff',ToggleToggled=Color3.fromHex'fafbfc',SliderRail=Color3.fromHex'2188ff',DropdownFrame
-=Color3.fromHex'fafbfc',DropdownHolder=Color3.fromHex'fafbfc',DropdownBorder=Color3.fromHex'e1e4e8',DropdownOption=
-Color3.fromHex'2f363d',Keybind=Color3.fromHex'fafbfc',Input=Color3.fromHex'fafbfc',InputFocused=Color3.fromHex'fafbfc',
-InputIndicator=Color3.fromHex'959da5',Dialog=Color3.fromHex'fafbfc',DialogHolder=Color3.fromHex'fafbfc',DialogHolderLine
-=Color3.fromHex'e1e4e8',DialogButton=Color3.fromHex'#fafbfc',DialogButtonBorder=Color3.fromHex'#20252c',DialogBorder=
-Color3.fromHex'e1e4e8',DialogInput=Color3.fromHex'fafbfc',DialogInputLine=Color3.fromHex'2188ff',Text=Color3.fromHex
-'24292e',SubText=Color3.fromHex'6a737d',Hover=Color3.fromHex'ebf0f4',HoverChange=0.1}end)()end,[59]=function()local aa,
-ab,ac=a(59)local ad return(function(...)return{Accent=Color3.fromHex'#a57a4c',AcrylicMain=Color3.fromHex'#221a0f',
-AcrylicBorder=Color3.fromHex'#5e452b',AcrylicGradient=ColorSequence.new(Color3.fromHex'#221a0f',Color3.fromHex'#221a0f')
-,AcrylicNoise=1,TitleBarLine=Color3.fromHex'#51412c',Tab=Color3.fromHex'#d3af86',Element=Color3.fromHex'#51412c',
-ElementBorder=Color3.fromHex'#5e452b',InElementBorder=Color3.fromHex'#a57a4c',ElementTransparency=0,ToggleSlider=Color3.
-fromHex'#a57a4c',ToggleToggled=Color3.fromHex'#51412c',SliderRail=Color3.fromHex'#a57a4c',DropdownFrame=Color3.fromHex
-'#51412c',DropdownHolder=Color3.fromHex'#51412c',DropdownBorder=Color3.fromHex'#5e452b',DropdownOption=Color3.fromHex
-'#d3af86',Keybind=Color3.fromHex'#51412c',Input=Color3.fromHex'#51412c',InputFocused=Color3.fromHex'#51412c',
-InputIndicator=Color3.fromHex'#a57a4c',Dialog=Color3.fromHex'#362712',DialogHolder=Color3.fromHex'#221a14',
-DialogHolderLine=Color3.fromHex'#5e452b',DialogButton=Color3.fromHex'#6e583b',DialogButtonBorder=Color3.fromHex'#5e452b'
-,DialogBorder=Color3.fromHex'#5e452b',DialogInput=Color3.fromHex'#51412c',DialogInputLine=Color3.fromHex'#a57a4c',Text=
-Color3.fromHex'#d3af86',SubText=Color3.fromHex'#a57a4c',Hover=Color3.fromHex'#7c5021',HoverChange=0.1}end)()end,[60]=
-function()local aa,ab,ac=a(60)local ad return(function(...)return{Accent=Color3.fromRGB(0,103,192),AcrylicMain=Color3.
-fromRGB(200,200,200),AcrylicBorder=Color3.fromRGB(120,120,120),AcrylicGradient=ColorSequence.new(Color3.fromRGB(255,255,
-255),Color3.fromRGB(255,255,255)),AcrylicNoise=0.96,TitleBarLine=Color3.fromRGB(160,160,160),Tab=Color3.fromRGB(90,90,90
-),Element=Color3.fromRGB(255,255,255),ElementBorder=Color3.fromRGB(180,180,180),InElementBorder=Color3.fromRGB(150,150,
-150),ElementTransparency=0.65,ToggleSlider=Color3.fromRGB(40,40,40),ToggleToggled=Color3.fromRGB(255,255,255),SliderRail
-=Color3.fromRGB(40,40,40),DropdownFrame=Color3.fromRGB(200,200,200),DropdownHolder=Color3.fromRGB(240,240,240),
-DropdownBorder=Color3.fromRGB(200,200,200),DropdownOption=Color3.fromRGB(150,150,150),Keybind=Color3.fromRGB(120,120,120
-),Input=Color3.fromRGB(200,200,200),InputFocused=Color3.fromRGB(100,100,100),InputIndicator=Color3.fromRGB(80,80,80),
-Dialog=Color3.fromRGB(255,255,255),DialogHolder=Color3.fromRGB(240,240,240),DialogHolderLine=Color3.fromRGB(228,228,228)
-,DialogButton=Color3.fromRGB(255,255,255),DialogButtonBorder=Color3.fromRGB(190,190,190),DialogBorder=Color3.fromRGB(140
-,140,140),DialogInput=Color3.fromRGB(250,250,250),DialogInputLine=Color3.fromRGB(160,160,160),Text=Color3.fromRGB(41,41,
-41),SubText=Color3.fromRGB(40,40,40),Hover=Color3.fromRGB(50,50,50),HoverChange=0.16}end)()end,[61]=function()local aa,
-ab,ac=a(61)local ad return(function(...)return{Accent=Color3.fromRGB(110,80,200),AcrylicMain=Color3.fromRGB(12,10,22),
-AcrylicBorder=Color3.fromRGB(38,30,58),AcrylicGradient=ColorSequence.new(Color3.fromRGB(32,12,72),Color3.fromRGB(68,42,
-190)),AcrylicNoise=0.9,TitleBarLine=Color3.fromRGB(48,32,86),Tab=Color3.fromRGB(160,130,210),Element=Color3.fromRGB(82,
-64,128),ElementBorder=Color3.fromRGB(16,12,28),InElementBorder=Color3.fromRGB(110,80,200),ElementTransparency=0.84,
-ToggleSlider=Color3.fromRGB(130,98,190),ToggleToggled=Color3.fromRGB(10,8,18),SliderRail=Color3.fromRGB(130,98,190),
-DropdownFrame=Color3.fromRGB(142,120,200),DropdownHolder=Color3.fromRGB(26,18,44),DropdownBorder=Color3.fromRGB(22,16,36
-),DropdownOption=Color3.fromRGB(172,150,220),Keybind=Color3.fromRGB(120,96,185),Input=Color3.fromRGB(116,96,176),
-InputFocused=Color3.fromRGB(8,6,14),InputIndicator=Color3.fromRGB(190,170,230),Dialog=Color3.fromRGB(24,16,40),
-DialogHolder=Color3.fromRGB(18,12,34),DialogHolderLine=Color3.fromRGB(14,10,26),DialogButton=Color3.fromRGB(24,16,40),
-DialogButtonBorder=Color3.fromRGB(72,54,132),DialogBorder=Color3.fromRGB(40,30,68),DialogInput=Color3.fromRGB(52,40,86),
-DialogInputLine=Color3.fromRGB(190,170,230),Text=Color3.fromRGB(244,244,248),SubText=Color3.fromRGB(170,160,185),Hover=
-Color3.fromRGB(130,98,190),HoverChange=0.05}end)()end,[62]=function()local aa,ab,ac=a(62)local ad return(function(...)
-return{Accent=Color3.fromHex'#75715E',AcrylicMain=Color3.fromHex'#272822',AcrylicBorder=Color3.fromHex'#1e1f1c',
-AcrylicGradient=ColorSequence.new(Color3.fromHex'#272822',Color3.fromHex'#272822'),AcrylicNoise=1,TitleBarLine=Color3.
-fromHex'#1e1f1c',Tab=Color3.fromHex'#f8f8f2',Element=Color3.fromHex'#414339',ElementBorder=Color3.fromHex'#75715E',
-InElementBorder=Color3.fromHex'#75715E',ElementTransparency=0,ToggleSlider=Color3.fromHex'#75715E',ToggleToggled=Color3.
-fromHex'#272822',SliderRail=Color3.fromHex'#75715E',DropdownFrame=Color3.fromHex'#414339',DropdownHolder=Color3.fromHex
-'#1e1f1c',DropdownBorder=Color3.fromHex'#75715E',DropdownOption=Color3.fromHex'#f8f8f2',Keybind=Color3.fromHex'#414339',
-Input=Color3.fromHex'#414339',InputFocused=Color3.fromHex'#414339',InputIndicator=Color3.fromHex'#90908a',Dialog=Color3.
-fromHex'#1e1f1c',DialogHolder=Color3.fromHex'#1e1f1c',DialogHolderLine=Color3.fromHex'#414339',DialogButton=Color3.
-fromHex'#414339',DialogButtonBorder=Color3.fromHex'#75715E',DialogBorder=Color3.fromHex'#75715E',DialogInput=Color3.
-fromHex'#414339',DialogInputLine=Color3.fromHex'#75715E',Text=Color3.fromHex'#f8f8f2',SubText=Color3.fromHex'#88846f',
-Hover=Color3.fromHex'#3e3d32',HoverChange=0.1}end)()end,[63]=function()local aa,ab,ac=a(63)local ad return(function(...)
-return{Accent=Color3.fromHex'#3655b5',AcrylicMain=Color3.fromHex'#1e1e1e',AcrylicBorder=Color3.fromHex'#303030',
-AcrylicGradient=ColorSequence.new(Color3.fromHex'#1e1e1e',Color3.fromHex'#1e1e1e'),AcrylicNoise=1,TitleBarLine=Color3.
-fromHex'#303030',Tab=Color3.fromHex'#d8d8d8',Element=Color3.fromHex'#525252',ElementBorder=Color3.fromHex'#505050',
-InElementBorder=Color3.fromHex'#3655b5',ElementTransparency=0,ToggleSlider=Color3.fromHex'#3655b5',ToggleToggled=Color3.
-fromHex'#525252',SliderRail=Color3.fromHex'#3655b5',DropdownFrame=Color3.fromHex'#525252',DropdownHolder=Color3.fromHex
-'#525252',DropdownBorder=Color3.fromHex'#505050',DropdownOption=Color3.fromHex'#c5c8c6',Keybind=Color3.fromHex'#525252',
-Input=Color3.fromHex'#525252',InputFocused=Color3.fromHex'#525252',InputIndicator=Color3.fromHex'#949494',Dialog=Color3.
-fromHex'#272727',DialogHolder=Color3.fromHex'#272727',DialogHolderLine=Color3.fromHex'#505050',DialogButton=Color3.
-fromHex'#565656',DialogButtonBorder=Color3.fromHex'#505050',DialogBorder=Color3.fromHex'#505050',DialogInput=Color3.
-fromHex'#525252',DialogInputLine=Color3.fromHex'#3655b5',Text=Color3.fromHex'#c5c8c6',SubText=Color3.fromHex'#9A9B99',
-Hover=Color3.fromHex'#444444',HoverChange=0.1}end)()end,[64]=function()local aa,ab,ac=a(64)local ad return(function(...)
-return{Accent=Color3.fromHex'#528bff',AcrylicMain=Color3.fromHex'#16171D',AcrylicBorder=Color3.fromHex'#181A1F',
-AcrylicGradient=ColorSequence.new(Color3.fromHex'#16171D',Color3.fromHex'#16171D'),AcrylicNoise=1,TitleBarLine=Color3.
-fromHex'#181A1F',Tab=Color3.fromHex'#f8f8f0',Element=Color3.fromHex'#1d1f23',ElementBorder=Color3.fromHex'#181A11',
-InElementBorder=Color3.fromHex'#528bff',ElementTransparency=0,ToggleSlider=Color3.fromHex'#528bff',ToggleToggled=Color3.
-fromHex'#16171D',SliderRail=Color3.fromHex'#528bff',DropdownFrame=Color3.fromHex'#1d1f23',DropdownHolder=Color3.fromHex
-'#21252B',DropdownBorder=Color3.fromHex'#181A11',DropdownOption=Color3.fromHex'#d7dae0',Keybind=Color3.fromHex'#1d1f23',
-Input=Color3.fromHex'#1d1f23',InputFocused=Color3.fromHex'#1d1f23',InputIndicator=Color3.fromHex'#495162',Dialog=Color3.
-fromHex'#21252B',DialogHolder=Color3.fromHex'#21252B',DialogHolderLine=Color3.fromHex'#181A1F',DialogButton=Color3.
-fromHex'#1d1f23',DialogButtonBorder=Color3.fromHex'#181A11',DialogBorder=Color3.fromHex'#181A1F',DialogInput=Color3.
-fromHex'#1d1f23',DialogInputLine=Color3.fromHex'#528bff',Text=Color3.fromHex'#f8f8f0',SubText=Color3.fromHex'#5c6370',
-Hover=Color3.fromHex'#292d35',HoverChange=0.1}end)()end,[65]=function()local aa,ab,ac=a(65)local ad return(function(...)
-return{Accent=Color3.fromHex'#F92672',AcrylicMain=Color3.fromHex'#272822',AcrylicBorder=Color3.fromHex'#414339',
-AcrylicGradient=ColorSequence.new(Color3.fromHex'#272822',Color3.fromHex'#1e1f1c'),AcrylicNoise=1,TitleBarLine=Color3.
-fromHex'#414339',Tab=Color3.fromHex'#f8f8f2',Element=Color3.fromHex'#414339',ElementBorder=Color3.fromHex'#75715E',
-InElementBorder=Color3.fromHex'#F92672',ElementTransparency=0,ToggleSlider=Color3.fromHex'#F92672',ToggleToggled=Color3.
-fromHex'#414339',SliderRail=Color3.fromHex'#75715E',DropdownFrame=Color3.fromHex'#414339',DropdownHolder=Color3.fromHex
-'#1e1f1c',DropdownBorder=Color3.fromHex'#75715E',DropdownOption=Color3.fromHex'#f8f8f2',Keybind=Color3.fromHex'#414339',
-Input=Color3.fromHex'#414339',InputFocused=Color3.fromHex'#414339',InputIndicator=Color3.fromHex'#90908a',Dialog=Color3.
-fromHex'#1e1f1c',DialogHolder=Color3.fromHex'#1e1f1c',DialogHolderLine=Color3.fromHex'#414339',DialogButton=Color3.
-fromHex'#414339',DialogButtonBorder=Color3.fromHex'#75715E',DialogBorder=Color3.fromHex'#75715E',DialogInput=Color3.
-fromHex'#414339',DialogInputLine=Color3.fromHex'#F92672',Text=Color3.fromHex'#f8f8f2',SubText=Color3.fromHex'#88846f',
-Hover=Color3.fromHex'#3e3d32',HoverChange=0.1}end)()end,[66]=function()local aa,ab,ac=a(66)local ad return(function(...)
-return{Accent=Color3.fromRGB(64,190,220),AcrylicMain=Color3.fromRGB(12,16,28),AcrylicBorder=Color3.fromRGB(28,60,76),
-AcrylicGradient=ColorSequence.new(Color3.fromRGB(14,22,38),Color3.fromRGB(24,110,130)),AcrylicNoise=0.9,TitleBarLine=
-Color3.fromRGB(22,58,74),Tab=Color3.fromRGB(130,200,210),Element=Color3.fromRGB(42,68,86),ElementBorder=Color3.fromRGB(8
-,12,20),InElementBorder=Color3.fromRGB(64,190,220),ElementTransparency=0.82,ToggleSlider=Color3.fromRGB(96,180,200),
-ToggleToggled=Color3.fromRGB(8,12,20),SliderRail=Color3.fromRGB(96,180,200),DropdownFrame=Color3.fromRGB(120,170,180),
-DropdownHolder=Color3.fromRGB(16,28,44),DropdownBorder=Color3.fromRGB(10,18,28),DropdownOption=Color3.fromRGB(140,205,
-215),Keybind=Color3.fromRGB(110,185,195),Input=Color3.fromRGB(112,185,195),InputFocused=Color3.fromRGB(8,10,16),
-InputIndicator=Color3.fromRGB(170,220,230),Dialog=Color3.fromRGB(18,32,46),DialogHolder=Color3.fromRGB(12,24,36),
-DialogHolderLine=Color3.fromRGB(8,14,24),DialogButton=Color3.fromRGB(18,32,46),DialogButtonBorder=Color3.fromRGB(60,96,
-104),DialogBorder=Color3.fromRGB(26,52,68),DialogInput=Color3.fromRGB(30,56,72),DialogInputLine=Color3.fromRGB(170,220,
-230),Text=Color3.fromRGB(236,244,248),SubText=Color3.fromRGB(165,185,190),Hover=Color3.fromRGB(96,180,200),HoverChange=
-0.05}end)()end,[67]=function()local aa,ab,ac=a(67)local ad return(function(...)return{Accent=Color3.fromRGB(120,190,225)
-,AcrylicMain=Color3.fromRGB(14,16,30),AcrylicBorder=Color3.fromRGB(36,44,72),AcrylicGradient=ColorSequence.new{
-ColorSequenceKeypoint.new(0,Color3.fromRGB(14,16,30)),ColorSequenceKeypoint.new(0.52,Color3.fromRGB(64,44,108)),
-ColorSequenceKeypoint.new(1,Color3.fromRGB(120,190,225))},AcrylicNoise=0.96,TitleBarLine=Color3.fromRGB(50,62,96),Tab=
-Color3.fromRGB(220,235,245),Element=Color3.fromRGB(36,56,76),ElementBorder=Color3.fromRGB(10,14,24),InElementBorder=
-Color3.fromRGB(160,210,240),ElementTransparency=0.78,ToggleSlider=Color3.fromRGB(165,210,235),ToggleToggled=Color3.
-fromRGB(12,14,22),SliderRail=Color3.fromRGB(165,210,235),DropdownFrame=Color3.fromRGB(180,205,220),DropdownHolder=Color3
-.fromRGB(22,34,50),DropdownBorder=Color3.fromRGB(14,24,36),DropdownOption=Color3.fromRGB(210,230,240),Keybind=Color3.
-fromRGB(150,190,205),Input=Color3.fromRGB(150,190,205),InputFocused=Color3.fromRGB(12,14,22),InputIndicator=Color3.
-fromRGB(200,230,245),Dialog=Color3.fromRGB(20,30,44),DialogHolder=Color3.fromRGB(16,24,40),DialogHolderLine=Color3.
-fromRGB(12,18,30),DialogButton=Color3.fromRGB(20,30,44),DialogButtonBorder=Color3.fromRGB(96,140,170),DialogBorder=
-Color3.fromRGB(44,64,96),DialogInput=Color3.fromRGB(56,86,110),DialogInputLine=Color3.fromRGB(200,230,245),Text=Color3.
-fromRGB(246,250,252),SubText=Color3.fromRGB(180,200,210),Hover=Color3.fromRGB(140,200,225),HoverChange=0.055}end)()end,[
-68]=function()local aa,ab,ac=a(68)local ad return(function(...)return{Accent=Color3.fromHex'#9769dc',AcrylicMain=Color3.
-fromHex'#F5F5F5',AcrylicBorder=Color3.fromHex'#c4b7d7',AcrylicGradient=ColorSequence.new(Color3.fromHex'#F5F5F5',Color3.
-fromHex'#F5F5F5'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#c4b7d7',Tab=Color3.fromHex'#705697',Element=Color3.fromHex
-'#F2F2F2',ElementBorder=Color3.fromHex'#adafb7',InElementBorder=Color3.fromHex'#9769dc',ElementTransparency=0,
-ToggleSlider=Color3.fromHex'#705697',ToggleToggled=Color3.fromHex'#F5F5F5',SliderRail=Color3.fromHex'#705697',
-DropdownFrame=Color3.fromHex'#F5F5F5',DropdownHolder=Color3.fromHex'#F5F5F5',DropdownBorder=Color3.fromHex'#adafb7',
-DropdownOption=Color3.fromHex'#333333',Keybind=Color3.fromHex'#F5F5F5',Input=Color3.fromHex'#F5F5F5',InputFocused=Color3
-.fromHex'#F5F5F5',InputIndicator=Color3.fromHex'#AAAAAA',Dialog=Color3.fromHex'#F2F8FC',DialogHolder=Color3.fromHex
-'#F2F8FC',DialogHolderLine=Color3.fromHex'#705697',DialogButton=Color3.fromHex'#F5F5F5',DialogButtonBorder=Color3.
-fromHex'#adafb7',DialogBorder=Color3.fromHex'#705697',DialogInput=Color3.fromHex'#F5F5F5',DialogInputLine=Color3.fromHex
-'#9769dc',Text=Color3.fromHex'#333333',SubText=Color3.fromHex'#6D705B',Hover=Color3.fromHex'#e0e0e0',HoverChange=0.1}end
-)()end,[69]=function()local aa,ab,ac=a(69)local ad return(function(...)return{Accent=Color3.fromRGB(180,55,90),
+and f==ak.CacheVersion then d=false end end local e=0 for f,g in next,ak.Urls do e+=1 task.spawn(function()pcall(
+function()local h=aj(f)if not h then return end local i=`{b}/{h}.png`if d or not isfile(i)then local j=ah(g)if j then
+pcall(writefile,i,j)end end if isfile(i)then local j,k=pcall(af,i)if j and k then ak.ResolvedAssets[f]=k end end end)e-=
+1 end)end while e>0 do task.wait()end if d then pcall(writefile,c,ak.CacheVersion)end end function ag.Get(ak,b)if not ak
+.Enabled or typeof(b)~='string'then return b end if not ak.Urls[b]then return b end return ak.ResolvedAssets[b]or ak.
+Empty end return ag end)()end,[31]=function()local aa,ab,ac=a(31)local ad return(function(...)local ae={Names={'Vynixu',
+'Dark','Darker','Light','Quiet Light','Aqua','Tomorrow Night Blue','Abyss','Amethyst','Amethyst Dark','Rose','Amberfall'
+,'NeonTide','VerdantGlass','MidnightPrism','FrozenAurora','OpalineHalo','Yaru','United Ubuntu','Elementary','Yaru Dark',
+'United GNOME','Arc Dark','Ambiance','Adapta Nokto','Monokai','Monokai Classic','Monokai Vibrant','Monokai Dimmed',
+'Typewriter','Dark Typewriter','Kimbie Dark','Solarized Dark','Solarized Light','DuoTone Dark Sea','DuoTone Dark Sky',
+'DuoTone Dark Space','DuoTone Dark Forest','DuoTone Dark Earth','VSC Dark+','VSC Dark Modern','VSC Dark High Contrast',
+'VSC Light+','VSC Light Modern','VSC Light High Contrast','VSC Red','VS Dark','VS Light','GitHub Dark',
+'GitHub Dark Dimmed','GitHub Dark Default','GitHub Dark High Contrast','GitHub Dark Colorblind','GitHub Light',
+'GitHub Light Default','GitHub Light High Contrast','GitHub Light Colorblind','Viow Arabian','Viow Arabian Mix',
+'Viow Darker','Viow Flat','Viow Light','Viow Mars','Viow Neon'}}for af,ag in next,ae.Names do local ah=ac(ab[ag])ah.Name
+=ag ae[ah.Name]=ah end return ae end)()end,[32]=function()local aa,ab,ac=a(32)local ad return(function(...)return{Accent
+=Color3.fromRGB(102,136,204),AcrylicMain=Color3.fromRGB(0,12,24),AcrylicBorder=Color3.fromRGB(43,43,74),AcrylicGradient=
+ColorSequence.new(Color3.fromRGB(0,12,24),Color3.fromRGB(0,12,24)),AcrylicNoise=1,TitleBarLine=Color3.fromRGB(43,43,74),
+Tab=Color3.fromRGB(128,162,194),Element=Color3.fromRGB(24,31,47),ElementBorder=Color3.fromRGB(43,43,74),InElementBorder=
+Color3.fromRGB(0,99,165),ElementTransparency=0,ToggleSlider=Color3.fromRGB(0,99,165),ToggleToggled=Color3.fromRGB(24,31,
+47),SliderRail=Color3.fromRGB(0,99,165),DropdownFrame=Color3.fromRGB(24,31,47),DropdownHolder=Color3.fromRGB(24,31,47),
+DropdownBorder=Color3.fromRGB(43,43,74),DropdownOption=Color3.fromRGB(102,136,204),Keybind=Color3.fromRGB(24,31,47),
+Input=Color3.fromRGB(24,31,47),InputFocused=Color3.fromRGB(24,31,47),InputIndicator=Color3.fromRGB(64,99,133),Dialog=
+Color3.fromRGB(38,38,65),DialogHolder=Color3.fromRGB(6,6,33),DialogHolderLine=Color3.fromRGB(43,43,74),DialogButton=
+Color3.fromRGB(24,31,47),DialogButtonBorder=Color3.fromRGB(43,43,74),DialogBorder=Color3.fromRGB(43,43,74),DialogInput=
+Color3.fromRGB(24,31,47),DialogInputLine=Color3.fromRGB(0,99,165),Text=Color3.fromRGB(102,136,204),SubText=Color3.
+fromRGB(64,99,133),Hover=Color3.fromRGB(8,40,107),HoverChange=0.1}end)()end,[33]=function()local aa,ab,ac=a(33)local ad
+return(function(...)return{Accent=Color3.fromHex'#ec6a3f',AcrylicMain=Color3.fromHex'#31312e',AcrylicBorder=Color3.
+fromHex'#403f3a',AcrylicGradient=ColorSequence.new(Color3.fromHex'#31312e',Color3.fromHex'#31312e'),AcrylicNoise=1,
+TitleBarLine=Color3.fromHex'#403f3a',Tab=Color3.fromHex'#dddddd',Element=Color3.fromHex'#373633',ElementBorder=Color3.
+fromHex'#403f3a',InElementBorder=Color3.fromHex'#ec6a3f',ElementTransparency=0,ToggleSlider=Color3.fromHex'#ec6a3f',
+ToggleToggled=Color3.fromHex'#31312e',SliderRail=Color3.fromHex'#ec6a3f',DropdownFrame=Color3.fromHex'#373633',
+DropdownHolder=Color3.fromHex'#373633',DropdownBorder=Color3.fromHex'#403f3a',DropdownOption=Color3.fromHex'#dddddd',
+Keybind=Color3.fromHex'#373633',Input=Color3.fromHex'#373633',InputFocused=Color3.fromHex'#373633',InputIndicator=Color3
+.fromHex'#747c84',Dialog=Color3.fromHex'#3c3b37',DialogHolder=Color3.fromHex'#31312e',DialogHolderLine=Color3.fromHex
+'#403f3a',DialogButton=Color3.fromHex'#373633',DialogButtonBorder=Color3.fromHex'#403f3a',DialogBorder=Color3.fromHex
+'#403f3a',DialogInput=Color3.fromHex'#373633',DialogInputLine=Color3.fromHex'#ec6a3f',Text=Color3.fromHex'#dddddd',
+SubText=Color3.fromHex'#747c84',Hover=Color3.fromHex'#403f3a',HoverChange=0.1}end)()end,[34]=function()local aa,ab,ac=a(
+34)local ad return(function(...)return{Accent=Color3.fromRGB(200,100,40),AcrylicMain=Color3.fromRGB(35,30,25),
+AcrylicBorder=Color3.fromRGB(90,60,45),AcrylicGradient=ColorSequence.new(Color3.fromRGB(120,70,40),Color3.fromRGB(30,20,
+15)),AcrylicNoise=0.92,TitleBarLine=Color3.fromRGB(110,70,45),Tab=Color3.fromRGB(155,110,85),Element=Color3.fromRGB(120,
+85,65),ElementBorder=Color3.fromRGB(40,30,25),InElementBorder=Color3.fromRGB(85,55,40),ElementTransparency=0.88,
+ToggleSlider=Color3.fromRGB(155,110,85),ToggleToggled=Color3.fromRGB(0,0,0),SliderRail=Color3.fromRGB(155,110,85),
+DropdownFrame=Color3.fromRGB(170,125,95),DropdownHolder=Color3.fromRGB(100,70,55),DropdownBorder=Color3.fromRGB(60,40,30
+),DropdownOption=Color3.fromRGB(155,110,85),Keybind=Color3.fromRGB(140,95,70),Input=Color3.fromRGB(120,85,65),
+InputFocused=Color3.fromRGB(18,12,10),InputIndicator=Color3.fromRGB(185,135,95),Dialog=Color3.fromRGB(100,70,55),
+DialogHolder=Color3.fromRGB(85,60,45),DialogHolderLine=Color3.fromRGB(60,40,30),DialogButton=Color3.fromRGB(100,70,55),
+DialogButtonBorder=Color3.fromRGB(140,95,70),DialogBorder=Color3.fromRGB(110,80,65),DialogInput=Color3.fromRGB(120,85,65
+),DialogInputLine=Color3.fromRGB(185,135,95),Text=Color3.fromRGB(245,240,235),SubText=Color3.fromRGB(180,160,140),Hover=
+Color3.fromRGB(200,100,40),HoverChange=0.04}end)()end,[35]=function()local aa,ab,ac=a(35)local ad return(function(...)
+return{Accent=Color3.fromHex'#00BCD4',AcrylicMain=Color3.fromHex'#29353b',AcrylicBorder=Color3.fromHex'#222D32',
+AcrylicGradient=ColorSequence.new(Color3.fromHex'#29353b',Color3.fromHex'#29353b'),AcrylicNoise=1,TitleBarLine=Color3.
+fromHex'#222D32',Tab=Color3.fromHex'#EEFFFF',Element=Color3.fromHex'#243035',ElementBorder=Color3.fromHex'#222D32',
+InElementBorder=Color3.fromHex'#00BCD4',ElementTransparency=0,ToggleSlider=Color3.fromHex'#00BCD4',ToggleToggled=Color3.
+fromHex'#29353b',SliderRail=Color3.fromHex'#00BCD4',DropdownFrame=Color3.fromHex'#243035',DropdownHolder=Color3.fromHex
+'#243035',DropdownBorder=Color3.fromHex'#222D32',DropdownOption=Color3.fromHex'#EEFFFF',Keybind=Color3.fromHex'#243035',
+Input=Color3.fromHex'#243035',InputFocused=Color3.fromHex'#243035',InputIndicator=Color3.fromHex'#546E7A',Dialog=Color3.
+fromHex'#222D32',DialogHolder=Color3.fromHex'#29353b',DialogHolderLine=Color3.fromHex'#222D32',DialogButton=Color3.
+fromHex'#243035',DialogButtonBorder=Color3.fromHex'#222D32',DialogBorder=Color3.fromHex'#222D32',DialogInput=Color3.
+fromHex'#243035',DialogInputLine=Color3.fromHex'#00BCD4',Text=Color3.fromHex'#EEFFFF',SubText=Color3.fromHex'#546E7A',
+Hover=Color3.fromHex'#2D3B42',HoverChange=0.1}end)()end,[36]=function()local aa,ab,ac=a(36)local ad return(function(...)
+return{Accent=Color3.fromHex'#b133ff',AcrylicMain=Color3.fromHex'#120024',AcrylicBorder=Color3.fromHex'#4d057b',
+AcrylicGradient=ColorSequence.new(Color3.fromHex'#120024',Color3.fromHex'#120024'),AcrylicNoise=0.92,TitleBarLine=Color3
+.fromHex'#4d057b',Tab=Color3.fromHex'#e9d9f2',Element=Color3.fromHex'#25013c',ElementBorder=Color3.fromHex'#4d057b',
+InElementBorder=Color3.fromHex'#b133ff',ElementTransparency=0.85,ToggleSlider=Color3.fromHex'#7d16bf',ToggleToggled=
+Color3.fromHex'#120024',SliderRail=Color3.fromHex'#7d16bf',DropdownFrame=Color3.fromHex'#25013c',DropdownHolder=Color3.
+fromHex'#25013c',DropdownBorder=Color3.fromHex'#4d057b',DropdownOption=Color3.fromHex'#e9d9f2',Keybind=Color3.fromHex
+'#25013c',Input=Color3.fromHex'#180030',InputFocused=Color3.fromHex'#180030',InputIndicator=Color3.fromHex'#9e85ad',
+Dialog=Color3.fromHex'#25013c',DialogHolder=Color3.fromHex'#120024',DialogHolderLine=Color3.fromHex'#4d057b',
+DialogButton=Color3.fromHex'#25013c',DialogButtonBorder=Color3.fromHex'#4d057b',DialogBorder=Color3.fromHex'#4d057b',
+DialogInput=Color3.fromHex'#180030',DialogInputLine=Color3.fromHex'#b133ff',Text=Color3.fromHex'#e9d9f2',SubText=Color3.
+fromHex'#9e85ad',Hover=Color3.fromHex'#4d057b',HoverChange=0.1}end)()end,[37]=function()local aa,ab,ac=a(37)local ad
+return(function(...)return{Accent=Color3.fromRGB(97,62,167),AcrylicMain=Color3.fromRGB(20,20,20),AcrylicBorder=Color3.
+fromRGB(110,90,130),AcrylicGradient=ColorSequence.new(Color3.fromRGB(85,57,139),Color3.fromRGB(40,25,65)),AcrylicNoise=
+0.92,TitleBarLine=Color3.fromRGB(95,75,110),Tab=Color3.fromRGB(160,140,180),Element=Color3.fromRGB(140,120,160),
+ElementBorder=Color3.fromRGB(60,50,70),InElementBorder=Color3.fromRGB(100,90,110),ElementTransparency=0.87,ToggleSlider=
+Color3.fromRGB(140,120,160),ToggleToggled=Color3.fromRGB(0,0,0),SliderRail=Color3.fromRGB(140,120,160),DropdownFrame=
+Color3.fromRGB(170,160,200),DropdownHolder=Color3.fromRGB(60,45,80),DropdownBorder=Color3.fromRGB(50,40,65),
+DropdownOption=Color3.fromRGB(140,120,160),Keybind=Color3.fromRGB(140,120,160),Input=Color3.fromRGB(140,120,160),
+InputFocused=Color3.fromRGB(20,10,30),InputIndicator=Color3.fromRGB(170,150,190),Dialog=Color3.fromRGB(60,45,80),
+DialogHolder=Color3.fromRGB(45,30,65),DialogHolderLine=Color3.fromRGB(40,25,60),DialogButton=Color3.fromRGB(60,45,80),
+DialogButtonBorder=Color3.fromRGB(95,80,110),DialogBorder=Color3.fromRGB(85,70,100),DialogInput=Color3.fromRGB(70,55,85)
+,DialogInputLine=Color3.fromRGB(175,160,190),Text=Color3.fromRGB(240,240,240),SubText=Color3.fromRGB(170,170,170),Hover=
+Color3.fromRGB(140,120,160),HoverChange=0.04}end)()end,[38]=function()local aa,ab,ac=a(38)local ad return(function(...)
+return{Accent=Color3.fromRGB(60,165,165),AcrylicMain=Color3.fromRGB(20,20,20),AcrylicBorder=Color3.fromRGB(50,100,100),
+AcrylicGradient=ColorSequence.new(Color3.fromRGB(60,140,140),Color3.fromRGB(40,80,80)),AcrylicNoise=0.92,TitleBarLine=
+Color3.fromRGB(60,120,120),Tab=Color3.fromRGB(140,180,180),Element=Color3.fromRGB(110,160,160),ElementBorder=Color3.
+fromRGB(40,70,70),InElementBorder=Color3.fromRGB(80,110,110),ElementTransparency=0.84,ToggleSlider=Color3.fromRGB(110,
+160,160),ToggleToggled=Color3.fromRGB(0,0,0),SliderRail=Color3.fromRGB(110,160,160),DropdownFrame=Color3.fromRGB(160,200
+,200),DropdownHolder=Color3.fromRGB(40,80,80),DropdownBorder=Color3.fromRGB(40,65,65),DropdownOption=Color3.fromRGB(110,
+160,160),Keybind=Color3.fromRGB(110,160,160),Input=Color3.fromRGB(110,160,160),InputFocused=Color3.fromRGB(20,10,30),
+InputIndicator=Color3.fromRGB(130,170,170),Dialog=Color3.fromRGB(40,80,80),DialogHolder=Color3.fromRGB(30,60,60),
+DialogHolderLine=Color3.fromRGB(25,50,50),DialogButton=Color3.fromRGB(40,80,80),DialogButtonBorder=Color3.fromRGB(80,110
+,110),DialogBorder=Color3.fromRGB(50,100,100),DialogInput=Color3.fromRGB(45,90,90),DialogInputLine=Color3.fromRGB(130,
+170,170),Text=Color3.fromRGB(240,240,240),SubText=Color3.fromRGB(170,170,170),Hover=Color3.fromRGB(110,160,160),
+HoverChange=0.04}end)()end,[39]=function()local aa,ab,ac=a(39)local ad return(function(...)return{Accent=Color3.fromHex
+'#5294e2',AcrylicMain=Color3.fromHex'#383c4a',AcrylicBorder=Color3.fromHex'#404f7d',AcrylicGradient=ColorSequence.new(
+Color3.fromHex'#383c4a',Color3.fromHex'#383c4a'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#404f7d',Tab=Color3.fromHex
+'#a2a2a2',Element=Color3.fromHex'#4b5162',ElementBorder=Color3.fromHex'#404f7d',InElementBorder=Color3.fromHex'#5294e2',
+ElementTransparency=0,ToggleSlider=Color3.fromHex'#5294e2',ToggleToggled=Color3.fromHex'#383c4a',SliderRail=Color3.
+fromHex'#5294e2',DropdownFrame=Color3.fromHex'#4b5162',DropdownHolder=Color3.fromHex'#4b5162',DropdownBorder=Color3.
+fromHex'#404f7d',DropdownOption=Color3.fromHex'#a2a2a2',Keybind=Color3.fromHex'#4b5162',Input=Color3.fromHex'#4b5162',
+InputFocused=Color3.fromHex'#4b5162',InputIndicator=Color3.fromHex'#7285b7',Dialog=Color3.fromHex'#434858',DialogHolder=
+Color3.fromHex'#383c4a',DialogHolderLine=Color3.fromHex'#404f7d',DialogButton=Color3.fromHex'#4b5162',DialogButtonBorder
+=Color3.fromHex'#404f7d',DialogBorder=Color3.fromHex'#404f7d',DialogInput=Color3.fromHex'#4b5162',DialogInputLine=Color3
+.fromHex'#5294e2',Text=Color3.fromHex'#a2a2a2',SubText=Color3.fromHex'#7285b7',Hover=Color3.fromHex'#4b5162',HoverChange
+=0.1}end)()end,[40]=function()local aa,ab,ac=a(40)local ad return(function(...)return{Accent=Color3.fromRGB(109,180,120)
+,AcrylicMain=Color3.fromRGB(38,38,38),AcrylicBorder=Color3.fromRGB(85,85,85),AcrylicGradient=ColorSequence.new(Color3.
+fromRGB(38,38,38),Color3.fromRGB(38,38,38)),AcrylicNoise=1,TitleBarLine=Color3.fromRGB(189,189,189),Tab=Color3.fromRGB(
+109,180,120),Element=Color3.fromRGB(42,42,42),ElementBorder=Color3.fromRGB(51,51,51),InElementBorder=Color3.fromRGB(51,
+51,51),ElementTransparency=0,ToggleSlider=Color3.fromRGB(103,169,113),ToggleToggled=Color3.fromRGB(255,255,255),
+SliderRail=Color3.fromRGB(51,51,51),DropdownFrame=Color3.fromRGB(68,68,68),DropdownHolder=Color3.fromRGB(68,68,68),
+DropdownBorder=Color3.fromRGB(38,38,38),DropdownOption=Color3.fromRGB(153,200,255),Keybind=Color3.fromRGB(54,54,54),
+Input=Color3.fromRGB(27,27,27),InputFocused=Color3.fromRGB(51,51,51),InputIndicator=Color3.fromRGB(197,184,161),Dialog=
+Color3.fromRGB(38,38,38),DialogHolder=Color3.fromRGB(58,52,46),DialogHolderLine=Color3.fromRGB(40,40,40),DialogButton=
+Color3.fromRGB(42,42,42),DialogButtonBorder=Color3.fromRGB(51,51,51),DialogBorder=Color3.fromRGB(189,189,189),
+DialogInput=Color3.fromRGB(27,27,27),DialogInputLine=Color3.fromRGB(197,184,161),Text=Color3.fromRGB(197,184,161),
+SubText=Color3.fromRGB(158,158,158),Hover=Color3.fromRGB(149,149,149),HoverChange=0.04}end)()end,[41]=function()local aa
+,ab,ac=a(41)local ad return(function(...)return{Accent=Color3.fromRGB(96,205,255),AcrylicMain=Color3.fromRGB(60,60,60),
+AcrylicBorder=Color3.fromRGB(90,90,90),AcrylicGradient=ColorSequence.new(Color3.fromRGB(40,40,40),Color3.fromRGB(40,40,
+40)),AcrylicNoise=0.9,TitleBarLine=Color3.fromRGB(75,75,75),Tab=Color3.fromRGB(120,120,120),Element=Color3.fromRGB(120,
+120,120),ElementBorder=Color3.fromRGB(35,35,35),InElementBorder=Color3.fromRGB(90,90,90),ElementTransparency=0.87,
+ToggleSlider=Color3.fromRGB(120,120,120),ToggleToggled=Color3.fromRGB(0,0,0),SliderRail=Color3.fromRGB(120,120,120),
+DropdownFrame=Color3.fromRGB(160,160,160),DropdownHolder=Color3.fromRGB(45,45,45),DropdownBorder=Color3.fromRGB(35,35,35
+),DropdownOption=Color3.fromRGB(120,120,120),Keybind=Color3.fromRGB(120,120,120),Input=Color3.fromRGB(160,160,160),
+InputFocused=Color3.fromRGB(10,10,10),InputIndicator=Color3.fromRGB(150,150,150),Dialog=Color3.fromRGB(45,45,45),
+DialogHolder=Color3.fromRGB(35,35,35),DialogHolderLine=Color3.fromRGB(30,30,30),DialogButton=Color3.fromRGB(45,45,45),
+DialogButtonBorder=Color3.fromRGB(80,80,80),DialogBorder=Color3.fromRGB(70,70,70),DialogInput=Color3.fromRGB(55,55,55),
+DialogInputLine=Color3.fromRGB(160,160,160),Text=Color3.fromRGB(240,240,240),SubText=Color3.fromRGB(170,170,170),Hover=
+Color3.fromRGB(120,120,120),HoverChange=0.07}end)()end,[42]=function()local aa,ab,ac=a(42)local ad return(function(...)
+return{Accent=Color3.fromRGB(72,138,182),AcrylicMain=Color3.fromRGB(30,30,30),AcrylicBorder=Color3.fromRGB(60,60,60),
+AcrylicGradient=ColorSequence.new(Color3.fromRGB(25,25,25),Color3.fromRGB(15,15,15)),AcrylicNoise=0.94,TitleBarLine=
+Color3.fromRGB(65,65,65),Tab=Color3.fromRGB(100,100,100),Element=Color3.fromRGB(70,70,70),ElementBorder=Color3.fromRGB(
+25,25,25),InElementBorder=Color3.fromRGB(55,55,55),ElementTransparency=0.82,DropdownFrame=Color3.fromRGB(120,120,120),
+DropdownHolder=Color3.fromRGB(35,35,35),DropdownBorder=Color3.fromRGB(25,25,25),Dialog=Color3.fromRGB(35,35,35),
+DialogHolder=Color3.fromRGB(25,25,25),DialogHolderLine=Color3.fromRGB(20,20,20),DialogButton=Color3.fromRGB(35,35,35),
+DialogButtonBorder=Color3.fromRGB(55,55,55),DialogBorder=Color3.fromRGB(50,50,50),DialogInput=Color3.fromRGB(45,45,45),
+DialogInputLine=Color3.fromRGB(120,120,120)}end)()end,[43]=function()local aa,ab,ac=a(43)local ad return(function(...)
+return{Accent=Color3.fromHex'#fecb52',AcrylicMain=Color3.fromHex'#2c2826',AcrylicBorder=Color3.fromHex'#48413d',
+AcrylicGradient=ColorSequence.new(Color3.fromHex'#2c2826',Color3.fromHex'#2c2826'),AcrylicNoise=1,TitleBarLine=Color3.
+fromHex'#48413d',Tab=Color3.fromHex'#bd987f',Element=Color3.fromHex'#35302D',ElementBorder=Color3.fromHex'#48413d',
+InElementBorder=Color3.fromHex'#fecb52',ElementTransparency=0,ToggleSlider=Color3.fromHex'#fecb52',ToggleToggled=Color3.
+fromHex'#2c2826',SliderRail=Color3.fromHex'#fecb52',DropdownFrame=Color3.fromHex'#35302D',DropdownHolder=Color3.fromHex
+'#35302D',DropdownBorder=Color3.fromHex'#48413d',DropdownOption=Color3.fromHex'#bd987f',Keybind=Color3.fromHex'#35302D',
+Input=Color3.fromHex'#35302D',InputFocused=Color3.fromHex'#35302D',InputIndicator=Color3.fromHex'#564b43',Dialog=Color3.
+fromHex'#35302D',DialogHolder=Color3.fromHex'#2c2826',DialogHolderLine=Color3.fromHex'#48413d',DialogButton=Color3.
+fromHex'#35302D',DialogButtonBorder=Color3.fromHex'#48413d',DialogBorder=Color3.fromHex'#48413d',DialogInput=Color3.
+fromHex'#35302D',DialogInputLine=Color3.fromHex'#fecb52',Text=Color3.fromHex'#bd987f',SubText=Color3.fromHex'#564b43',
+Hover=Color3.fromHex'#4D4642',HoverChange=0.1}end)()end,[44]=function()local aa,ab,ac=a(44)local ad return(function(...)
+return{Accent=Color3.fromHex'#e7f98b',AcrylicMain=Color3.fromHex'#2a2d2a',AcrylicBorder=Color3.fromHex'#424842',
+AcrylicGradient=ColorSequence.new(Color3.fromHex'#2a2d2a',Color3.fromHex'#2a2d2a'),AcrylicNoise=1,TitleBarLine=Color3.
+fromHex'#424842',Tab=Color3.fromHex'#a9bca9',Element=Color3.fromHex'#313531',ElementBorder=Color3.fromHex'#424842',
+InElementBorder=Color3.fromHex'#e7f98b',ElementTransparency=0,ToggleSlider=Color3.fromHex'#e7f98b',ToggleToggled=Color3.
+fromHex'#2a2d2a',SliderRail=Color3.fromHex'#e7f98b',DropdownFrame=Color3.fromHex'#313531',DropdownHolder=Color3.fromHex
+'#313531',DropdownBorder=Color3.fromHex'#424842',DropdownOption=Color3.fromHex'#a9bca9',Keybind=Color3.fromHex'#313531',
+Input=Color3.fromHex'#313531',InputFocused=Color3.fromHex'#313531',InputIndicator=Color3.fromHex'#585f58',Dialog=Color3.
+fromHex'#313531',DialogHolder=Color3.fromHex'#2a2d2a',DialogHolderLine=Color3.fromHex'#424842',DialogButton=Color3.
+fromHex'#313531',DialogButtonBorder=Color3.fromHex'#424842',DialogBorder=Color3.fromHex'#424842',DialogInput=Color3.
+fromHex'#313531',DialogInputLine=Color3.fromHex'#e7f98b',Text=Color3.fromHex'#a9bca9',SubText=Color3.fromHex'#585f58',
+Hover=Color3.fromHex'#474D47',HoverChange=0.1}end)()end,[45]=function()local aa,ab,ac=a(45)local ad return(function(...)
+return{Accent=Color3.fromHex'#34FEBB',AcrylicMain=Color3.fromHex'#1D262F',AcrylicBorder=Color3.fromHex'#303F4F',
+AcrylicGradient=ColorSequence.new(Color3.fromHex'#1D262F',Color3.fromHex'#1D262F'),AcrylicNoise=1,TitleBarLine=Color3.
+fromHex'#303F4F',Tab=Color3.fromHex'#88b4e7',Element=Color3.fromHex'#232D38',ElementBorder=Color3.fromHex'#303F4F',
+InElementBorder=Color3.fromHex'#34FEBB',ElementTransparency=0,ToggleSlider=Color3.fromHex'#34FEBB',ToggleToggled=Color3.
+fromHex'#1D262F',SliderRail=Color3.fromHex'#34FEBB',DropdownFrame=Color3.fromHex'#232D38',DropdownHolder=Color3.fromHex
+'#232D38',DropdownBorder=Color3.fromHex'#303F4F',DropdownOption=Color3.fromHex'#88b4e7',Keybind=Color3.fromHex'#232D38',
+Input=Color3.fromHex'#232D38',InputFocused=Color3.fromHex'#232D38',InputIndicator=Color3.fromHex'#444c55',Dialog=Color3.
+fromHex'#232D38',DialogHolder=Color3.fromHex'#1D262F',DialogHolderLine=Color3.fromHex'#303F4F',DialogButton=Color3.
+fromHex'#232D38',DialogButtonBorder=Color3.fromHex'#303F4F',DialogBorder=Color3.fromHex'#303F4F',DialogInput=Color3.
+fromHex'#232D38',DialogInputLine=Color3.fromHex'#34FEBB',Text=Color3.fromHex'#88b4e7',SubText=Color3.fromHex'#444c55',
+Hover=Color3.fromHex'#354454',HoverChange=0.1}end)()end,[46]=function()local aa,ab,ac=a(46)local ad return(function(...)
+return{Accent=Color3.fromHex'#fec38f',AcrylicMain=Color3.fromHex'#2c2734',AcrylicBorder=Color3.fromHex'#443d51',
+AcrylicGradient=ColorSequence.new(Color3.fromHex'#2c2734',Color3.fromHex'#2c2734'),AcrylicNoise=1,TitleBarLine=Color3.
+fromHex'#443d51',Tab=Color3.fromHex'#cab2fa',Element=Color3.fromHex'#342E3D',ElementBorder=Color3.fromHex'#443d51',
+InElementBorder=Color3.fromHex'#fec38f',ElementTransparency=0,ToggleSlider=Color3.fromHex'#fec38f',ToggleToggled=Color3.
+fromHex'#2c2734',SliderRail=Color3.fromHex'#fec38f',DropdownFrame=Color3.fromHex'#342E3D',DropdownHolder=Color3.fromHex
+'#342E3D',DropdownBorder=Color3.fromHex'#443d51',DropdownOption=Color3.fromHex'#cab2fa',Keybind=Color3.fromHex'#342E3D',
+Input=Color3.fromHex'#342E3D',InputFocused=Color3.fromHex'#342E3D',InputIndicator=Color3.fromHex'#544d60',Dialog=Color3.
+fromHex'#342E3D',DialogHolder=Color3.fromHex'#2c2734',DialogHolderLine=Color3.fromHex'#443d51',DialogButton=Color3.
+fromHex'#342E3D',DialogButtonBorder=Color3.fromHex'#443d51',DialogBorder=Color3.fromHex'#443d51',DialogInput=Color3.
+fromHex'#342E3D',DialogInputLine=Color3.fromHex'#fec38f',Text=Color3.fromHex'#cab2fa',SubText=Color3.fromHex'#544d60',
+Hover=Color3.fromHex'#494256',HoverChange=0.1}end)()end,[47]=function()local aa,ab,ac=a(47)local ad return(function(...)
+return{Accent=Color3.fromHex'#fe7734',AcrylicMain=Color3.fromHex'#24242e',AcrylicBorder=Color3.fromHex'#3a3a4a',
+AcrylicGradient=ColorSequence.new(Color3.fromHex'#24242e',Color3.fromHex'#24242e'),AcrylicNoise=1,TitleBarLine=Color3.
+fromHex'#3a3a4a',Tab=Color3.fromHex'#8686cb',Element=Color3.fromHex'#2B2B36',ElementBorder=Color3.fromHex'#3a3a4a',
+InElementBorder=Color3.fromHex'#fe7734',ElementTransparency=0,ToggleSlider=Color3.fromHex'#fe7734',ToggleToggled=Color3.
+fromHex'#24242e',SliderRail=Color3.fromHex'#fe7734',DropdownFrame=Color3.fromHex'#2B2B36',DropdownHolder=Color3.fromHex
+'#2B2B36',DropdownBorder=Color3.fromHex'#3a3a4a',DropdownOption=Color3.fromHex'#8686cb',Keybind=Color3.fromHex'#2B2B36',
+Input=Color3.fromHex'#2B2B36',InputFocused=Color3.fromHex'#2B2B36',InputIndicator=Color3.fromHex'#49495a',Dialog=Color3.
+fromHex'#2B2B36',DialogHolder=Color3.fromHex'#24242e',DialogHolderLine=Color3.fromHex'#3a3a4a',DialogButton=Color3.
+fromHex'#2B2B36',DialogButtonBorder=Color3.fromHex'#3a3a4a',DialogBorder=Color3.fromHex'#3a3a4a',DialogInput=Color3.
+fromHex'#2B2B36',DialogInputLine=Color3.fromHex'#fe7734',Text=Color3.fromHex'#8686cb',SubText=Color3.fromHex'#49495a',
+Hover=Color3.fromHex'#3F3F4F',HoverChange=0.1}end)()end,[48]=function()local aa,ab,ac=a(48)local ad return(function(...)
+return{Accent=Color3.fromHex'#cb5226',AcrylicMain=Color3.fromHex'#eff0f1',AcrylicBorder=Color3.fromHex'#e9d18d',
+AcrylicGradient=ColorSequence.new(Color3.fromHex'#eff0f1',Color3.fromHex'#eff0f1'),AcrylicNoise=1,TitleBarLine=Color3.
+fromHex'#e9d18d',Tab=Color3.fromHex'#5e5e5e',Element=Color3.fromHex'#fdf6e3',ElementBorder=Color3.fromHex'#e9d18d',
+InElementBorder=Color3.fromHex'#cb5226',ElementTransparency=0,ToggleSlider=Color3.fromHex'#cb5226',ToggleToggled=Color3.
+fromHex'#fdf6e3',SliderRail=Color3.fromHex'#cb5226',DropdownFrame=Color3.fromHex'#fbefce',DropdownHolder=Color3.fromHex
+'#fbefce',DropdownBorder=Color3.fromHex'#e9d18d',DropdownOption=Color3.fromHex'#5e5e5e',Keybind=Color3.fromHex'#fdf6e3',
+Input=Color3.fromHex'#fdf6e3',InputFocused=Color3.fromHex'#fdf6e3',InputIndicator=Color3.fromHex'#93a1a1',Dialog=Color3.
+fromHex'#fbefce',DialogHolder=Color3.fromHex'#fbefce',DialogHolderLine=Color3.fromHex'#e9d18d',DialogButton=Color3.
+fromHex'#fbefce',DialogButtonBorder=Color3.fromHex'#e9d18d',DialogBorder=Color3.fromHex'#e9d18d',DialogInput=Color3.
+fromHex'#fdf6e3',DialogInputLine=Color3.fromHex'#cb5226',Text=Color3.fromHex'#5e5e5e',SubText=Color3.fromHex'#93a1a1',
+Hover=Color3.fromHex'#d6d6d6',HoverChange=0.1}end)()end,[49]=function()local aa,ab,ac=a(49)local ad return(function(...)
+return{Accent=Color3.fromRGB(105,180,215),AcrylicMain=Color3.fromRGB(16,22,34),AcrylicBorder=Color3.fromRGB(36,72,96),
+AcrylicGradient=ColorSequence.new(Color3.fromRGB(28,62,106),Color3.fromRGB(100,180,215)),AcrylicNoise=0.92,TitleBarLine=
+Color3.fromRGB(42,84,116),Tab=Color3.fromRGB(150,200,225),Element=Color3.fromRGB(86,122,148),ElementBorder=Color3.
+fromRGB(16,30,44),InElementBorder=Color3.fromRGB(105,180,215),ElementTransparency=0.82,ToggleSlider=Color3.fromRGB(112,
+170,200),ToggleToggled=Color3.fromRGB(8,10,16),SliderRail=Color3.fromRGB(112,170,200),DropdownFrame=Color3.fromRGB(160,
+200,220),DropdownHolder=Color3.fromRGB(20,40,60),DropdownBorder=Color3.fromRGB(16,32,48),DropdownOption=Color3.fromRGB(
+132,180,205),Keybind=Color3.fromRGB(112,170,200),Input=Color3.fromRGB(122,185,210),InputFocused=Color3.fromRGB(10,12,18)
+,InputIndicator=Color3.fromRGB(186,220,235),Dialog=Color3.fromRGB(20,36,54),DialogHolder=Color3.fromRGB(16,32,50),
+DialogHolderLine=Color3.fromRGB(12,24,38),DialogButton=Color3.fromRGB(20,36,54),DialogButtonBorder=Color3.fromRGB(72,124
+,150),DialogBorder=Color3.fromRGB(34,64,92),DialogInput=Color3.fromRGB(46,92,118),DialogInputLine=Color3.fromRGB(186,220
+,235),Text=Color3.fromRGB(242,246,250),SubText=Color3.fromRGB(170,190,200),Hover=Color3.fromRGB(112,170,200),HoverChange
+=0.04}end)()end,[50]=function()local aa,ab,ac=a(50)local ad return(function(...)return{Accent=Color3.fromHex'#1f6feb',
+AcrylicMain=Color3.fromHex'#010409',AcrylicBorder=Color3.fromHex'#30363d',AcrylicGradient=ColorSequence.new(Color3.
+fromHex'#010409',Color3.fromHex'#010409'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#30363d',Tab=Color3.fromHex
+'#c9d1d9',Element=Color3.fromHex'#161b22',ElementBorder=Color3.fromHex'#30363d',InElementBorder=Color3.fromHex'#1f6feb',
+ElementTransparency=0,ToggleSlider=Color3.fromHex'#1f6feb',ToggleToggled=Color3.fromHex'#0d1117',SliderRail=Color3.
+fromHex'#1f6feb',DropdownFrame=Color3.fromHex'#161b22',DropdownHolder=Color3.fromHex'#161b22',DropdownBorder=Color3.
+fromHex'#30363d',DropdownOption=Color3.fromHex'#c9d1d9',Keybind=Color3.fromHex'#0d1117',Input=Color3.fromHex'#0d1117',
+InputFocused=Color3.fromHex'#0d1117',InputIndicator=Color3.fromHex'#6e7681',Dialog=Color3.fromHex'#161b22',DialogHolder=
+Color3.fromHex'#161b22',DialogHolderLine=Color3.fromHex'#30363d',DialogButton=Color3.fromHex'#0d1117',DialogButtonBorder
+=Color3.fromHex'#30363d',DialogBorder=Color3.fromHex'#30363d',DialogInput=Color3.fromHex'#0d1117',DialogInputLine=Color3
+.fromHex'#1f6feb',Text=Color3.fromHex'#c9d1d9',SubText=Color3.fromHex'#8b949e',Hover=Color3.fromHex'#6e7681',HoverChange
+=0.1}end)()end,[51]=function()local aa,ab,ac=a(51)local ad return(function(...)return{Accent=Color3.fromHex'#1f6feb',
+AcrylicMain=Color3.fromHex'#010409',AcrylicBorder=Color3.fromHex'#30363d',AcrylicGradient=ColorSequence.new(Color3.
+fromHex'#010409',Color3.fromHex'#010409'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#30363d',Tab=Color3.fromHex
+'#e6edf3',Element=Color3.fromHex'#161b22',ElementBorder=Color3.fromHex'#30363d',InElementBorder=Color3.fromHex'#1f6feb',
+ElementTransparency=0,ToggleSlider=Color3.fromHex'#1f6feb',ToggleToggled=Color3.fromHex'#0d1117',SliderRail=Color3.
+fromHex'#1f6feb',DropdownFrame=Color3.fromHex'#161b22',DropdownHolder=Color3.fromHex'#161b22',DropdownBorder=Color3.
+fromHex'#30363d',DropdownOption=Color3.fromHex'#e6edf3',Keybind=Color3.fromHex'#0d1117',Input=Color3.fromHex'#0d1117',
+InputFocused=Color3.fromHex'#0d1117',InputIndicator=Color3.fromHex'#6e7681',Dialog=Color3.fromHex'#161b22',DialogHolder=
+Color3.fromHex'#161b22',DialogHolderLine=Color3.fromHex'#30363d',DialogButton=Color3.fromHex'#0d1117',DialogButtonBorder
+=Color3.fromHex'#30363d',DialogBorder=Color3.fromHex'#30363d',DialogInput=Color3.fromHex'#0d1117',DialogInputLine=Color3
+.fromHex'#1f6feb',Text=Color3.fromHex'#e6edf3',SubText=Color3.fromHex'#7d8590',Hover=Color3.fromHex'#6e7681',HoverChange
+=0.1}end)()end,[52]=function()local aa,ab,ac=a(52)local ad return(function(...)return{Accent=Color3.fromHex'#316dca',
+AcrylicMain=Color3.fromHex'#1c2128',AcrylicBorder=Color3.fromHex'#444c56',AcrylicGradient=ColorSequence.new(Color3.
+fromHex'#1c2128',Color3.fromHex'#1c2128'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#444c56',Tab=Color3.fromHex
+'#adbac7',Element=Color3.fromHex'#2d333b',ElementBorder=Color3.fromHex'#444c56',InElementBorder=Color3.fromHex'#316dca',
+ElementTransparency=0,ToggleSlider=Color3.fromHex'#316dca',ToggleToggled=Color3.fromHex'#22272e',SliderRail=Color3.
+fromHex'#316dca',DropdownFrame=Color3.fromHex'#2d333b',DropdownHolder=Color3.fromHex'#2d333b',DropdownBorder=Color3.
+fromHex'#444c56',DropdownOption=Color3.fromHex'#adbac7',Keybind=Color3.fromHex'#22272e',Input=Color3.fromHex'#22272e',
+InputFocused=Color3.fromHex'#22272e',InputIndicator=Color3.fromHex'#636e7b',Dialog=Color3.fromHex'#2d333b',DialogHolder=
+Color3.fromHex'#2d333b',DialogHolderLine=Color3.fromHex'#444c56',DialogButton=Color3.fromHex'#22272e',DialogButtonBorder
+=Color3.fromHex'#444c56',DialogBorder=Color3.fromHex'#444c56',DialogInput=Color3.fromHex'#22272e',DialogInputLine=Color3
+.fromHex'#316dca',Text=Color3.fromHex'#adbac7',SubText=Color3.fromHex'#768390',Hover=Color3.fromHex'#636e7b',HoverChange
+=0.1}end)()end,[53]=function()local aa,ab,ac=a(53)local ad return(function(...)return{Accent=Color3.fromHex'#409eff',
+AcrylicMain=Color3.fromHex'#010409',AcrylicBorder=Color3.fromHex'#7a828e',AcrylicGradient=ColorSequence.new(Color3.
+fromHex'#010409',Color3.fromHex'#010409'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#7a828e',Tab=Color3.fromHex
+'#f0f3f6',Element=Color3.fromHex'#272b33',ElementBorder=Color3.fromHex'#7a828e',InElementBorder=Color3.fromHex'#409eff',
+ElementTransparency=0,ToggleSlider=Color3.fromHex'#409eff',ToggleToggled=Color3.fromHex'#0a0c10',SliderRail=Color3.
+fromHex'#409eff',DropdownFrame=Color3.fromHex'#272b33',DropdownHolder=Color3.fromHex'#272b33',DropdownBorder=Color3.
+fromHex'#7a828e',DropdownOption=Color3.fromHex'#f0f3f6',Keybind=Color3.fromHex'#0a0c10',Input=Color3.fromHex'#0a0c10',
+InputFocused=Color3.fromHex'#0a0c10',InputIndicator=Color3.fromHex'#9ea7b3',Dialog=Color3.fromHex'#272b33',DialogHolder=
+Color3.fromHex'#272b33',DialogHolderLine=Color3.fromHex'#7a828e',DialogButton=Color3.fromHex'#0a0c10',DialogButtonBorder
+=Color3.fromHex'#7a828e',DialogBorder=Color3.fromHex'#7a828e',DialogInput=Color3.fromHex'#0a0c10',DialogInputLine=Color3
+.fromHex'#409eff',Text=Color3.fromHex'#f0f3f6',SubText=Color3.fromHex'#f0f3f6',Hover=Color3.fromHex'#9ea7b3',HoverChange
+=0.1}end)()end,[54]=function()local aa,ab,ac=a(54)local ad return(function(...)return{Accent=Color3.fromHex'#005cc5',
+AcrylicMain=Color3.fromHex'#1f2428',AcrylicBorder=Color3.fromHex'#1b1f23',AcrylicGradient=ColorSequence.new(Color3.
+fromHex'#1f2428',Color3.fromHex'#1f2428'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#1b1f23',Tab=Color3.fromHex
+'#e1e4e8',Element=Color3.fromHex'#2f363d',ElementBorder=Color3.fromHex'#1b1f23',InElementBorder=Color3.fromHex'#005cc5',
+ElementTransparency=0,ToggleSlider=Color3.fromHex'#005cc5',ToggleToggled=Color3.fromHex'#2f363d',SliderRail=Color3.
+fromHex'#005cc5',DropdownFrame=Color3.fromHex'#2f363d',DropdownHolder=Color3.fromHex'#2f363d',DropdownBorder=Color3.
+fromHex'#1b1f23',DropdownOption=Color3.fromHex'#e1e4e8',Keybind=Color3.fromHex'#2f363d',Input=Color3.fromHex'#2f363d',
+InputFocused=Color3.fromHex'#2f363d',InputIndicator=Color3.fromHex'#959da5',Dialog=Color3.fromHex'#2f363d',DialogHolder=
+Color3.fromHex'#2f363d',DialogHolderLine=Color3.fromHex'#444d56',DialogButton=Color3.fromHex'#2f363d',DialogButtonBorder
+=Color3.fromHex'#1b1f23',DialogBorder=Color3.fromHex'#1b1f23',DialogInput=Color3.fromHex'#2f363d',DialogInputLine=Color3
+.fromHex'#005cc5',Text=Color3.fromHex'#d1d5da',SubText=Color3.fromHex'#959da5',Hover=Color3.fromHex'#282e34',HoverChange
+=0.1}end)()end,[55]=function()local aa,ab,ac=a(55)local ad return(function(...)return{Accent=Color3.fromHex'#0969da',
+AcrylicMain=Color3.fromHex'#f6f8fa',AcrylicBorder=Color3.fromHex'#d0d7de',AcrylicGradient=ColorSequence.new(Color3.
+fromHex'#f6f8fa',Color3.fromHex'#f6f8fa'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#d0d7de',Tab=Color3.fromHex
+'#24292f',Element=Color3.fromHex'#ffffff',ElementBorder=Color3.fromHex'#d0d7de',InElementBorder=Color3.fromHex'#0969da',
+ElementTransparency=0,ToggleSlider=Color3.fromHex'#0969da',ToggleToggled=Color3.fromHex'#ffffff',SliderRail=Color3.
+fromHex'#0969da',DropdownFrame=Color3.fromHex'#ffffff',DropdownHolder=Color3.fromHex'#ffffff',DropdownBorder=Color3.
+fromHex'#d0d7de',DropdownOption=Color3.fromHex'#24292f',Keybind=Color3.fromHex'#ffffff',Input=Color3.fromHex'#ffffff',
+InputFocused=Color3.fromHex'#ffffff',InputIndicator=Color3.fromHex'#6e7781',Dialog=Color3.fromHex'#ffffff',DialogHolder=
+Color3.fromHex'#ffffff',DialogHolderLine=Color3.fromHex'#d0d7de',DialogButton=Color3.fromHex'#ffffff',DialogButtonBorder
+=Color3.fromHex'#20252c',DialogBorder=Color3.fromHex'#d0d7de',DialogInput=Color3.fromHex'#ffffff',DialogInputLine=Color3
+.fromHex'#0969da',Text=Color3.fromHex'#24292f',SubText=Color3.fromHex'#57606a',Hover=Color3.fromHex'#eaeef2',HoverChange
+=0.1}end)()end,[56]=function()local aa,ab,ac=a(56)local ad return(function(...)return{Accent=Color3.fromHex'#0969da',
+AcrylicMain=Color3.fromHex'#f6f8fa',AcrylicBorder=Color3.fromHex'#d0d7de',AcrylicGradient=ColorSequence.new(Color3.
+fromHex'#f6f8fa',Color3.fromHex'#f6f8fa'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#d0d7de',Tab=Color3.fromHex
+'#1f2328',Element=Color3.fromHex'#ffffff',ElementBorder=Color3.fromHex'#d0d7de',InElementBorder=Color3.fromHex'#0969da',
+ElementTransparency=0,ToggleSlider=Color3.fromHex'#0969da',ToggleToggled=Color3.fromHex'#ffffff',SliderRail=Color3.
+fromHex'#0969da',DropdownFrame=Color3.fromHex'#ffffff',DropdownHolder=Color3.fromHex'#ffffff',DropdownBorder=Color3.
+fromHex'#d0d7de',DropdownOption=Color3.fromHex'#1f2328',Keybind=Color3.fromHex'#ffffff',Input=Color3.fromHex'#ffffff',
+InputFocused=Color3.fromHex'#ffffff',InputIndicator=Color3.fromHex'#6e7781',Dialog=Color3.fromHex'#ffffff',DialogHolder=
+Color3.fromHex'#ffffff',DialogHolderLine=Color3.fromHex'#d0d7de',DialogButton=Color3.fromHex'#ffffff',DialogButtonBorder
+=Color3.fromHex'#20252c',DialogBorder=Color3.fromHex'#d0d7de',DialogInput=Color3.fromHex'#ffffff',DialogInputLine=Color3
+.fromHex'#0969da',Text=Color3.fromHex'#1f2328',SubText=Color3.fromHex'#656d76',Hover=Color3.fromHex'#eaeef2',HoverChange
+=0.1}end)()end,[57]=function()local aa,ab,ac=a(57)local ad return(function(...)return{Accent=Color3.fromHex'#0349b4',
+AcrylicMain=Color3.fromHex'#ffffff',AcrylicBorder=Color3.fromHex'#20252c',AcrylicGradient=ColorSequence.new(Color3.
+fromHex'#ffffff',Color3.fromHex'#ffffff'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#20252c',Tab=Color3.fromHex
+'#0e1116',Element=Color3.fromHex'#ffffff',ElementBorder=Color3.fromHex'#20252c',InElementBorder=Color3.fromHex'#0349b4',
+ElementTransparency=0,ToggleSlider=Color3.fromHex'#0349b4',ToggleToggled=Color3.fromHex'#ffffff',SliderRail=Color3.
+fromHex'#0349b4',DropdownFrame=Color3.fromHex'#ffffff',DropdownHolder=Color3.fromHex'#ffffff',DropdownBorder=Color3.
+fromHex'#20252c',DropdownOption=Color3.fromHex'#0e1116',Keybind=Color3.fromHex'#ffffff',Input=Color3.fromHex'#ffffff',
+InputFocused=Color3.fromHex'#ffffff',InputIndicator=Color3.fromHex'#66707b',Dialog=Color3.fromHex'#ffffff',DialogHolder=
+Color3.fromHex'#ffffff',DialogHolderLine=Color3.fromHex'#20252c',DialogButton=Color3.fromHex'#ffffff',DialogButtonBorder
+=Color3.fromHex'#20252c',DialogBorder=Color3.fromHex'#20252c',DialogInput=Color3.fromHex'#ffffff',DialogInputLine=Color3
+.fromHex'#0349b4',Text=Color3.fromHex'#0e1116',SubText=Color3.fromHex'#66707b',Hover=Color3.fromHex'#e7ecf0',HoverChange
+=0.1}end)()end,[58]=function()local aa,ab,ac=a(58)local ad return(function(...)return{Accent=Color3.fromHex'2188ff',
+AcrylicMain=Color3.fromHex'f6f8fa',AcrylicBorder=Color3.fromHex'e1e4e8',AcrylicGradient=ColorSequence.new(Color3.fromHex
+'f6f8fa',Color3.fromHex'f6f8fa'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'e1e4e8',Tab=Color3.fromHex'2f363d',Element=
+Color3.fromHex'fafbfc',ElementBorder=Color3.fromHex'e1e4e8',InElementBorder=Color3.fromHex'2188ff',ElementTransparency=0
+,ToggleSlider=Color3.fromHex'2188ff',ToggleToggled=Color3.fromHex'fafbfc',SliderRail=Color3.fromHex'2188ff',
+DropdownFrame=Color3.fromHex'fafbfc',DropdownHolder=Color3.fromHex'fafbfc',DropdownBorder=Color3.fromHex'e1e4e8',
+DropdownOption=Color3.fromHex'2f363d',Keybind=Color3.fromHex'fafbfc',Input=Color3.fromHex'fafbfc',InputFocused=Color3.
+fromHex'fafbfc',InputIndicator=Color3.fromHex'959da5',Dialog=Color3.fromHex'fafbfc',DialogHolder=Color3.fromHex'fafbfc',
+DialogHolderLine=Color3.fromHex'e1e4e8',DialogButton=Color3.fromHex'#fafbfc',DialogButtonBorder=Color3.fromHex'#20252c',
+DialogBorder=Color3.fromHex'e1e4e8',DialogInput=Color3.fromHex'fafbfc',DialogInputLine=Color3.fromHex'2188ff',Text=
+Color3.fromHex'24292e',SubText=Color3.fromHex'6a737d',Hover=Color3.fromHex'ebf0f4',HoverChange=0.1}end)()end,[59]=
+function()local aa,ab,ac=a(59)local ad return(function(...)return{Accent=Color3.fromHex'#a57a4c',AcrylicMain=Color3.
+fromHex'#221a0f',AcrylicBorder=Color3.fromHex'#5e452b',AcrylicGradient=ColorSequence.new(Color3.fromHex'#221a0f',Color3.
+fromHex'#221a0f'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#51412c',Tab=Color3.fromHex'#d3af86',Element=Color3.fromHex
+'#51412c',ElementBorder=Color3.fromHex'#5e452b',InElementBorder=Color3.fromHex'#a57a4c',ElementTransparency=0,
+ToggleSlider=Color3.fromHex'#a57a4c',ToggleToggled=Color3.fromHex'#51412c',SliderRail=Color3.fromHex'#a57a4c',
+DropdownFrame=Color3.fromHex'#51412c',DropdownHolder=Color3.fromHex'#51412c',DropdownBorder=Color3.fromHex'#5e452b',
+DropdownOption=Color3.fromHex'#d3af86',Keybind=Color3.fromHex'#51412c',Input=Color3.fromHex'#51412c',InputFocused=Color3
+.fromHex'#51412c',InputIndicator=Color3.fromHex'#a57a4c',Dialog=Color3.fromHex'#362712',DialogHolder=Color3.fromHex
+'#221a14',DialogHolderLine=Color3.fromHex'#5e452b',DialogButton=Color3.fromHex'#6e583b',DialogButtonBorder=Color3.
+fromHex'#5e452b',DialogBorder=Color3.fromHex'#5e452b',DialogInput=Color3.fromHex'#51412c',DialogInputLine=Color3.fromHex
+'#a57a4c',Text=Color3.fromHex'#d3af86',SubText=Color3.fromHex'#a57a4c',Hover=Color3.fromHex'#7c5021',HoverChange=0.1}end
+)()end,[60]=function()local aa,ab,ac=a(60)local ad return(function(...)return{Accent=Color3.fromRGB(0,103,192),
+AcrylicMain=Color3.fromRGB(200,200,200),AcrylicBorder=Color3.fromRGB(120,120,120),AcrylicGradient=ColorSequence.new(
+Color3.fromRGB(255,255,255),Color3.fromRGB(255,255,255)),AcrylicNoise=0.96,TitleBarLine=Color3.fromRGB(160,160,160),Tab=
+Color3.fromRGB(90,90,90),Element=Color3.fromRGB(255,255,255),ElementBorder=Color3.fromRGB(180,180,180),InElementBorder=
+Color3.fromRGB(150,150,150),ElementTransparency=0.65,ToggleSlider=Color3.fromRGB(40,40,40),ToggleToggled=Color3.fromRGB(
+255,255,255),SliderRail=Color3.fromRGB(40,40,40),DropdownFrame=Color3.fromRGB(200,200,200),DropdownHolder=Color3.
+fromRGB(240,240,240),DropdownBorder=Color3.fromRGB(200,200,200),DropdownOption=Color3.fromRGB(150,150,150),Keybind=
+Color3.fromRGB(120,120,120),Input=Color3.fromRGB(200,200,200),InputFocused=Color3.fromRGB(100,100,100),InputIndicator=
+Color3.fromRGB(80,80,80),Dialog=Color3.fromRGB(255,255,255),DialogHolder=Color3.fromRGB(240,240,240),DialogHolderLine=
+Color3.fromRGB(228,228,228),DialogButton=Color3.fromRGB(255,255,255),DialogButtonBorder=Color3.fromRGB(190,190,190),
+DialogBorder=Color3.fromRGB(140,140,140),DialogInput=Color3.fromRGB(250,250,250),DialogInputLine=Color3.fromRGB(160,160,
+160),Text=Color3.fromRGB(41,41,41),SubText=Color3.fromRGB(40,40,40),Hover=Color3.fromRGB(50,50,50),HoverChange=0.16}end
+)()end,[61]=function()local aa,ab,ac=a(61)local ad return(function(...)return{Accent=Color3.fromRGB(110,80,200),
+AcrylicMain=Color3.fromRGB(12,10,22),AcrylicBorder=Color3.fromRGB(38,30,58),AcrylicGradient=ColorSequence.new(Color3.
+fromRGB(32,12,72),Color3.fromRGB(68,42,190)),AcrylicNoise=0.9,TitleBarLine=Color3.fromRGB(48,32,86),Tab=Color3.fromRGB(
+160,130,210),Element=Color3.fromRGB(82,64,128),ElementBorder=Color3.fromRGB(16,12,28),InElementBorder=Color3.fromRGB(110
+,80,200),ElementTransparency=0.84,ToggleSlider=Color3.fromRGB(130,98,190),ToggleToggled=Color3.fromRGB(10,8,18),
+SliderRail=Color3.fromRGB(130,98,190),DropdownFrame=Color3.fromRGB(142,120,200),DropdownHolder=Color3.fromRGB(26,18,44),
+DropdownBorder=Color3.fromRGB(22,16,36),DropdownOption=Color3.fromRGB(172,150,220),Keybind=Color3.fromRGB(120,96,185),
+Input=Color3.fromRGB(116,96,176),InputFocused=Color3.fromRGB(8,6,14),InputIndicator=Color3.fromRGB(190,170,230),Dialog=
+Color3.fromRGB(24,16,40),DialogHolder=Color3.fromRGB(18,12,34),DialogHolderLine=Color3.fromRGB(14,10,26),DialogButton=
+Color3.fromRGB(24,16,40),DialogButtonBorder=Color3.fromRGB(72,54,132),DialogBorder=Color3.fromRGB(40,30,68),DialogInput=
+Color3.fromRGB(52,40,86),DialogInputLine=Color3.fromRGB(190,170,230),Text=Color3.fromRGB(244,244,248),SubText=Color3.
+fromRGB(170,160,185),Hover=Color3.fromRGB(130,98,190),HoverChange=0.05}end)()end,[62]=function()local aa,ab,ac=a(62)
+local ad return(function(...)return{Accent=Color3.fromHex'#75715E',AcrylicMain=Color3.fromHex'#272822',AcrylicBorder=
+Color3.fromHex'#1e1f1c',AcrylicGradient=ColorSequence.new(Color3.fromHex'#272822',Color3.fromHex'#272822'),AcrylicNoise=
+1,TitleBarLine=Color3.fromHex'#1e1f1c',Tab=Color3.fromHex'#f8f8f2',Element=Color3.fromHex'#414339',ElementBorder=Color3.
+fromHex'#75715E',InElementBorder=Color3.fromHex'#75715E',ElementTransparency=0,ToggleSlider=Color3.fromHex'#75715E',
+ToggleToggled=Color3.fromHex'#272822',SliderRail=Color3.fromHex'#75715E',DropdownFrame=Color3.fromHex'#414339',
+DropdownHolder=Color3.fromHex'#1e1f1c',DropdownBorder=Color3.fromHex'#75715E',DropdownOption=Color3.fromHex'#f8f8f2',
+Keybind=Color3.fromHex'#414339',Input=Color3.fromHex'#414339',InputFocused=Color3.fromHex'#414339',InputIndicator=Color3
+.fromHex'#90908a',Dialog=Color3.fromHex'#1e1f1c',DialogHolder=Color3.fromHex'#1e1f1c',DialogHolderLine=Color3.fromHex
+'#414339',DialogButton=Color3.fromHex'#414339',DialogButtonBorder=Color3.fromHex'#75715E',DialogBorder=Color3.fromHex
+'#75715E',DialogInput=Color3.fromHex'#414339',DialogInputLine=Color3.fromHex'#75715E',Text=Color3.fromHex'#f8f8f2',
+SubText=Color3.fromHex'#88846f',Hover=Color3.fromHex'#3e3d32',HoverChange=0.1}end)()end,[63]=function()local aa,ab,ac=a(
+63)local ad return(function(...)return{Accent=Color3.fromHex'#3655b5',AcrylicMain=Color3.fromHex'#1e1e1e',AcrylicBorder=
+Color3.fromHex'#303030',AcrylicGradient=ColorSequence.new(Color3.fromHex'#1e1e1e',Color3.fromHex'#1e1e1e'),AcrylicNoise=
+1,TitleBarLine=Color3.fromHex'#303030',Tab=Color3.fromHex'#d8d8d8',Element=Color3.fromHex'#525252',ElementBorder=Color3.
+fromHex'#505050',InElementBorder=Color3.fromHex'#3655b5',ElementTransparency=0,ToggleSlider=Color3.fromHex'#3655b5',
+ToggleToggled=Color3.fromHex'#525252',SliderRail=Color3.fromHex'#3655b5',DropdownFrame=Color3.fromHex'#525252',
+DropdownHolder=Color3.fromHex'#525252',DropdownBorder=Color3.fromHex'#505050',DropdownOption=Color3.fromHex'#c5c8c6',
+Keybind=Color3.fromHex'#525252',Input=Color3.fromHex'#525252',InputFocused=Color3.fromHex'#525252',InputIndicator=Color3
+.fromHex'#949494',Dialog=Color3.fromHex'#272727',DialogHolder=Color3.fromHex'#272727',DialogHolderLine=Color3.fromHex
+'#505050',DialogButton=Color3.fromHex'#565656',DialogButtonBorder=Color3.fromHex'#505050',DialogBorder=Color3.fromHex
+'#505050',DialogInput=Color3.fromHex'#525252',DialogInputLine=Color3.fromHex'#3655b5',Text=Color3.fromHex'#c5c8c6',
+SubText=Color3.fromHex'#9A9B99',Hover=Color3.fromHex'#444444',HoverChange=0.1}end)()end,[64]=function()local aa,ab,ac=a(
+64)local ad return(function(...)return{Accent=Color3.fromHex'#528bff',AcrylicMain=Color3.fromHex'#16171D',AcrylicBorder=
+Color3.fromHex'#181A1F',AcrylicGradient=ColorSequence.new(Color3.fromHex'#16171D',Color3.fromHex'#16171D'),AcrylicNoise=
+1,TitleBarLine=Color3.fromHex'#181A1F',Tab=Color3.fromHex'#f8f8f0',Element=Color3.fromHex'#1d1f23',ElementBorder=Color3.
+fromHex'#181A11',InElementBorder=Color3.fromHex'#528bff',ElementTransparency=0,ToggleSlider=Color3.fromHex'#528bff',
+ToggleToggled=Color3.fromHex'#16171D',SliderRail=Color3.fromHex'#528bff',DropdownFrame=Color3.fromHex'#1d1f23',
+DropdownHolder=Color3.fromHex'#21252B',DropdownBorder=Color3.fromHex'#181A11',DropdownOption=Color3.fromHex'#d7dae0',
+Keybind=Color3.fromHex'#1d1f23',Input=Color3.fromHex'#1d1f23',InputFocused=Color3.fromHex'#1d1f23',InputIndicator=Color3
+.fromHex'#495162',Dialog=Color3.fromHex'#21252B',DialogHolder=Color3.fromHex'#21252B',DialogHolderLine=Color3.fromHex
+'#181A1F',DialogButton=Color3.fromHex'#1d1f23',DialogButtonBorder=Color3.fromHex'#181A11',DialogBorder=Color3.fromHex
+'#181A1F',DialogInput=Color3.fromHex'#1d1f23',DialogInputLine=Color3.fromHex'#528bff',Text=Color3.fromHex'#f8f8f0',
+SubText=Color3.fromHex'#5c6370',Hover=Color3.fromHex'#292d35',HoverChange=0.1}end)()end,[65]=function()local aa,ab,ac=a(
+65)local ad return(function(...)return{Accent=Color3.fromHex'#F92672',AcrylicMain=Color3.fromHex'#272822',AcrylicBorder=
+Color3.fromHex'#414339',AcrylicGradient=ColorSequence.new(Color3.fromHex'#272822',Color3.fromHex'#1e1f1c'),AcrylicNoise=
+1,TitleBarLine=Color3.fromHex'#414339',Tab=Color3.fromHex'#f8f8f2',Element=Color3.fromHex'#414339',ElementBorder=Color3.
+fromHex'#75715E',InElementBorder=Color3.fromHex'#F92672',ElementTransparency=0,ToggleSlider=Color3.fromHex'#F92672',
+ToggleToggled=Color3.fromHex'#414339',SliderRail=Color3.fromHex'#75715E',DropdownFrame=Color3.fromHex'#414339',
+DropdownHolder=Color3.fromHex'#1e1f1c',DropdownBorder=Color3.fromHex'#75715E',DropdownOption=Color3.fromHex'#f8f8f2',
+Keybind=Color3.fromHex'#414339',Input=Color3.fromHex'#414339',InputFocused=Color3.fromHex'#414339',InputIndicator=Color3
+.fromHex'#90908a',Dialog=Color3.fromHex'#1e1f1c',DialogHolder=Color3.fromHex'#1e1f1c',DialogHolderLine=Color3.fromHex
+'#414339',DialogButton=Color3.fromHex'#414339',DialogButtonBorder=Color3.fromHex'#75715E',DialogBorder=Color3.fromHex
+'#75715E',DialogInput=Color3.fromHex'#414339',DialogInputLine=Color3.fromHex'#F92672',Text=Color3.fromHex'#f8f8f2',
+SubText=Color3.fromHex'#88846f',Hover=Color3.fromHex'#3e3d32',HoverChange=0.1}end)()end,[66]=function()local aa,ab,ac=a(
+66)local ad return(function(...)return{Accent=Color3.fromRGB(64,190,220),AcrylicMain=Color3.fromRGB(12,16,28),
+AcrylicBorder=Color3.fromRGB(28,60,76),AcrylicGradient=ColorSequence.new(Color3.fromRGB(14,22,38),Color3.fromRGB(24,110,
+130)),AcrylicNoise=0.9,TitleBarLine=Color3.fromRGB(22,58,74),Tab=Color3.fromRGB(130,200,210),Element=Color3.fromRGB(42,
+68,86),ElementBorder=Color3.fromRGB(8,12,20),InElementBorder=Color3.fromRGB(64,190,220),ElementTransparency=0.82,
+ToggleSlider=Color3.fromRGB(96,180,200),ToggleToggled=Color3.fromRGB(8,12,20),SliderRail=Color3.fromRGB(96,180,200),
+DropdownFrame=Color3.fromRGB(120,170,180),DropdownHolder=Color3.fromRGB(16,28,44),DropdownBorder=Color3.fromRGB(10,18,28
+),DropdownOption=Color3.fromRGB(140,205,215),Keybind=Color3.fromRGB(110,185,195),Input=Color3.fromRGB(112,185,195),
+InputFocused=Color3.fromRGB(8,10,16),InputIndicator=Color3.fromRGB(170,220,230),Dialog=Color3.fromRGB(18,32,46),
+DialogHolder=Color3.fromRGB(12,24,36),DialogHolderLine=Color3.fromRGB(8,14,24),DialogButton=Color3.fromRGB(18,32,46),
+DialogButtonBorder=Color3.fromRGB(60,96,104),DialogBorder=Color3.fromRGB(26,52,68),DialogInput=Color3.fromRGB(30,56,72),
+DialogInputLine=Color3.fromRGB(170,220,230),Text=Color3.fromRGB(236,244,248),SubText=Color3.fromRGB(165,185,190),Hover=
+Color3.fromRGB(96,180,200),HoverChange=0.05}end)()end,[67]=function()local aa,ab,ac=a(67)local ad return(function(...)
+return{Accent=Color3.fromRGB(120,190,225),AcrylicMain=Color3.fromRGB(14,16,30),AcrylicBorder=Color3.fromRGB(36,44,72),
+AcrylicGradient=ColorSequence.new{ColorSequenceKeypoint.new(0,Color3.fromRGB(14,16,30)),ColorSequenceKeypoint.new(0.52,
+Color3.fromRGB(64,44,108)),ColorSequenceKeypoint.new(1,Color3.fromRGB(120,190,225))},AcrylicNoise=0.96,TitleBarLine=
+Color3.fromRGB(50,62,96),Tab=Color3.fromRGB(220,235,245),Element=Color3.fromRGB(36,56,76),ElementBorder=Color3.fromRGB(
+10,14,24),InElementBorder=Color3.fromRGB(160,210,240),ElementTransparency=0.78,ToggleSlider=Color3.fromRGB(165,210,235),
+ToggleToggled=Color3.fromRGB(12,14,22),SliderRail=Color3.fromRGB(165,210,235),DropdownFrame=Color3.fromRGB(180,205,220),
+DropdownHolder=Color3.fromRGB(22,34,50),DropdownBorder=Color3.fromRGB(14,24,36),DropdownOption=Color3.fromRGB(210,230,
+240),Keybind=Color3.fromRGB(150,190,205),Input=Color3.fromRGB(150,190,205),InputFocused=Color3.fromRGB(12,14,22),
+InputIndicator=Color3.fromRGB(200,230,245),Dialog=Color3.fromRGB(20,30,44),DialogHolder=Color3.fromRGB(16,24,40),
+DialogHolderLine=Color3.fromRGB(12,18,30),DialogButton=Color3.fromRGB(20,30,44),DialogButtonBorder=Color3.fromRGB(96,140
+,170),DialogBorder=Color3.fromRGB(44,64,96),DialogInput=Color3.fromRGB(56,86,110),DialogInputLine=Color3.fromRGB(200,230
+,245),Text=Color3.fromRGB(246,250,252),SubText=Color3.fromRGB(180,200,210),Hover=Color3.fromRGB(140,200,225),HoverChange
+=0.055}end)()end,[68]=function()local aa,ab,ac=a(68)local ad return(function(...)return{Accent=Color3.fromHex'#9769dc',
+AcrylicMain=Color3.fromHex'#F5F5F5',AcrylicBorder=Color3.fromHex'#c4b7d7',AcrylicGradient=ColorSequence.new(Color3.
+fromHex'#F5F5F5',Color3.fromHex'#F5F5F5'),AcrylicNoise=1,TitleBarLine=Color3.fromHex'#c4b7d7',Tab=Color3.fromHex
+'#705697',Element=Color3.fromHex'#F2F2F2',ElementBorder=Color3.fromHex'#adafb7',InElementBorder=Color3.fromHex'#9769dc',
+ElementTransparency=0,ToggleSlider=Color3.fromHex'#705697',ToggleToggled=Color3.fromHex'#F5F5F5',SliderRail=Color3.
+fromHex'#705697',DropdownFrame=Color3.fromHex'#F5F5F5',DropdownHolder=Color3.fromHex'#F5F5F5',DropdownBorder=Color3.
+fromHex'#adafb7',DropdownOption=Color3.fromHex'#333333',Keybind=Color3.fromHex'#F5F5F5',Input=Color3.fromHex'#F5F5F5',
+InputFocused=Color3.fromHex'#F5F5F5',InputIndicator=Color3.fromHex'#AAAAAA',Dialog=Color3.fromHex'#F2F8FC',DialogHolder=
+Color3.fromHex'#F2F8FC',DialogHolderLine=Color3.fromHex'#705697',DialogButton=Color3.fromHex'#F5F5F5',DialogButtonBorder
+=Color3.fromHex'#adafb7',DialogBorder=Color3.fromHex'#705697',DialogInput=Color3.fromHex'#F5F5F5',DialogInputLine=Color3
+.fromHex'#9769dc',Text=Color3.fromHex'#333333',SubText=Color3.fromHex'#6D705B',Hover=Color3.fromHex'#e0e0e0',HoverChange
+=0.1}end)()end,[69]=function()local aa,ab,ac=a(69)local ad return(function(...)return{Accent=Color3.fromRGB(180,55,90),
 AcrylicMain=Color3.fromRGB(40,40,40),AcrylicBorder=Color3.fromRGB(130,90,110),AcrylicGradient=ColorSequence.new(Color3.
 fromRGB(190,60,135),Color3.fromRGB(165,50,70)),AcrylicNoise=0.92,TitleBarLine=Color3.fromRGB(140,85,105),Tab=Color3.
 fromRGB(180,140,160),Element=Color3.fromRGB(200,120,170),ElementBorder=Color3.fromRGB(110,70,85),InElementBorder=Color3.
@@ -11277,63 +11279,64 @@ function()local aa,ab,ac=a(150)local ad return(function(...)return function()loc
 Parent.SingleMotor),ac(ab.Parent.GroupMotor)local ah,aj=af.new(0),ag.new{}it('should properly detect motors',function()
 expect(ae(ah)).to.equal(true)expect(ae(aj)).to.equal(true)end)it("shouldn't detect things that aren't motors",function()
 expect(ae{}).to.equal(false)end)it('should return the proper motor type',function()local ak,b=ae(ah)local c,d=ae(aj)
-expect(b).to.equal'Single'expect(d).to.equal'Group'end)end end)()end},{{1,2,{'Fluent Renewed'},{{31,2,{'Themes'},{{92,2,
-{'Viow Neon'}},{94,2,{'Yaru Dark'}},{93,2,{'Vynixu'}},{48,2,{'Elementary'}},{41,2,{'Dark'}},{95,2,{'Yaru'}},{59,2,{
-'Kimbie Dark'}},{91,2,{'Viow Mars'}},{73,2,{'Typewriter'}},{61,2,{'MidnightPrism'}},{46,2,{'DuoTone Dark Sky'}},{89,2,{
-'Viow Flat'}},{88,2,{'Viow Darker'}},{51,2,{'GitHub Dark Default'}},{90,2,{'Viow Light'}},{53,2,{
-'GitHub Dark High Contrast'}},{45,2,{'DuoTone Dark Sea'}},{85,2,{'VerdantGlass'}},{84,2,{'VSC Red'}},{37,2,{'Amethyst'}}
-,{83,2,{'VSC Light+'}},{82,2,{'VSC Light Modern'}},{49,2,{'FrozenAurora'}},{44,2,{'DuoTone Dark Forest'}},{75,2,{
-'United Ubuntu'}},{68,2,{'Quiet Light'}},{71,2,{'Solarized Light'}},{47,2,{'DuoTone Dark Space'}},{74,2,{'United GNOME'}
-},{79,2,{'VSC Dark Modern'}},{86,2,{'Viow Arabian Mix'}},{77,2,{'VS Light'}},{76,2,{'VS Dark'}},{32,2,{'Abyss'}},{80,2,{
-'VSC Dark+'}},{36,2,{'Amethyst Dark'}},{67,2,{'OpalineHalo'}},{78,2,{'VSC Dark High Contrast'}},{69,2,{'Rose'}},{40,2,{
-'Dark Typewriter'}},{70,2,{'Solarized Dark'}},{35,2,{'Ambiance'}},{60,2,{'Light'}},{63,2,{'Monokai Dimmed'}},{33,2,{
-'Adapta Nokto'}},{57,2,{'GitHub Light High Contrast'}},{72,2,{'Tomorrow Night Blue'}},{66,2,{'NeonTide'}},{50,2,{
-'GitHub Dark Colorblind'}},{54,2,{'GitHub Dark'}},{62,2,{'Monokai Classic'}},{43,2,{'DuoTone Dark Earth'}},{34,2,{
-'Amberfall'}},{39,2,{'Arc Dark'}},{42,2,{'Darker'}},{55,2,{'GitHub Light Colorblind'}},{56,2,{'GitHub Light Default'}},{
-58,2,{'GitHub Light'}},{64,2,{'Monokai Vibrant'}},{65,2,{'Monokai'}},{52,2,{'GitHub Dark Dimmed'}},{81,2,{
-'VSC Light High Contrast'}},{87,2,{'Viow Arabian'}},{38,2,{'Aqua'}}}},{22,1,{'Modules'},{{29,2,{'Icons'}},{30,2,{
-'SecureAssets'}},{28,2,{'Creator'}},{23,2,{'Acrylic'},{{27,2,{'Utils'}},{25,2,{'AcrylicPaint'}},{26,2,{'CreateAcrylic'}}
-,{24,2,{'AcrylicBlur'}}}}}},{96,1,{'Packages'},{{98,2,{'Ripple'}},{100,1,{'_Index'},{{104,1,{'littensy_ripple@0.9.3'},{{
-106,2,{'ripple'},{{119,2,{'types'}},{110,1,{'solvers'},{{118,2,{'tween.spec'}},{115,2,{'spring'}},{113,2,{'linear'}},{
-114,2,{'linear.spec'}},{117,2,{'tween'}},{112,2,{'immediate.spec'}},{116,2,{'spring.spec'}},{111,2,{'immediate'}}}},{107
-,2,{'config'}},{120,1,{'utils'},{{124,2,{'snapshot'}},{125,2,{'spy'}},{123,2,{'merge'}},{122,2,{'intermediate'}},{121,2,
-{'assign'}}}},{109,2,{'createMotion.spec'}},{108,2,{'createMotion'}}}},{105,2,{'Promise'}}}},{133,1,{
-'reselim_flipper@2.0.0'},{{134,2,{'flipper'},{{147,2,{'Spring'}},{149,2,{'isMotor'}},{142,2,{'Linear.spec'}},{137,2,{
-'GroupMotor'}},{136,2,{'BaseMotor.spec'}},{140,2,{'Instant.spec'}},{150,2,{'isMotor.spec'}},{148,2,{'Spring.spec'}},{138
-,2,{'GroupMotor.spec'}},{145,2,{'SingleMotor'}},{146,2,{'SingleMotor.spec'}},{144,2,{'Signal.spec'}},{135,2,{'BaseMotor'
-}},{141,2,{'Linear'}},{143,2,{'Signal'}},{139,2,{'Instant'}}}}}},{126,1,{'lucasmzreal_fastsignal@10.4.0'},{{127,2,{
-'fastsignal'},{{128,2,{'Deferred'}},{131,2,{'Readme'}},{132,2,{'wally'}},{130,2,{'Immediate'}},{129,2,{'Docs'}}}}}},{101
-,1,{'evaera_promise@4.0.0'},{{102,2,{'promise'},{{103,2,{'init.spec'}}}}}}}},{99,2,{'Signal'}},{97,2,{'Flipper'}}}},{2,1
-,{'Components'},{{3,2,{'Assets'}},{7,2,{'Notification'}},{8,2,{'Section'}},{4,2,{'Button'}},{12,2,{'Window'}},{11,2,{
-'TitleBar'}},{9,2,{'Tab'}},{10,2,{'Textbox'}},{6,2,{'Element'}},{5,2,{'Dialog'}}}},{13,2,{'Elements'},{{15,2,{
-'Colorpicker'}},{20,2,{'Slider'}},{16,2,{'Dropdown'}},{18,2,{'Keybind'}},{21,2,{'Toggle'}},{14,2,{'Button'}},{19,2,{
-'Paragraph'}},{17,2,{'Input'}}}}}}},'0.4.2','WaxRuntime',string,task,setmetatable,error,next,table,unpack,coroutine,
-script,type,require,pcall,tostring,tonumber,_VERSION local m,n,o,p,q,r,s=b.insert,b.remove,b.freeze or function(m)return
-m end,d.wrap,ae.sub,ae.match,ae.gmatch if k and q(k,1,4)=='Lune'then local t,u=h(g,'@lune/task')if t and u then af=u end
-end local t=af and af.defer local u,v,w,x,y,z,A,B,C=t or function(u,...)p(u)(...)end,{[1]='Folder',[2]='ModuleScript',[3
-]='Script',[4]='LocalScript',[5]='StringValue'},{},{},{},{},{},{},{}local D,E={GetFullName={{},function(D)local E,F=D.
-Name,D.Parent while F do E=F.Name..'.'..E F=F.Parent end return E end},GetChildren={{},function(D)local E={}for F in aj,
-C[D]do m(E,F)end return E end},GetDescendants={{},function(D)local E={}for F in aj,C[D]do m(E,F)for G,H in aj,F:
-GetDescendants()do m(E,H)end end return E end},FindFirstChild={{'string','boolean?'},function(D,E,F)local G=C[D]for H in
-aj,G do if H.Name==E then return H end end if F then for H in aj,G do return H:FindFirstChild(E,true)end end end},
-FindFirstAncestor={{'string'},function(D,E)local F=D.Parent while F do if F.Name==E then return F end F=F.Parent end end
-},WaitForChild={{'string','number?'},function(D,E)return D:FindFirstChild(E)end}},{}for F,G in aj,D do local H,I,J=G[1],
-G[2],{}for K,L in aj,H do local M,N=r(L,'^([^%?]+)(%??)')J[K]={M,N}end E[F]=function(K,...)if not C[K]then ah(
-"Expected ':' not '.' calling member function "..F,2)end local L={...}for M,N in aj,J do local O=L[M]local P,Q,R=f(O),N[
-1],N[2]if O==nil and not R then ah('Argument '..O..' missing or nil',3)end if Q~='any'and P~=Q and not(P=='nil'and R)
-then ah('Argument '..M..' expects type "'..Q..'", got "'..P..'"',2)end end return I(K,...)end end local function F(G,H,I
-)local J,K=(ag({},{__mode='k'}))local function L(M)ah(M..' is not a valid (virtual) member of '..G..' "'..H..'"',3)end
-local function M(N)ah('Unable to assign (virtual) property '..N..'. Property is read only',3)end local N,O={},{}O.
-__metatable=false O.__index=function(P,Q)if Q=='ClassName'then return G elseif Q=='Name'then return H elseif Q=='Parent'
-then return I elseif G=='StringValue'and Q=='Value'then return K else local R=E[Q]if R then return R end end for R in aj
-,J do if R.Name==Q then return R end end L(Q)end O.__newindex=function(P,Q,R)if Q=='ClassName'then M(Q)elseif Q=='Name'
-then H=R elseif Q=='Parent'then if R==N then return end if I~=nil then C[I][N]=nil end I=R if R~=nil then C[R][N]=true
-end elseif G=='StringValue'and Q=='Value'then K=R else L(Q)end end O.__tostring=function()return H end ag(N,O)C[N]=J if
-I~=nil then C[I][N]=true end return N end local function G(H,I)local J,K,L,M=H[1],H[2],H[3],H[4]local N=v[K]local O=L
-and n(L,1)or N local P=F(N,O,I)w[J]=P if L then for Q,R in aj,L do P[Q]=R end end if M then for Q,R in aj,M do G(R,P)end
-end return P end local H=F('Folder','['..ad..']')for I,J in aj,ab do G(J,H)end for I,J in aj,aa do local K=w[I]x[K]=J y[
-K]=I local L=K.ClassName if L=='LocalScript'or L=='Script'then m(A,K)end end local function I(J)local K,L=J.ClassName,z[
-J]if L and K=='ModuleScript'then return c(L)end local M=x[J]local function N(O)O=i(O)local P,Q,R=J:GetFullName(),r(O,
+expect(b).to.equal'Single'expect(d).to.equal'Group'end)end end)()end},{{1,2,{'Fluent Renewed'},{{96,1,{'Packages'},{{98,
+2,{'Ripple'}},{99,2,{'Signal'}},{97,2,{'Flipper'}},{100,1,{'_Index'},{{133,1,{'reselim_flipper@2.0.0'},{{134,2,{
+'flipper'},{{139,2,{'Instant'}},{148,2,{'Spring.spec'}},{136,2,{'BaseMotor.spec'}},{146,2,{'SingleMotor.spec'}},{147,2,{
+'Spring'}},{150,2,{'isMotor.spec'}},{149,2,{'isMotor'}},{140,2,{'Instant.spec'}},{143,2,{'Signal'}},{138,2,{
+'GroupMotor.spec'}},{144,2,{'Signal.spec'}},{142,2,{'Linear.spec'}},{145,2,{'SingleMotor'}},{135,2,{'BaseMotor'}},{137,2
+,{'GroupMotor'}},{141,2,{'Linear'}}}}}},{104,1,{'littensy_ripple@0.9.3'},{{105,2,{'Promise'}},{106,2,{'ripple'},{{120,1,
+{'utils'},{{123,2,{'merge'}},{125,2,{'spy'}},{121,2,{'assign'}},{122,2,{'intermediate'}},{124,2,{'snapshot'}}}},{108,2,{
+'createMotion'}},{110,1,{'solvers'},{{111,2,{'immediate'}},{117,2,{'tween'}},{116,2,{'spring.spec'}},{115,2,{'spring'}},
+{112,2,{'immediate.spec'}},{118,2,{'tween.spec'}},{113,2,{'linear'}},{114,2,{'linear.spec'}}}},{107,2,{'config'}},{109,2
+,{'createMotion.spec'}},{119,2,{'types'}}}}}},{126,1,{'lucasmzreal_fastsignal@10.4.0'},{{127,2,{'fastsignal'},{{130,2,{
+'Immediate'}},{129,2,{'Docs'}},{132,2,{'wally'}},{131,2,{'Readme'}},{128,2,{'Deferred'}}}}}},{101,1,{
+'evaera_promise@4.0.0'},{{102,2,{'promise'},{{103,2,{'init.spec'}}}}}}}}}},{13,2,{'Elements'},{{14,2,{'Button'}},{19,2,{
+'Paragraph'}},{20,2,{'Slider'}},{18,2,{'Keybind'}},{16,2,{'Dropdown'}},{17,2,{'Input'}},{21,2,{'Toggle'}},{15,2,{
+'Colorpicker'}}}},{22,1,{'Modules'},{{30,2,{'SecureAssets'}},{29,2,{'Icons'}},{23,2,{'Acrylic'},{{25,2,{'AcrylicPaint'}}
+,{26,2,{'CreateAcrylic'}},{27,2,{'Utils'}},{24,2,{'AcrylicBlur'}}}},{28,2,{'Creator'}}}},{31,2,{'Themes'},{{43,2,{
+'DuoTone Dark Earth'}},{94,2,{'Yaru Dark'}},{93,2,{'Vynixu'}},{62,2,{'Monokai Classic'}},{81,2,{
+'VSC Light High Contrast'}},{46,2,{'DuoTone Dark Sky'}},{76,2,{'VS Dark'}},{89,2,{'Viow Flat'}},{67,2,{'OpalineHalo'}},{
+88,2,{'Viow Darker'}},{35,2,{'Ambiance'}},{53,2,{'GitHub Dark High Contrast'}},{80,2,{'VSC Dark+'}},{72,2,{
+'Tomorrow Night Blue'}},{86,2,{'Viow Arabian Mix'}},{85,2,{'VerdantGlass'}},{79,2,{'VSC Dark Modern'}},{52,2,{
+'GitHub Dark Dimmed'}},{42,2,{'Darker'}},{66,2,{'NeonTide'}},{71,2,{'Solarized Light'}},{44,2,{'DuoTone Dark Forest'}},{
+38,2,{'Aqua'}},{32,2,{'Abyss'}},{39,2,{'Arc Dark'}},{84,2,{'VSC Red'}},{40,2,{'Dark Typewriter'}},{34,2,{'Amberfall'}},{
+74,2,{'United GNOME'}},{92,2,{'Viow Neon'}},{91,2,{'Viow Mars'}},{87,2,{'Viow Arabian'}},{70,2,{'Solarized Dark'}},{64,2
+,{'Monokai Vibrant'}},{50,2,{'GitHub Dark Colorblind'}},{33,2,{'Adapta Nokto'}},{54,2,{'GitHub Dark'}},{47,2,{
+'DuoTone Dark Space'}},{90,2,{'Viow Light'}},{57,2,{'GitHub Light High Contrast'}},{45,2,{'DuoTone Dark Sea'}},{65,2,{
+'Monokai'}},{58,2,{'GitHub Light'}},{56,2,{'GitHub Light Default'}},{83,2,{'VSC Light+'}},{36,2,{'Amethyst Dark'}},{73,2
+,{'Typewriter'}},{60,2,{'Light'}},{69,2,{'Rose'}},{49,2,{'FrozenAurora'}},{82,2,{'VSC Light Modern'}},{78,2,{
+'VSC Dark High Contrast'}},{63,2,{'Monokai Dimmed'}},{68,2,{'Quiet Light'}},{41,2,{'Dark'}},{55,2,{
+'GitHub Light Colorblind'}},{61,2,{'MidnightPrism'}},{37,2,{'Amethyst'}},{51,2,{'GitHub Dark Default'}},{75,2,{
+'United Ubuntu'}},{59,2,{'Kimbie Dark'}},{77,2,{'VS Light'}},{95,2,{'Yaru'}},{48,2,{'Elementary'}}}},{2,1,{'Components'}
+,{{6,2,{'Element'}},{4,2,{'Button'}},{11,2,{'TitleBar'}},{12,2,{'Window'}},{5,2,{'Dialog'}},{8,2,{'Section'}},{3,2,{
+'Assets'}},{7,2,{'Notification'}},{10,2,{'Textbox'}},{9,2,{'Tab'}}}}}}},'0.4.2','WaxRuntime',string,task,setmetatable,
+error,next,table,unpack,coroutine,script,type,require,pcall,tostring,tonumber,_VERSION local m,n,o,p,q,r,s=b.insert,b.
+remove,b.freeze or function(m)return m end,d.wrap,ae.sub,ae.match,ae.gmatch if k and q(k,1,4)=='Lune'then local t,u=h(g,
+'@lune/task')if t and u then af=u end end local t=af and af.defer local u,v,w,x,y,z,A,B,C=t or function(u,...)p(u)(...)
+end,{[1]='Folder',[2]='ModuleScript',[3]='Script',[4]='LocalScript',[5]='StringValue'},{},{},{},{},{},{},{}local D,E={
+GetFullName={{},function(D)local E,F=D.Name,D.Parent while F do E=F.Name..'.'..E F=F.Parent end return E end},
+GetChildren={{},function(D)local E={}for F in aj,C[D]do m(E,F)end return E end},GetDescendants={{},function(D)local E={}
+for F in aj,C[D]do m(E,F)for G,H in aj,F:GetDescendants()do m(E,H)end end return E end},FindFirstChild={{'string',
+'boolean?'},function(D,E,F)local G=C[D]for H in aj,G do if H.Name==E then return H end end if F then for H in aj,G do
+return H:FindFirstChild(E,true)end end end},FindFirstAncestor={{'string'},function(D,E)local F=D.Parent while F do if F.
+Name==E then return F end F=F.Parent end end},WaitForChild={{'string','number?'},function(D,E)return D:FindFirstChild(E)
+end}},{}for F,G in aj,D do local H,I,J=G[1],G[2],{}for K,L in aj,H do local M,N=r(L,'^([^%?]+)(%??)')J[K]={M,N}end E[F]=
+function(K,...)if not C[K]then ah("Expected ':' not '.' calling member function "..F,2)end local L={...}for M,N in aj,J
+do local O=L[M]local P,Q,R=f(O),N[1],N[2]if O==nil and not R then ah('Argument '..O..' missing or nil',3)end if Q~='any'
+and P~=Q and not(P=='nil'and R)then ah('Argument '..M..' expects type "'..Q..'", got "'..P..'"',2)end end return I(K,...
+)end end local function F(G,H,I)local J,K=(ag({},{__mode='k'}))local function L(M)ah(M..
+' is not a valid (virtual) member of '..G..' "'..H..'"',3)end local function M(N)ah(
+'Unable to assign (virtual) property '..N..'. Property is read only',3)end local N,O={},{}O.__metatable=false O.__index=
+function(P,Q)if Q=='ClassName'then return G elseif Q=='Name'then return H elseif Q=='Parent'then return I elseif G==
+'StringValue'and Q=='Value'then return K else local R=E[Q]if R then return R end end for R in aj,J do if R.Name==Q then
+return R end end L(Q)end O.__newindex=function(P,Q,R)if Q=='ClassName'then M(Q)elseif Q=='Name'then H=R elseif Q==
+'Parent'then if R==N then return end if I~=nil then C[I][N]=nil end I=R if R~=nil then C[R][N]=true end elseif G==
+'StringValue'and Q=='Value'then K=R else L(Q)end end O.__tostring=function()return H end ag(N,O)C[N]=J if I~=nil then C[
+I][N]=true end return N end local function G(H,I)local J,K,L,M=H[1],H[2],H[3],H[4]local N=v[K]local O=L and n(L,1)or N
+local P=F(N,O,I)w[J]=P if L then for Q,R in aj,L do P[Q]=R end end if M then for Q,R in aj,M do G(R,P)end end return P
+end local H=F('Folder','['..ad..']')for I,J in aj,ab do G(J,H)end for I,J in aj,aa do local K=w[I]x[K]=J y[K]=I local L=
+K.ClassName if L=='LocalScript'or L=='Script'then m(A,K)end end local function I(J)local K,L=J.ClassName,z[J]if L and K
+=='ModuleScript'then return c(L)end local M=x[J]local function N(O)O=i(O)local P,Q,R=J:GetFullName(),r(O,
 '[^:]+:(%d+): (.+)')if not Q or not l then return P..':*: '..(R or O)end Q=j(Q)local S=y[J]local T=l[S]local U=Q-T+1 if
 U<0 then U='?'end return P..':'..U..': '..R end if K=='LocalScript'or K=='Script'then local O,P=h(M)if not O then ah(N(P
 ),0)end else local O={h(M)}local P=n(O,1)if not P then local Q=n(O,1)ah(N(Q),0)end z[J]=O return c(O)end end function a(
