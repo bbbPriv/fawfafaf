@@ -11256,53 +11256,53 @@ function()local aa,ab,ac=a(150)local ad return(function(...)return function()loc
 Parent.SingleMotor),ac(ab.Parent.GroupMotor)local ah,aj=af.new(0),ag.new{}it('should properly detect motors',function()
 expect(ae(ah)).to.equal(true)expect(ae(aj)).to.equal(true)end)it("shouldn't detect things that aren't motors",function()
 expect(ae{}).to.equal(false)end)it('should return the proper motor type',function()local ak,b=ae(ah)local c,d=ae(aj)
-expect(b).to.equal'Single'expect(d).to.equal'Group'end)end end)()end},{{1,2,{'Fluent Renewed'},{{22,1,{'Modules'},{{30,2
-,{'SecureAssets'}},{29,2,{'Icons'}},{28,2,{'Creator'}},{23,2,{'Acrylic'},{{27,2,{'Utils'}},{25,2,{'AcrylicPaint'}},{24,2
-,{'AcrylicBlur'}},{26,2,{'CreateAcrylic'}}}}}},{13,2,{'Elements'},{{15,2,{'Colorpicker'}},{14,2,{'Button'}},{18,2,{
-'Keybind'}},{19,2,{'Paragraph'}},{17,2,{'Input'}},{16,2,{'Dropdown'}},{20,2,{'Slider'}},{21,2,{'Toggle'}}}},{2,1,{
-'Components'},{{5,2,{'Dialog'}},{11,2,{'TitleBar'}},{9,2,{'Tab'}},{7,2,{'Notification'}},{8,2,{'Section'}},{12,2,{
-'Window'}},{3,2,{'Assets'}},{4,2,{'Button'}},{6,2,{'Element'}},{10,2,{'Textbox'}}}},{96,1,{'Packages'},{{97,2,{'Flipper'
-}},{100,1,{'_Index'},{{133,1,{'reselim_flipper@2.0.0'},{{134,2,{'flipper'},{{150,2,{'isMotor.spec'}},{143,2,{'Signal'}},
-{148,2,{'Spring.spec'}},{142,2,{'Linear.spec'}},{136,2,{'BaseMotor.spec'}},{147,2,{'Spring'}},{145,2,{'SingleMotor'}},{
-139,2,{'Instant'}},{146,2,{'SingleMotor.spec'}},{144,2,{'Signal.spec'}},{149,2,{'isMotor'}},{141,2,{'Linear'}},{137,2,{
-'GroupMotor'}},{138,2,{'GroupMotor.spec'}},{140,2,{'Instant.spec'}},{135,2,{'BaseMotor'}}}}}},{101,1,{
-'evaera_promise@4.0.0'},{{102,2,{'promise'},{{103,2,{'init.spec'}}}}}},{104,1,{'littensy_ripple@0.9.3'},{{105,2,{
-'Promise'}},{106,2,{'ripple'},{{110,1,{'solvers'},{{118,2,{'tween.spec'}},{112,2,{'immediate.spec'}},{116,2,{
-'spring.spec'}},{111,2,{'immediate'}},{113,2,{'linear'}},{117,2,{'tween'}},{115,2,{'spring'}},{114,2,{'linear.spec'}}}},
-{107,2,{'config'}},{109,2,{'createMotion.spec'}},{108,2,{'createMotion'}},{120,1,{'utils'},{{125,2,{'spy'}},{122,2,{
-'intermediate'}},{124,2,{'snapshot'}},{121,2,{'assign'}},{123,2,{'merge'}}}},{119,2,{'types'}}}}}},{126,1,{
-'lucasmzreal_fastsignal@10.4.0'},{{127,2,{'fastsignal'},{{130,2,{'Immediate'}},{128,2,{'Deferred'}},{131,2,{'Readme'}},{
-129,2,{'Docs'}},{132,2,{'wally'}}}}}}}},{98,2,{'Ripple'}},{99,2,{'Signal'}}}},{31,2,{'Themes'},{{51,2,{
-'GitHub Dark Default'}},{57,2,{'GitHub Light High Contrast'}},{89,2,{'Viow Flat'}},{95,2,{'Yaru'}},{61,2,{
-'MidnightPrism'}},{80,2,{'VSC Dark+'}},{94,2,{'Yaru Dark'}},{44,2,{'DuoTone Dark Forest'}},{88,2,{'Viow Darker'}},{70,2,
-{'Solarized Dark'}},{48,2,{'Elementary'}},{85,2,{'VerdantGlass'}},{76,2,{'VS Dark'}},{73,2,{'Typewriter'}},{49,2,{
-'FrozenAurora'}},{93,2,{'Vynixu'}},{90,2,{'Viow Light'}},{78,2,{'VSC Dark High Contrast'}},{55,2,{
-'GitHub Light Colorblind'}},{66,2,{'NeonTide'}},{92,2,{'Viow Neon'}},{87,2,{'Viow Arabian'}},{86,2,{'Viow Arabian Mix'}}
-,{38,2,{'Aqua'}},{69,2,{'Rose'}},{58,2,{'GitHub Light'}},{83,2,{'VSC Light+'}},{72,2,{'Tomorrow Night Blue'}},{81,2,{
-'VSC Light High Contrast'}},{82,2,{'VSC Light Modern'}},{67,2,{'OpalineHalo'}},{32,2,{'Abyss'}},{75,2,{'United Ubuntu'}}
-,{84,2,{'VSC Red'}},{59,2,{'Kimbie Dark'}},{71,2,{'Solarized Light'}},{68,2,{'Quiet Light'}},{34,2,{'Amberfall'}},{77,2,
-{'VS Light'}},{42,2,{'Darker'}},{39,2,{'Arc Dark'}},{91,2,{'Viow Mars'}},{65,2,{'Monokai'}},{54,2,{'GitHub Dark'}},{40,2
-,{'Dark Typewriter'}},{74,2,{'United GNOME'}},{64,2,{'Monokai Vibrant'}},{50,2,{'GitHub Dark Colorblind'}},{36,2,{
-'Amethyst Dark'}},{41,2,{'Dark'}},{47,2,{'DuoTone Dark Space'}},{56,2,{'GitHub Light Default'}},{62,2,{'Monokai Classic'
-}},{52,2,{'GitHub Dark Dimmed'}},{35,2,{'Ambiance'}},{46,2,{'DuoTone Dark Sky'}},{33,2,{'Adapta Nokto'}},{60,2,{'Light'}
-},{45,2,{'DuoTone Dark Sea'}},{63,2,{'Monokai Dimmed'}},{79,2,{'VSC Dark Modern'}},{43,2,{'DuoTone Dark Earth'}},{37,2,{
-'Amethyst'}},{53,2,{'GitHub Dark High Contrast'}}}}}}},'0.4.2','WaxRuntime',string,task,setmetatable,error,next,table,
-unpack,coroutine,script,type,require,pcall,tostring,tonumber,_VERSION local m,n,o,p,q,r,s=b.insert,b.remove,b.freeze or
-function(m)return m end,d.wrap,ae.sub,ae.match,ae.gmatch if k and q(k,1,4)=='Lune'then local t,u=h(g,'@lune/task')if t
-and u then af=u end end local t=af and af.defer local u,v,w,x,y,z,A,B,C=t or function(u,...)p(u)(...)end,{[1]='Folder',[
-2]='ModuleScript',[3]='Script',[4]='LocalScript',[5]='StringValue'},{},{},{},{},{},{},{}local D,E={GetFullName={{},
-function(D)local E,F=D.Name,D.Parent while F do E=F.Name..'.'..E F=F.Parent end return E end},GetChildren={{},function(D
-)local E={}for F in aj,C[D]do m(E,F)end return E end},GetDescendants={{},function(D)local E={}for F in aj,C[D]do m(E,F)
-for G,H in aj,F:GetDescendants()do m(E,H)end end return E end},FindFirstChild={{'string','boolean?'},function(D,E,F)
-local G=C[D]for H in aj,G do if H.Name==E then return H end end if F then for H in aj,G do return H:FindFirstChild(E,
-true)end end end},FindFirstAncestor={{'string'},function(D,E)local F=D.Parent while F do if F.Name==E then return F end
-F=F.Parent end end},WaitForChild={{'string','number?'},function(D,E)return D:FindFirstChild(E)end}},{}for F,G in aj,D do
-local H,I,J=G[1],G[2],{}for K,L in aj,H do local M,N=r(L,'^([^%?]+)(%??)')J[K]={M,N}end E[F]=function(K,...)if not C[K]
-then ah("Expected ':' not '.' calling member function "..F,2)end local L={...}for M,N in aj,J do local O=L[M]local P,Q,R
-=f(O),N[1],N[2]if O==nil and not R then ah('Argument '..O..' missing or nil',3)end if Q~='any'and P~=Q and not(P=='nil'
-and R)then ah('Argument '..M..' expects type "'..Q..'", got "'..P..'"',2)end end return I(K,...)end end local function F
-(G,H,I)local J,K=(ag({},{__mode='k'}))local function L(M)ah(M..' is not a valid (virtual) member of '..G..' "'..H..'"',3
-)end local function M(N)ah('Unable to assign (virtual) property '..N..'. Property is read only',3)end local N,O={},{}O.
+expect(b).to.equal'Single'expect(d).to.equal'Group'end)end end)()end},{{1,2,{'Fluent Renewed'},{{13,2,{'Elements'},{{17,
+2,{'Input'}},{15,2,{'Colorpicker'}},{21,2,{'Toggle'}},{18,2,{'Keybind'}},{16,2,{'Dropdown'}},{19,2,{'Paragraph'}},{20,2,
+{'Slider'}},{14,2,{'Button'}}}},{96,1,{'Packages'},{{98,2,{'Ripple'}},{99,2,{'Signal'}},{100,1,{'_Index'},{{104,1,{
+'littensy_ripple@0.9.3'},{{105,2,{'Promise'}},{106,2,{'ripple'},{{110,1,{'solvers'},{{112,2,{'immediate.spec'}},{118,2,{
+'tween.spec'}},{113,2,{'linear'}},{115,2,{'spring'}},{114,2,{'linear.spec'}},{117,2,{'tween'}},{116,2,{'spring.spec'}},{
+111,2,{'immediate'}}}},{107,2,{'config'}},{109,2,{'createMotion.spec'}},{120,1,{'utils'},{{124,2,{'snapshot'}},{122,2,{
+'intermediate'}},{123,2,{'merge'}},{125,2,{'spy'}},{121,2,{'assign'}}}},{119,2,{'types'}},{108,2,{'createMotion'}}}}}},{
+133,1,{'reselim_flipper@2.0.0'},{{134,2,{'flipper'},{{150,2,{'isMotor.spec'}},{146,2,{'SingleMotor.spec'}},{144,2,{
+'Signal.spec'}},{145,2,{'SingleMotor'}},{138,2,{'GroupMotor.spec'}},{149,2,{'isMotor'}},{135,2,{'BaseMotor'}},{142,2,{
+'Linear.spec'}},{140,2,{'Instant.spec'}},{137,2,{'GroupMotor'}},{136,2,{'BaseMotor.spec'}},{148,2,{'Spring.spec'}},{141,
+2,{'Linear'}},{139,2,{'Instant'}},{143,2,{'Signal'}},{147,2,{'Spring'}}}}}},{126,1,{'lucasmzreal_fastsignal@10.4.0'},{{
+127,2,{'fastsignal'},{{131,2,{'Readme'}},{130,2,{'Immediate'}},{129,2,{'Docs'}},{128,2,{'Deferred'}},{132,2,{'wally'}}}}
+}},{101,1,{'evaera_promise@4.0.0'},{{102,2,{'promise'},{{103,2,{'init.spec'}}}}}}}},{97,2,{'Flipper'}}}},{31,2,{'Themes'
+},{{54,2,{'GitHub Dark'}},{62,2,{'Monokai Classic'}},{75,2,{'United Ubuntu'}},{94,2,{'Yaru Dark'}},{47,2,{
+'DuoTone Dark Space'}},{93,2,{'Vynixu'}},{85,2,{'VerdantGlass'}},{92,2,{'Viow Neon'}},{90,2,{'Viow Light'}},{46,2,{
+'DuoTone Dark Sky'}},{91,2,{'Viow Mars'}},{32,2,{'Abyss'}},{37,2,{'Amethyst'}},{66,2,{'NeonTide'}},{51,2,{
+'GitHub Dark Default'}},{60,2,{'Light'}},{89,2,{'Viow Flat'}},{83,2,{'VSC Light+'}},{88,2,{'Viow Darker'}},{77,2,{
+'VS Light'}},{39,2,{'Arc Dark'}},{84,2,{'VSC Red'}},{59,2,{'Kimbie Dark'}},{57,2,{'GitHub Light High Contrast'}},{40,2,{
+'Dark Typewriter'}},{50,2,{'GitHub Dark Colorblind'}},{74,2,{'United GNOME'}},{44,2,{'DuoTone Dark Forest'}},{95,2,{
+'Yaru'}},{49,2,{'FrozenAurora'}},{72,2,{'Tomorrow Night Blue'}},{38,2,{'Aqua'}},{81,2,{'VSC Light High Contrast'}},{53,2
+,{'GitHub Dark High Contrast'}},{80,2,{'VSC Dark+'}},{65,2,{'Monokai'}},{42,2,{'Darker'}},{76,2,{'VS Dark'}},{64,2,{
+'Monokai Vibrant'}},{33,2,{'Adapta Nokto'}},{71,2,{'Solarized Light'}},{34,2,{'Amberfall'}},{35,2,{'Ambiance'}},{45,2,{
+'DuoTone Dark Sea'}},{78,2,{'VSC Dark High Contrast'}},{87,2,{'Viow Arabian'}},{82,2,{'VSC Light Modern'}},{61,2,{
+'MidnightPrism'}},{58,2,{'GitHub Light'}},{67,2,{'OpalineHalo'}},{68,2,{'Quiet Light'}},{36,2,{'Amethyst Dark'}},{52,2,{
+'GitHub Dark Dimmed'}},{79,2,{'VSC Dark Modern'}},{73,2,{'Typewriter'}},{69,2,{'Rose'}},{70,2,{'Solarized Dark'}},{43,2,
+{'DuoTone Dark Earth'}},{48,2,{'Elementary'}},{86,2,{'Viow Arabian Mix'}},{41,2,{'Dark'}},{56,2,{'GitHub Light Default'}
+},{55,2,{'GitHub Light Colorblind'}},{63,2,{'Monokai Dimmed'}}}},{2,1,{'Components'},{{12,2,{'Window'}},{8,2,{'Section'}
+},{11,2,{'TitleBar'}},{9,2,{'Tab'}},{7,2,{'Notification'}},{4,2,{'Button'}},{10,2,{'Textbox'}},{3,2,{'Assets'}},{6,2,{
+'Element'}},{5,2,{'Dialog'}}}},{22,1,{'Modules'},{{28,2,{'Creator'}},{29,2,{'Icons'}},{30,2,{'SecureAssets'}},{23,2,{
+'Acrylic'},{{27,2,{'Utils'}},{24,2,{'AcrylicBlur'}},{25,2,{'AcrylicPaint'}},{26,2,{'CreateAcrylic'}}}}}}}}},'0.4.2',
+'WaxRuntime',string,task,setmetatable,error,next,table,unpack,coroutine,script,type,require,pcall,tostring,tonumber,
+_VERSION local m,n,o,p,q,r,s=b.insert,b.remove,b.freeze or function(m)return m end,d.wrap,ae.sub,ae.match,ae.gmatch if k
+and q(k,1,4)=='Lune'then local t,u=h(g,'@lune/task')if t and u then af=u end end local t=af and af.defer local u,v,w,x,y
+,z,A,B,C=t or function(u,...)p(u)(...)end,{[1]='Folder',[2]='ModuleScript',[3]='Script',[4]='LocalScript',[5]=
+'StringValue'},{},{},{},{},{},{},{}local D,E={GetFullName={{},function(D)local E,F=D.Name,D.Parent while F do E=F.Name..
+'.'..E F=F.Parent end return E end},GetChildren={{},function(D)local E={}for F in aj,C[D]do m(E,F)end return E end},
+GetDescendants={{},function(D)local E={}for F in aj,C[D]do m(E,F)for G,H in aj,F:GetDescendants()do m(E,H)end end return
+E end},FindFirstChild={{'string','boolean?'},function(D,E,F)local G=C[D]for H in aj,G do if H.Name==E then return H end
+end if F then for H in aj,G do return H:FindFirstChild(E,true)end end end},FindFirstAncestor={{'string'},function(D,E)
+local F=D.Parent while F do if F.Name==E then return F end F=F.Parent end end},WaitForChild={{'string','number?'},
+function(D,E)return D:FindFirstChild(E)end}},{}for F,G in aj,D do local H,I,J=G[1],G[2],{}for K,L in aj,H do local M,N=
+r(L,'^([^%?]+)(%??)')J[K]={M,N}end E[F]=function(K,...)if not C[K]then ah(
+"Expected ':' not '.' calling member function "..F,2)end local L={...}for M,N in aj,J do local O=L[M]local P,Q,R=f(O),N[
+1],N[2]if O==nil and not R then ah('Argument '..O..' missing or nil',3)end if Q~='any'and P~=Q and not(P=='nil'and R)
+then ah('Argument '..M..' expects type "'..Q..'", got "'..P..'"',2)end end return I(K,...)end end local function F(G,H,I
+)local J,K=(ag({},{__mode='k'}))local function L(M)ah(M..' is not a valid (virtual) member of '..G..' "'..H..'"',3)end
+local function M(N)ah('Unable to assign (virtual) property '..N..'. Property is read only',3)end local N,O={},{}O.
 __metatable=false O.__index=function(P,Q)if Q=='ClassName'then return G elseif Q=='Name'then return H elseif Q=='Parent'
 then return I elseif G=='StringValue'and Q=='Value'then return K else local R=E[Q]if R then return R end end for R in aj
 ,J do if R.Name==Q then return R end end L(Q)end O.__newindex=function(P,Q,R)if Q=='ClassName'then M(Q)elseif Q=='Name'
